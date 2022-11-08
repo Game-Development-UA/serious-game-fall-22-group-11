@@ -1,0 +1,11 @@
+:: Practice Passage
+This is an example text Hello this is some more text [[go here for the next screen->Passage two]]
+:: Passage two
+This is the second one, how are you
+I'm doing fine thank you, are you ready to get [[started?->P 3]]
+:: P 3
+I'm as [[ready->P 4]] as I'll ever be. Considering that I don't have any of my group mates with me today lol
+:: P 4 
+Well here we [[go...->P 5]]
+:: P 5
+You woke up one morning with this glooming sense of dread. You figured this day was going to come but didn't realize that the day had beared it's ugly face in yours
