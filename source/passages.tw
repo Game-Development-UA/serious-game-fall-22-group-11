@@ -1,6 +1,0 @@
-:: Start
-Hello, what is your name? Enter name. Thank you $name. Today is your lucky day! You are in charage of this story.  This is the first passage in your game with just one variable called myVariable that has a value of $myVariable.  There are two passages in this template, and the other can be found [[here|Passage 2]] or not!
-
-:: Passage 2
-And here we are! Now click [[here|Practice Passage]].
-
