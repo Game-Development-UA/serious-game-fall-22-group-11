@@ -12,10 +12,22 @@ What a brave soul [[you have.->P 3]]
 :: No
 You don't? 
 Why don't you?
-Those people are monsters. They don't deserve any good coming to them. Why take the
+Those people are monsters. They don't deserve any good coming to them. Why even think about interviewing them?
+For the [[family?->Family]]
 
+For the [[money?->Money]]
+:: Family
+They've already been affected. They're already hurting. What do you think you're going to do to fix this?
+
+[[The least I can do is put their story out.->Family 2]]
+:: Family 2
+You could do that, but that might lead to places you don't want to see happen. What if the family doesn't want the story out and about? What if they do want the story out? Are you prepared to deal with those consequences?
+[[Yes?->P 3]]
+[[I don't know, I feel like you're rushing me wit-->P 3]] 
+:: Money
+I mean that's not 
 :: P 3
-I'm as [[ready->P 4]] as I'll ever be. Considering that I don't have any of my group mates with me today lol
+"Well you're hired!"
 :: P 4 
 Well here we [[go...->P 5]]
 :: P 5
