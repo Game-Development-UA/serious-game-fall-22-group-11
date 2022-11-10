@@ -25,9 +25,13 @@ You could do that, but that might lead to places you don't want to see happen. W
 [[Yes?->P 3]]
 [[I don't know, I feel like you're rushing me wit-->P 3]] 
 :: Money
-I mean that's not 
+Money does make the world go round. Money is a beautiful thing [[isn't it?->Money 2]]
+:: Money 2 
+It's a simple matter really. You take the story, do whatever you want with it, regardless of how anyone else feels, and you get paid a fat stack of cash. Are you going to take it?
+[[Yes->P 3]]
+[[I don't know, it all seems like a lot to tak-->P 3]]
 :: P 3
-"Well you're hired!"
+"Great, you're hired!"
 :: P 4 
 Well here we [[go...->P 5]]
 :: P 5
