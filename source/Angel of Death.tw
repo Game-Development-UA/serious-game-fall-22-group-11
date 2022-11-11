@@ -3,40 +3,39 @@ Hello there.
 May I ask you something?
 Are you afraid of the [[Angel of Death?->Passage two]]
 :: Passage two
-[[Yes->Yes]]
+<em>[[Yes.->Yes]]</em>
 
-[[I don't know what that means...->No]]
+<em>[[I don't know what that means...->No]]</em>
 :: Yes
 Then you're completely aware of what you're going to get yourself into.
 What a brave soul [[you have.->P 3]] 
 :: No
 You don't? 
-Why don't you?
-Those people are monsters. They don't deserve any good coming to them. Why even think about interviewing them?
-For the [[family?->Family]]
 
-For the [[money?->Money]]
+Why don't you?
+
+Those people are monsters. They don't deserve any good coming to them, they are ruining society, breaking us down into media consuming zombies, glorifying the chaos they cause and you don't know them? What are you even doing this for?
+
+<em>For the... <<timed 3s t8n>> [[family?->Family]]
+    <</timed>> </em>
+<em>For the... <<timed 3s t8n>> [[money?->Money]]
+    <</timed>> </em>
 :: Family
 They've already been affected. They're already hurting. What do you think you're going to do to fix this?
 
-[[The least I can do is put their story out.->Family 2]]
+<em>[[The least I can do is put their story out.->Family 2]]</em>
 :: Family 2
 You could do that, but that might lead to places you don't want to see happen. What if the family doesn't want the story out and about? What if they do want the story out? Are you prepared to deal with those consequences?
-[[Yes?->P 3]]
-[[I don't know, I feel like you're rushing me wit-->P 3]] 
+<em>[[Yes.->P 3]]</em>
+<em>[[I don't know, I feel like you're rushing me wit-->P 3]]</em> 
 :: Money
 Money does make the world go round. Money is a beautiful thing [[isn't it?->Money 2]]
 :: Money 2 
 It's a simple matter really. You take the story, do whatever you want with it, regardless of how anyone else feels, and you get paid a fat stack of cash. Are you going to take it?
-[[Yes->P 3]]
-[[I don't know, it all seems like a lot to tak-->P 3]]
+<em>[[Yes.->P 3]]</em>
+<em>[[I don't know, it all seems like a lot to tak-->P 3]]</em>
 :: P 3
-"Great, you're hired!"
-:: P 4 
-Well here we [[go...->P 5]]
-:: P 5
-You woke up one morning with this glooming sense of dread. You figured this day was going to come but didn't realize that the day had beared it's ugly face in yours
-"How is it already today?" You say to yourself, hoping that someone somewhere was going to respond to you
-"Fuck, I need a [[smoke->Smoke P]]
-:: Smoke P
-You pull the nightstand drawer open to a pack of Malboros Menthol, you enjoyed the cool taste of them but knew they were the worst for your middle aged lungs
+"Great, <<timed 2s t8n>> [[you're hired!"->P 4]]
+<</timed>>
+
+:: P 4
