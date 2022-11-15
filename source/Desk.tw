@@ -1,0 +1,8 @@
+/*This is 'home base' where the player chooses where to go next.  */
+:: Desk
+You return to your desk after the interview concluded. Jaded and skeptical of your own ability to figure out the best route for this investigation, you return to your desk. 
+<<<<timed 2s t8n>> You have 5 days [[remaining...->Main Desk]]
+<</timed>>
+:: Main Desk
+With 5 days on the clock, you find yourself scared at the idea of doing anything else but working on the investigation. Though it wouldn't be an issue if you decided to go do something else. 
+You are currently at your desk, you feel the urge to skip forward towards the first [[interview.-> 
