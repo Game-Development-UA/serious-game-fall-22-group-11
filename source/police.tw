@@ -1,2 +1,13 @@
 /* This is the police station interview. */
 :: Police I
+This is the text for the police interview
+This is the text to go back to the[[desk->Desk Police]]
+:: Police I2
+This is the text for the police interview after the family
+This is the text to go back to the [[desk->Main Desk 2b]]
+:: Police I3
+This is the text for the police interview after the killer
+This is the text to go back to the [[desk->Main Desk 2d]]
+:: Police I4
+This is the interview with the police after everything else 
+This is the text to go back to the [[desk->Main Desk 3a]]

@@ -1,11 +1,110 @@
 /*This is 'home base' where the player chooses where to go next.  */
 :: Desk
 You return to your desk after the interview concluded. Jaded and skeptical of your own ability to figure out the best route for this investigation, you return to your desk. 
-<<<<timed 2s t8n>> You have 5 days [[remaining...->Main Desk]]
+<<timed 2s t8n>> You have 5 days [[remaining...->Main Desk]]
 <</timed>>
 :: Main Desk
 With 5 days on the clock, you find yourself scared at the idea of doing anything else but working on the investigation. Though it wouldn't be an issue if you decided to go do something else. 
 You are currently at your desk, you feel the urge to skip forward towards the first with...
-The [[family?->Family I]]
+<em>The [[family?->Family I]]
 The [[killer?->Killer I]]
-The [[policemen?->Police I]]
+The [[policemen?->Police I]]</em>
+:: Desk Family
+This is the text that'll execute when you go back to the desk after the [[family visit->Letter F]]
+:: Letter F
+This the room for the player to recieve a letter
+This will transition into a room where only killer and police will be [[available->Main Desk Day 2a]]
+:: Desk Killer
+This text will execute when you go back to the desk after the [[killer interview->Letter K]]
+:: Letter K
+This is the room for the player to recieve a letter
+This will transition into a room where only the the family and police will be [[available->Main Desk Day 2b]]
+:: Desk Police
+This text will execute when you go back to the desk after the [[police interview->Letter P]]
+:: Letter P
+This is the room for the player to recieve a letter
+This will transition into a room where only the family and the killer will be [[available->Main Desk Day 2c]]
+
+:: Main Desk Day 2a
+You have 4 Days left
+Text about the family, reflection
+Next up are these people
+The [[killer?->Killer I2]]
+The [[police->Police I2]] 
+:: Main Desk 2a
+This is the text to recieve the [[letter->Letter K2]]
+:: Letter K2 
+This is the text saying player has recieved letter
+This will transition to the day where only the police are [[available->Main Desk Day Police]]
+:: Main Desk 2b
+This is the text to recieve the [[letter->Letter P2]]
+:: Letter P2
+This is the text saying the player has recieved letter
+This will transition to the day where only the killer is [[available->Main Desk Day Killer]]
+
+:: Main Desk Day 2b
+You have 4 Days left
+Text about the killer, reflection
+Next up are these people
+The [[family?->Family I2]]
+The [[police?->Police I3]]
+:: Main Desk 2c
+This is the text to recieve a [[letter->Letter F2]]
+:: Letter F2
+This is the text saying the player has recieved a letter
+This will transition to the day where only the police is [[available->Main Desk Day Police]]
+:: Main Desk 2d
+This is the text to recieve a [[letter->Letter P3]]
+:: Letter P3
+This is the text to recieve a 
+This will transition to the day where only the family is [[available->Main Desk Day Family]]
+
+:: Main Desk Day 2c
+You have 4 Days left
+Text about the police, reflection
+Next up are these people
+The [[family?->Family I3]]
+The [[killer?->Killer I3]]
+:: Main Desk 2e 
+This is the text to recieve a [[letter->Letter F3]]
+:: Letter F3
+This is the text saying player has recieved a letter
+This will transition to the day where only the killer is [[available->Main Desk Day Killer]]
+:: Main Desk 2f
+This is the text to recieve a [[letter->Letter K3]]
+:: Letter K3
+This is the text saying the player has recieved a letter
+This will transition to the day where only the family is [[available->Main Desk Day Family]]
+
+:: Main Desk Day Police 
+You have 3 days left
+Text about everything up until this point, reflection
+The last one to talk to is the [[police->Police I4]]
+:: Main Desk 3a 
+This is the text to recieve a [[letter->Letter P4]]
+:: Letter P4
+This is the text saying the player recieved a letter
+This will transition into the [[fourth day->Fourth Day]]
+
+:: Main Desk Day Killer
+You have 3 days left
+Text about everything up until this point, reflection
+The last person to talk to is the [[killer->Killer I4]]
+:: Main Desk 3b 
+This is the text to recieve a [[letter->Letter K4]]
+:: Letter K4
+This is the text saying the player recieved a letter
+This will transition into the [[fourth day->Fourth Day]]
+
+:: Main Desk Day Family
+You have 3 days left
+Text about everything up until this point, reflection
+The last person to talk to is the [[family->Family I4]]
+:: Main Desk 3c
+This is the text to recieve a [[letter->Letter F4]]
+:: Letter F4
+This is the text saying the player recieved a letter
+This will transition into the [[fourth day->Fourth Day]]
+
+:: Fourth Day
+You have 2 days left...

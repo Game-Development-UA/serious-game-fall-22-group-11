@@ -1,2 +1,13 @@
 /* This is the killer interview. */
 :: Killer I
+This is the text for the killer interview
+This is the text to go back to the [[desk->Desk Killer]]
+:: Killer I2
+This is the text for the killer interview after the family
+This is the text to go back to the [[desk->Main Desk 2a]]
+:: Killer I3
+This is the text for the killer interview after the police
+This is the text to go back to the [[desk->Main Desk 2f]]
+:: Killer I4 
+This is the text for the killer after everything else
+This is the text to go back to the [[desk->Main Desk 3b]]

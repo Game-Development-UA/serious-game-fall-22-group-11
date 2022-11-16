@@ -1,2 +1,13 @@
 /* This is the family house. */
 :: Family I
+This is the text that'll be executed when you get to this room. 
+This is the text that'll lead back to the [[desk->Desk Family]]
+:: Family I2
+This is the text that'll be executed when you get to this room after the killer
+This is the text that will lead back to the [[desk->Main Desk 2c]]
+:: Family I3
+This is the text for the family interview after the police
+This is the text to go back to the [[desk->Main Desk 2e]]
+:: Family I4 
+This is the text for the family interview after everything else
+This is the text to go back to the [[desk->Main Desk 3c]]

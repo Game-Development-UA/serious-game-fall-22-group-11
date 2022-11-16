@@ -35,5 +35,7 @@ It's a simple matter really. You take the story, do whatever you want with it, r
 <em>[[Yes.->P 3]]</em>
 <em>[[I don't know, it all seems like a lot to tak-->P 3]]</em>
 :: P 3
-"Great, <<timed 2s t8n>> [[you're hired!"->Desk]]
+"Great, <<timed 2s t8n>> you're hired!"
 <</timed>>
+<em> <<timed 3s t8n>> Wait [[what?->Desk]]
+<</timed>> </em>
