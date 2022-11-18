@@ -1,7 +1,8 @@
 :: The Beginning
 Hello there. 
 May I ask you something?
-Are you afraid of the [[Angel of Death?->Passage two]]
+[[Angel of Death -> Passage 1]]
+/*Are you afraid of the [[Angel of Death?->Passage two]]*/
 :: Passage two
 <em>[[Yes.->Yes]]</em>
 
