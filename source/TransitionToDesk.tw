@@ -1,18 +1,42 @@
-:: Heading Back 
-As you sit down at your desk, you notice a new letter. 
+:: Heading Back
+<<if $family_letters > 5>>
+    As you head back today, you notice an old man running(well, more like hobbling) up to you.
 
-<<set $type to random(1, 3)>> 
-<<print $type >> 
+    "Please wait! I need to talk to you."
+
+    [[What is it sir? -> Special Family]]
+
+<<elseif $killer_letters > 5 >>
+    As you head back today, you see a young woman run up to you.
+
+    "Hey! Hellloooo! Are you the person writing about my beautiful boo, [Killer Name]?"
+
+    [[Why do you ask? -> Special Killer]]
+
+<<elseif $true_crime > 5 >>
+    As you head back today, you grow uneasy - there is a person following you. 
+
+    You stop and turn around, turning on your phone to film them. 
+    
+    /<<nobr>>
+         You shout:
+
+        [[What do you want from me? -> Special Police]]
+    <</nobr>>
+
+<<else>>
+    Wearily, you sit back down at your desk. You notice a new letter.
+    <<set $type to random(1, 3)>> 
+    <<print $type >> 
 
 
 
 
-<<if $type == 1>>
-<<print $family_content.one>>
-<<run $read_letters.push($family_content.one) >>
+        <<if $type == 1>>
+        <<print $family_content.one>>
+        <<run $read_letters.push($family_content.one) >>
+        <</if>>
+        
+    [[Put Away Letter -> Passage 1]]
 
 <</if>>
-
-
-
-[[Put Away Letter -> Passage 1]]
