@@ -9,4 +9,30 @@
 :: StoryTitle
 Angel of Death
 :: StoryInit
-<<set $myVariable to 1>>
+/*Trackers */
+<<set $days to 5>>
+<<set $family_letters to 0>>
+<<set $fan_letters to 0 >>
+<<set $true_crime to 0>> 
+
+<<set $read_letters to [] >>
+
+/* Letters */
+<<set $family_content ={
+    "one" : "this is letter one",
+    "two" : "this is letter two", 
+    "three": "this is letter three"
+}>>
+
+<<set $killer_content ={
+    "one" : "this is letter one",
+    "two" : "this is letter two", 
+    "three": "this is letter three"
+}>>
+
+<<set $cop_content ={
+    "one" : "this is letter one",
+    "two" : "this is letter two", 
+    "three": "this is letter three"
+}>>
+

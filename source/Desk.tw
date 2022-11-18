@@ -26,7 +26,7 @@ This is the room for the player to recieve a letter
 This will transition into a room where only the family and the killer will be [[available->Main Desk Day 2c]]
 
 :: Main Desk Day 2a
-You have 4 Days left
+You have $days Days left
 Text about the family, reflection
 Next up are these people
 The [[killer?->Killer I2]]
@@ -108,3 +108,7 @@ This will transition into the [[fourth day->Fourth Day]]
 
 :: Fourth Day
 You have 2 days left...
+
+
+
+
