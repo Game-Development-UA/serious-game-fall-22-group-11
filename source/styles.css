@@ -28,8 +28,20 @@ body {
 }
 */
 
-/* This class will override any styles on passages tagged "forest"
+/* This class will override any styles on passages tagged "forest"*/
 .forest {
 	background: green;
 }
-*/
+
+
+.image1 #passages {
+	background-image: url("C:\Users\KuruJ\Documents\UOFA FALL 2022\ISTA 251\TwineCollab\serious-game-fall-22-group-11\source\media\Test1.png");
+	background-color:red;
+	height: 1080px;
+	width: 1920px;
+	background-position:center;
+}
+
+html.widescreen #passages {
+	width: 1920px;
+}
