@@ -1,24 +1,24 @@
 :: Heading Back
-<<if $family_letters > 5>>
+<<if $family_letters == $crit_number>>
     As you head back today, you notice an old man running(well, more like hobbling) up to you.
 
     "Please wait! I need to talk to you."
 
     [[What is it sir? -> Special Family]]
 
-<<elseif $killer_letters > 5 >>
+<<elseif $killer_letters == $crit_number >>
     As you head back today, you see a young woman run up to you.
 
-    "Hey! Hellloooo! Are you the person writing about my beautiful boo, [Killer Name]?"
+    "Hey! Hellloooo! Are you the person writing about my beautiful boo, $killer?"
 
     [[Why do you ask? -> Special Killer]]
 
-<<elseif $true_crime > 5 >>
+<<elseif $true_crime == $crit_number >>
     As you head back today, you grow uneasy - there is a person following you. 
 
     You stop and turn around, turning on your phone to film them. 
     
-    /<<nobr>>
+    <<nobr>>
          You shout:
 
         [[What do you want from me? -> Special Police]]

@@ -10,10 +10,15 @@
 Angel of Death
 :: StoryInit
 /*Trackers */
-<<set $days to 5>>
+<<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
 <<set $family_letters to 0>>
 <<set $fan_letters to 0 >>
-<<set $true_crime to 0>> 
+<<set $true_crime to 5>> 
+
+
+/*Global Keys */
+<<set $crit_number to 5 >>
+<<set $killer to "Martin">>
 
 <<set $read_letters to [] >>
 

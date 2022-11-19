@@ -100,7 +100,8 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Angel of Death" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* The body is everything displayed in the main text delivery area
+	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Angel of Death" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "styles.css" */
+/* The body is everything displayed in the main text delivery area
 body {
 	background: blue;
 }
@@ -134,19 +135,198 @@ body {
 .forest {
 	background: green;
 }
-*/</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Stow the sidebar initially
+*/
+/* twine-user-stylesheet #2: "typingeffect1.css" */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+  padding: 40px;
+  background-color: #121212;  
+}
+
+.typing_effect1 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+.typing_effect1 {
+  animation: animated-text 30s steps(29) normal both,
+             animated-cursor 600ms steps(29) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 600px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Stow the sidebar initially
 config.ui.stowBarInitially = true;
 */
 
 /* Hide the back / forward buttons
 config.history.controls = false;
-*/</script><tw-passagedata pid="1" name="The Beginning" tags="" position="100,100" size="100,100">Hello there. 
-May I ask you something?
-[[Angel of Death -&gt; Passage 1]]
-/*Are you afraid of the [[Angel of Death?-&gt;Passage two]]*/</tw-passagedata><tw-passagedata pid="2" name="Passage two" tags="" position="225,100" size="100,100">&lt;em&gt;[[Yes.-&gt;Yes]]&lt;/em&gt;
+*/
 
-&lt;em&gt;[[I don&#39;t know what that means...-&gt;No]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="3" name="Yes" tags="" position="350,100" size="100,100">Then you&#39;re completely aware of what you&#39;re going to get yourself into.
-What a brave soul [[you have.-&gt;P 3]]</tw-passagedata><tw-passagedata pid="4" name="No" tags="" position="475,100" size="100,100">You don&#39;t? 
+!function(){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),Furl=function(){function Furl(current,append){if(_classCallCheck(this,Furl),Object.defineProperties(this,{node:{value:current},childNodes:{value:[]},value:{writable:!0,value:""},append:{writable:!0,value:!!append},abortTyping:{writable:!0,value:!1}}),this.node.nodeValue&&(this.value=this.node.nodeValue,this.node.nodeValue=""),!this.node.style||"none"!==this.node.style.display)for(var childNodes=this.node.childNodes;childNodes.length>0;)this.childNodes.push(new Furl(childNodes[0],!0)),this.node.removeChild(childNodes[0])}return _createClass(Furl,[{key:"finish",value:function(){for(this.abortTyping=!0;this.unfurl(););}},{key:"unfurl",value:function(parent){if(this.append&&(parent&&parent.appendChild(this.node),this.append=!1),this.value)return this.node.nodeValue+=this.value[0],this.value=this.value.slice(1),!0;for(var current=this.node,i=0,len=this.childNodes.length;i<len;++i)if(this.childNodes[i].unfurl(current))return!0;return!1}}],[{key:"typeout",value:function(content,typeDelay,startDelay){function typer(){if(!furled.abortTyping)var current=passage(),typerId=setInterval(function(){!furled.abortTyping&&passage()===current&&furled.unfurl()||clearInterval(typerId)},typeDelay)}var furled=new Furl(content);return startDelay?setTimeout(typer,startDelay):typer(),furled}}]),Furl}(),tagRe=/^t8n-typewriter-(\d+)(?:-(\d+))?$/;postrender["t8n-typewriter-handler"]=function(content){$(document).off("keypress.t8n-typewriter");for(var tags=this.tags,i=0;i<tags.length;++i){var match=tagRe.exec(tags[i]);if(null!==match){if("break"===function(){var furled=Furl.typeout(content,Number(match[1]),Number(match[2]));return $(document).on("keypress.t8n-typewriter",function(ev){32!==ev.which||ev.target!==document.body&&ev.target!==document.documentElement||(ev.preventDefault(),$(document).off("keypress.t8n-typewriter"),furled.finish())}),"break"}())break}}}}();
+</script><tw-passagedata pid="1" name="The Beginning" tags="" position="100,100" size="100,100">&lt;&lt;timed 0.25s t8n&gt;&gt;Ah! Welcome!&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;timed 1s t8n&gt;&gt;You must be our new researcher!&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;timed 2s t8n&gt;&gt; &lt;label&gt;Please tell me your name.&lt;&lt;textbox &quot;$name&quot; &quot;Jane/John Doe&quot; &quot;Intro I&quot;&gt;&gt;&lt;/label&gt; &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Intro I" tags="" position="225,100" size="100,100">Hello &lt;&lt;print $name&gt;&gt;, my name is Stella. 
+
+As you may know, the name &quot;Angel of Death&quot; has been popping off in all SEO search engines. 
+
+With so much attention on Doctor $killer, it was a no brainer to green light a new mini series on his crimes! 
+
+What do you think? 
+
+[[Completely agree! This series will be awesome! -&gt; Intro 2a]]
+[[Do the victims&#39; families know we are doing this? -&gt; Intro 2b]]</tw-passagedata><tw-passagedata pid="3" name="Intro 2a" tags="" position="350,100" size="100,100">I&#39;m glad we are on the same page! 
+
+As you may know, Doctor $killer got away with 30 murders - all his victims being disabled immigrants. 
+It is your job to find how exactly how this happened. How was he able to get away with these murders and so forth. 
+You will have the option to interview the killer himself, the mother of his most abused victim, and the officer who finally caught him. 
+
+[[Got it. -&gt; PlayStart ]]</tw-passagedata><tw-passagedata pid="4" name="Intro 2b" tags="" position="475,100" size="100,100">Not yet, but they will soon be when you go and interview them. 
+
+As you may know, Doctor $killer got away with 30 murders - all his victims being disabled immigrants. 
+It is your job to find how exactly how this happened. How was he able to get away with these murders and so forth. 
+You will have the option to interview the killer himself, the mother of his most abused victim, and the officer who finally caught him. 
+
+[[Got it. -&gt; PlayStart ]]</tw-passagedata><tw-passagedata pid="5" name="PlayStart" tags="" position="600,100" size="100,100">I look forward to see what you find and do. 
+
+Remember, this mini series and how it protrays the truth will be up to your research. 
+
+[[You have 5 days. -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="6" name="Desk" tags="" position="725,100" size="100,100">You return to your desk after the interview concluded. Jaded and skeptical of your own ability to figure out the best route for this investigation, you return to your desk. 
+&lt;&lt;timed 2s t8n&gt;&gt; You have 5 days [[remaining...-&gt;Main Desk]]
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Main Desk" tags="" position="850,100" size="100,100">With 5 days on the clock, you find yourself scared at the idea of doing anything else but working on the investigation. Though it wouldn&#39;t be an issue if you decided to go do something else. 
+You are currently at your desk, you feel the urge to skip forward towards the first with...
+&lt;em&gt;The [[family?-&gt;Family I]]
+The [[killer?-&gt;Killer I]]
+The [[policemen?-&gt;Police I]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="8" name="Desk Family" tags="" position="975,100" size="100,100">This is the text that&#39;ll execute when you go back to the desk after the [[family visit-&gt;Letter F]]</tw-passagedata><tw-passagedata pid="9" name="Letter F" tags="" position="1100,100" size="100,100">This the room for the player to recieve a letter
+This will transition into a room where only killer and police will be [[available-&gt;Main Desk Day 2a]]</tw-passagedata><tw-passagedata pid="10" name="Desk Killer" tags="" position="1225,100" size="100,100">This text will execute when you go back to the desk after the [[killer interview-&gt;Letter K]]</tw-passagedata><tw-passagedata pid="11" name="Letter K" tags="" position="100,225" size="100,100">This is the room for the player to recieve a letter
+This will transition into a room where only the the family and police will be [[available-&gt;Main Desk Day 2b]]</tw-passagedata><tw-passagedata pid="12" name="Desk Police" tags="" position="225,225" size="100,100">This text will execute when you go back to the desk after the [[police interview-&gt;Letter P]]</tw-passagedata><tw-passagedata pid="13" name="Letter P" tags="" position="350,225" size="100,100">This is the room for the player to recieve a letter
+This will transition into a room where only the family and the killer will be [[available-&gt;Main Desk Day 2c]]</tw-passagedata><tw-passagedata pid="14" name="Main Desk Day 2a" tags="" position="475,225" size="100,100">You have $days Days left
+Text about the family, reflection
+Next up are these people
+The [[killer?-&gt;Killer I2]]
+The [[police-&gt;Police I2]]</tw-passagedata><tw-passagedata pid="15" name="Main Desk 2a" tags="" position="600,225" size="100,100">This is the text to recieve the [[letter-&gt;Letter K2]]</tw-passagedata><tw-passagedata pid="16" name="Letter K2" tags="" position="725,225" size="100,100">This is the text saying player has recieved letter
+This will transition to the day where only the police are [[available-&gt;Main Desk Day Police]]</tw-passagedata><tw-passagedata pid="17" name="Main Desk 2b" tags="" position="850,225" size="100,100">This is the text to recieve the [[letter-&gt;Letter P2]]</tw-passagedata><tw-passagedata pid="18" name="Letter P2" tags="" position="975,225" size="100,100">This is the text saying the player has recieved letter
+This will transition to the day where only the killer is [[available-&gt;Main Desk Day Killer]]</tw-passagedata><tw-passagedata pid="19" name="Main Desk Day 2b" tags="" position="1100,225" size="100,100">You have 4 Days left
+Text about the killer, reflection
+Next up are these people
+The [[family?-&gt;Family I2]]
+The [[police?-&gt;Police I3]]</tw-passagedata><tw-passagedata pid="20" name="Main Desk 2c" tags="" position="1225,225" size="100,100">This is the text to recieve a [[letter-&gt;Letter F2]]</tw-passagedata><tw-passagedata pid="21" name="Letter F2" tags="" position="100,350" size="100,100">This is the text saying the player has recieved a letter
+This will transition to the day where only the police is [[available-&gt;Main Desk Day Police]]</tw-passagedata><tw-passagedata pid="22" name="Main Desk 2d" tags="" position="225,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter P3]]</tw-passagedata><tw-passagedata pid="23" name="Letter P3" tags="" position="350,350" size="100,100">This is the text to recieve a 
+This will transition to the day where only the family is [[available-&gt;Main Desk Day Family]]</tw-passagedata><tw-passagedata pid="24" name="Main Desk Day 2c" tags="" position="475,350" size="100,100">You have 4 Days left
+Text about the police, reflection
+Next up are these people
+The [[family?-&gt;Family I3]]
+The [[killer?-&gt;Killer I3]]</tw-passagedata><tw-passagedata pid="25" name="Main Desk 2e" tags="" position="600,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter F3]]</tw-passagedata><tw-passagedata pid="26" name="Letter F3" tags="" position="725,350" size="100,100">This is the text saying player has recieved a letter
+This will transition to the day where only the killer is [[available-&gt;Main Desk Day Killer]]</tw-passagedata><tw-passagedata pid="27" name="Main Desk 2f" tags="" position="850,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter K3]]</tw-passagedata><tw-passagedata pid="28" name="Letter K3" tags="" position="975,350" size="100,100">This is the text saying the player has recieved a letter
+This will transition to the day where only the family is [[available-&gt;Main Desk Day Family]]</tw-passagedata><tw-passagedata pid="29" name="Main Desk Day Police" tags="" position="1100,350" size="100,100">You have 3 days left
+Text about everything up until this point, reflection
+The last one to talk to is the [[police-&gt;Police I4]]</tw-passagedata><tw-passagedata pid="30" name="Main Desk 3a" tags="" position="1225,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter P4]]</tw-passagedata><tw-passagedata pid="31" name="Letter P4" tags="" position="100,475" size="100,100">This is the text saying the player recieved a letter
+This will transition into the [[fourth day-&gt;Fourth Day]]</tw-passagedata><tw-passagedata pid="32" name="Main Desk Day Killer" tags="" position="225,475" size="100,100">You have 3 days left
+Text about everything up until this point, reflection
+The last person to talk to is the [[killer-&gt;Killer I4]]</tw-passagedata><tw-passagedata pid="33" name="Main Desk 3b" tags="" position="350,475" size="100,100">This is the text to recieve a [[letter-&gt;Letter K4]]</tw-passagedata><tw-passagedata pid="34" name="Letter K4" tags="" position="475,475" size="100,100">This is the text saying the player recieved a letter
+This will transition into the [[fourth day-&gt;Fourth Day]]</tw-passagedata><tw-passagedata pid="35" name="Main Desk Day Family" tags="" position="600,475" size="100,100">You have 3 days left
+Text about everything up until this point, reflection
+The last person to talk to is the [[family-&gt;Family I4]]</tw-passagedata><tw-passagedata pid="36" name="Main Desk 3c" tags="" position="725,475" size="100,100">This is the text to recieve a [[letter-&gt;Letter F4]]</tw-passagedata><tw-passagedata pid="37" name="Letter F4" tags="" position="850,475" size="100,100">This is the text saying the player recieved a letter
+This will transition into the [[fourth day-&gt;Fourth Day]]</tw-passagedata><tw-passagedata pid="38" name="Fourth Day" tags="" position="975,475" size="100,100">You have 2 days left...</tw-passagedata><tw-passagedata pid="39" name="Thriller Killer" tags="" position="1100,475" size="100,100">This is the ending if you choose to talk to the killer the most.</tw-passagedata><tw-passagedata pid="40" name="Ethical Entertainment" tags="" position="1225,475" size="100,100">This is the ending if you choose to talk to the family the most.</tw-passagedata><tw-passagedata pid="41" name="Nobody was Innocent" tags="" position="100,600" size="100,100">This is the ending if you choose to talk to the cop the most.</tw-passagedata><tw-passagedata pid="42" name="The Blood Is Not On Your Hands" tags="" position="225,600" size="100,100">This is the ending if you choose not to turn in your work.</tw-passagedata><tw-passagedata pid="43" name="Did You Do Good?" tags="" position="350,600" size="100,100">This is the ending if you don&#39;t talk to someone the most.</tw-passagedata><tw-passagedata pid="44" name="Heading Back" tags="" position="475,600" size="100,100">&lt;&lt;if $family_letters == $crit_number&gt;&gt;
+    As you head back today, you notice an old man running(well, more like hobbling) up to you.
+
+    &quot;Please wait! I need to talk to you.&quot;
+
+    [[What is it sir? -&gt; Special Family]]
+
+&lt;&lt;elseif $killer_letters == $crit_number &gt;&gt;
+    As you head back today, you see a young woman run up to you.
+
+    &quot;Hey! Hellloooo! Are you the person writing about my beautiful boo, $killer?&quot;
+
+    [[Why do you ask? -&gt; Special Killer]]
+
+&lt;&lt;elseif $true_crime == $crit_number &gt;&gt;
+    As you head back today, you grow uneasy - there is a person following you. 
+
+    You stop and turn around, turning on your phone to film them. 
+    
+    /&lt;&lt;nobr&gt;&gt;
+         You shout:
+
+        [[What do you want from me? -&gt; Special Police]]
+    &lt;&lt;/nobr&gt;&gt;
+
+&lt;&lt;else&gt;&gt;
+    Wearily, you sit back down at your desk. You notice a new letter.
+    &lt;&lt;set $type to random(1, 3)&gt;&gt; 
+    &lt;&lt;print $type &gt;&gt; 
+
+
+
+
+        &lt;&lt;if $type == 1&gt;&gt;
+        &lt;&lt;print $family_content.one&gt;&gt;
+        &lt;&lt;run $read_letters.push($family_content.one) &gt;&gt;
+        &lt;&lt;/if&gt;&gt;
+        
+    [[Put Away Letter -&gt; Passage 1]]
+
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Family I" tags="" position="600,600" size="100,100">This is the text that&#39;ll be executed when you get to this room. 
+This is the text that&#39;ll lead back to the [[desk-&gt;Desk Family]]</tw-passagedata><tw-passagedata pid="46" name="Family I2" tags="" position="725,600" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
+This is the text that will lead back to the [[desk-&gt;Main Desk 2c]]</tw-passagedata><tw-passagedata pid="47" name="Family I3" tags="" position="850,600" size="100,100">This is the text for the family interview after the police
+This is the text to go back to the [[desk-&gt;Main Desk 2e]]</tw-passagedata><tw-passagedata pid="48" name="Family I4" tags="" position="975,600" size="100,100">This is the text for the family interview after everything else
+This is the text to go back to the [[desk-&gt;Main Desk 3c]]</tw-passagedata><tw-passagedata pid="49" name="StoryInit" tags="" position="1100,600" size="100,100">/*Trackers */
+&lt;&lt;set $days to 6&gt;&gt; &lt;!--Set 1 up to deal with automatic count down.--&gt;
+&lt;&lt;set $family_letters to 0&gt;&gt;
+&lt;&lt;set $fan_letters to 0 &gt;&gt;
+&lt;&lt;set $true_crime to 5&gt;&gt; 
+
+
+/*Global Keys */
+&lt;&lt;set $crit_number to 5 &gt;&gt;
+&lt;&lt;set $killer to &quot;Martin&quot;&gt;&gt;
+
+&lt;&lt;set $read_letters to [] &gt;&gt;
+
+/* Letters */
+&lt;&lt;set $family_content ={
+    &quot;one&quot; : &quot;this is letter one&quot;,
+    &quot;two&quot; : &quot;this is letter two&quot;, 
+    &quot;three&quot;: &quot;this is letter three&quot;
+}&gt;&gt;
+
+&lt;&lt;set $killer_content ={
+    &quot;one&quot; : &quot;this is letter one&quot;,
+    &quot;two&quot; : &quot;this is letter two&quot;, 
+    &quot;three&quot;: &quot;this is letter three&quot;
+}&gt;&gt;
+
+&lt;&lt;set $cop_content ={
+    &quot;one&quot; : &quot;this is letter one&quot;,
+    &quot;two&quot; : &quot;this is letter two&quot;, 
+    &quot;three&quot;: &quot;this is letter three&quot;
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Killer I" tags="" position="1225,600" size="100,100">This is the text for the killer interview
+This is the text to go back to the [[desk-&gt;Desk Killer]]</tw-passagedata><tw-passagedata pid="51" name="Killer I2" tags="" position="100,725" size="100,100">This is the text for the killer interview after the family
+This is the text to go back to the [[desk-&gt;Main Desk 2a]]</tw-passagedata><tw-passagedata pid="52" name="Killer I3" tags="" position="225,725" size="100,100">This is the text for the killer interview after the police
+This is the text to go back to the [[desk-&gt;Main Desk 2f]]</tw-passagedata><tw-passagedata pid="53" name="Killer I4" tags="" position="350,725" size="100,100">This is the text for the killer after everything else
+This is the text to go back to the [[desk-&gt;Main Desk 3b]]</tw-passagedata><tw-passagedata pid="54" name="Passage two" tags="" position="475,725" size="100,100">&lt;em&gt;[[Yes.-&gt;Yes]]&lt;/em&gt;
+
+&lt;em&gt;[[I don&#39;t know what that means...-&gt;No]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="55" name="Yes" tags="" position="600,725" size="100,100">Then you&#39;re completely aware of what you&#39;re going to get yourself into.
+What a brave soul [[you have.-&gt;P 3]]</tw-passagedata><tw-passagedata pid="56" name="No" tags="" position="725,725" size="100,100">You don&#39;t? 
 
 Why don&#39;t you?
 
@@ -155,87 +335,21 @@ Those people are monsters. They don&#39;t deserve any good coming to them, they 
 &lt;em&gt;For the... &lt;&lt;timed 3s t8n&gt;&gt; [[family?-&gt;Family]]
     &lt;&lt;/timed&gt;&gt; &lt;/em&gt;
 &lt;em&gt;For the... &lt;&lt;timed 3s t8n&gt;&gt; [[money?-&gt;Money]]
-    &lt;&lt;/timed&gt;&gt; &lt;/em&gt;</tw-passagedata><tw-passagedata pid="5" name="Family" tags="" position="600,100" size="100,100">They&#39;ve already been affected. They&#39;re already hurting. What do you think you&#39;re going to do to fix this?
+    &lt;&lt;/timed&gt;&gt; &lt;/em&gt;</tw-passagedata><tw-passagedata pid="57" name="Family" tags="" position="850,725" size="100,100">They&#39;ve already been affected. They&#39;re already hurting. What do you think you&#39;re going to do to fix this?
 
-&lt;em&gt;[[The least I can do is put their story out.-&gt;Family 2]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="6" name="Family 2" tags="" position="725,100" size="100,100">You could do that, but that might lead to places you don&#39;t want to see happen. What if the family doesn&#39;t want the story out and about? What if they do want the story out? Are you prepared to deal with those consequences?
+&lt;em&gt;[[The least I can do is put their story out.-&gt;Family 2]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="58" name="Family 2" tags="" position="975,725" size="100,100">You could do that, but that might lead to places you don&#39;t want to see happen. What if the family doesn&#39;t want the story out and about? What if they do want the story out? Are you prepared to deal with those consequences?
 &lt;em&gt;[[Yes.-&gt;P 3]]&lt;/em&gt;
-&lt;em&gt;[[I don&#39;t know, I feel like you&#39;re rushing me wit--&gt;P 3]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="7" name="Money" tags="" position="850,100" size="100,100">Money does make the world go round. Money is a beautiful thing [[isn&#39;t it?-&gt;Money 2]]</tw-passagedata><tw-passagedata pid="8" name="Money 2" tags="" position="975,100" size="100,100">It&#39;s a simple matter really. You take the story, do whatever you want with it, regardless of how anyone else feels, and you get paid a fat stack of cash. Are you going to take it?
+&lt;em&gt;[[I don&#39;t know, I feel like you&#39;re rushing me wit--&gt;P 3]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="59" name="Money" tags="" position="1100,725" size="100,100">Money does make the world go round. Money is a beautiful thing [[isn&#39;t it?-&gt;Money 2]]</tw-passagedata><tw-passagedata pid="60" name="Money 2" tags="" position="1225,725" size="100,100">It&#39;s a simple matter really. You take the story, do whatever you want with it, regardless of how anyone else feels, and you get paid a fat stack of cash. Are you going to take it?
 &lt;em&gt;[[Yes.-&gt;P 3]]&lt;/em&gt;
-&lt;em&gt;[[I don&#39;t know, it all seems like a lot to tak--&gt;P 3]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="9" name="P 3" tags="" position="1100,100" size="100,100">&quot;Great, &lt;&lt;timed 2s t8n&gt;&gt; you&#39;re hired!&quot;
+&lt;em&gt;[[I don&#39;t know, it all seems like a lot to tak--&gt;P 3]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="61" name="P 3" tags="" position="100,850" size="100,100">&quot;Great, &lt;&lt;timed 2s t8n&gt;&gt; you&#39;re hired!&quot;
 &lt;&lt;/timed&gt;&gt;
 &lt;em&gt; &lt;&lt;timed 3s t8n&gt;&gt; Wait [[what?-&gt;Desk]]
-&lt;&lt;/timed&gt;&gt; &lt;/em&gt;</tw-passagedata><tw-passagedata pid="10" name="Desk" tags="" position="1225,100" size="100,100">You return to your desk after the interview concluded. Jaded and skeptical of your own ability to figure out the best route for this investigation, you return to your desk. 
-&lt;&lt;timed 2s t8n&gt;&gt; You have 5 days [[remaining...-&gt;Main Desk]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Main Desk" tags="" position="100,225" size="100,100">With 5 days on the clock, you find yourself scared at the idea of doing anything else but working on the investigation. Though it wouldn&#39;t be an issue if you decided to go do something else. 
-You are currently at your desk, you feel the urge to skip forward towards the first with...
-&lt;em&gt;The [[family?-&gt;Family I]]
-The [[killer?-&gt;Killer I]]
-The [[policemen?-&gt;Police I]]&lt;/em&gt;</tw-passagedata><tw-passagedata pid="12" name="Desk Family" tags="" position="225,225" size="100,100">This is the text that&#39;ll execute when you go back to the desk after the [[family visit-&gt;Letter F]]</tw-passagedata><tw-passagedata pid="13" name="Letter F" tags="" position="350,225" size="100,100">This the room for the player to recieve a letter
-This will transition into a room where only killer and police will be [[available-&gt;Main Desk Day 2a]]</tw-passagedata><tw-passagedata pid="14" name="Desk Killer" tags="" position="475,225" size="100,100">This text will execute when you go back to the desk after the [[killer interview-&gt;Letter K]]</tw-passagedata><tw-passagedata pid="15" name="Letter K" tags="" position="600,225" size="100,100">This is the room for the player to recieve a letter
-This will transition into a room where only the the family and police will be [[available-&gt;Main Desk Day 2b]]</tw-passagedata><tw-passagedata pid="16" name="Desk Police" tags="" position="725,225" size="100,100">This text will execute when you go back to the desk after the [[police interview-&gt;Letter P]]</tw-passagedata><tw-passagedata pid="17" name="Letter P" tags="" position="850,225" size="100,100">This is the room for the player to recieve a letter
-This will transition into a room where only the family and the killer will be [[available-&gt;Main Desk Day 2c]]</tw-passagedata><tw-passagedata pid="18" name="Main Desk Day 2a" tags="" position="975,225" size="100,100">You have 4 Days left
-Text about the family, reflection
-Next up are these people
-The [[killer?-&gt;Killer I2]]
-The [[police-&gt;Police I2]]</tw-passagedata><tw-passagedata pid="19" name="Main Desk 2a" tags="" position="1100,225" size="100,100">This is the text to recieve the [[letter-&gt;Letter K2]]</tw-passagedata><tw-passagedata pid="20" name="Letter K2" tags="" position="1225,225" size="100,100">This is the text saying player has recieved letter
-This will transition to the day where only the police are [[available-&gt;Main Desk Day Police]]</tw-passagedata><tw-passagedata pid="21" name="Main Desk 2b" tags="" position="100,350" size="100,100">This is the text to recieve the [[letter-&gt;Letter P2]]</tw-passagedata><tw-passagedata pid="22" name="Letter P2" tags="" position="225,350" size="100,100">This is the text saying the player has recieved letter
-This will transition to the day where only the killer is [[available-&gt;Main Desk Day Killer]]</tw-passagedata><tw-passagedata pid="23" name="Main Desk Day 2b" tags="" position="350,350" size="100,100">You have 4 Days left
-Text about the killer, reflection
-Next up are these people
-The [[family?-&gt;Family I2]]
-The [[police?-&gt;Police I3]]</tw-passagedata><tw-passagedata pid="24" name="Main Desk 2c" tags="" position="475,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter F2]]</tw-passagedata><tw-passagedata pid="25" name="Letter F2" tags="" position="600,350" size="100,100">This is the text saying the player has recieved a letter
-This will transition to the day where only the police is [[available-&gt;Main Desk Day Police]]</tw-passagedata><tw-passagedata pid="26" name="Main Desk 2d" tags="" position="725,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter P3]]</tw-passagedata><tw-passagedata pid="27" name="Letter P3" tags="" position="850,350" size="100,100">This is the text to recieve a 
-This will transition to the day where only the family is [[available-&gt;Main Desk Day Family]]</tw-passagedata><tw-passagedata pid="28" name="Main Desk Day 2c" tags="" position="975,350" size="100,100">You have 4 Days left
-Text about the police, reflection
-Next up are these people
-The [[family?-&gt;Family I3]]
-The [[killer?-&gt;Killer I3]]</tw-passagedata><tw-passagedata pid="29" name="Main Desk 2e" tags="" position="1100,350" size="100,100">This is the text to recieve a [[letter-&gt;Letter F3]]</tw-passagedata><tw-passagedata pid="30" name="Letter F3" tags="" position="1225,350" size="100,100">This is the text saying player has recieved a letter
-This will transition to the day where only the killer is [[available-&gt;Main Desk Day Killer]]</tw-passagedata><tw-passagedata pid="31" name="Main Desk 2f" tags="" position="100,475" size="100,100">This is the text to recieve a [[letter-&gt;Letter K3]]</tw-passagedata><tw-passagedata pid="32" name="Letter K3" tags="" position="225,475" size="100,100">This is the text saying the player has recieved a letter
-This will transition to the day where only the family is [[available-&gt;Main Desk Day Family]]</tw-passagedata><tw-passagedata pid="33" name="Main Desk Day Police" tags="" position="350,475" size="100,100">You have 3 days left
-Text about everything up until this point, reflection
-The last one to talk to is the [[police-&gt;Police I4]]</tw-passagedata><tw-passagedata pid="34" name="Main Desk 3a" tags="" position="475,475" size="100,100">This is the text to recieve a [[letter-&gt;Letter P4]]</tw-passagedata><tw-passagedata pid="35" name="Letter P4" tags="" position="600,475" size="100,100">This is the text saying the player recieved a letter
-This will transition into the [[fourth day-&gt;Fourth Day]]</tw-passagedata><tw-passagedata pid="36" name="Main Desk Day Killer" tags="" position="725,475" size="100,100">You have 3 days left
-Text about everything up until this point, reflection
-The last person to talk to is the [[killer-&gt;Killer I4]]</tw-passagedata><tw-passagedata pid="37" name="Main Desk 3b" tags="" position="850,475" size="100,100">This is the text to recieve a [[letter-&gt;Letter K4]]</tw-passagedata><tw-passagedata pid="38" name="Letter K4" tags="" position="975,475" size="100,100">This is the text saying the player recieved a letter
-This will transition into the [[fourth day-&gt;Fourth Day]]</tw-passagedata><tw-passagedata pid="39" name="Main Desk Day Family" tags="" position="1100,475" size="100,100">You have 3 days left
-Text about everything up until this point, reflection
-The last person to talk to is the [[family-&gt;Family I4]]</tw-passagedata><tw-passagedata pid="40" name="Main Desk 3c" tags="" position="1225,475" size="100,100">This is the text to recieve a [[letter-&gt;Letter F4]]</tw-passagedata><tw-passagedata pid="41" name="Letter F4" tags="" position="100,600" size="100,100">This is the text saying the player recieved a letter
-This will transition into the [[fourth day-&gt;Fourth Day]]</tw-passagedata><tw-passagedata pid="42" name="Fourth Day" tags="" position="225,600" size="100,100">You have 2 days left...</tw-passagedata><tw-passagedata pid="43" name="Thriller Killer" tags="" position="350,600" size="100,100">This is the ending if you choose to talk to the killer the most.</tw-passagedata><tw-passagedata pid="44" name="Ethical Entertainment" tags="" position="475,600" size="100,100">This is the ending if you choose to talk to the family the most.</tw-passagedata><tw-passagedata pid="45" name="Nobody was Innocent" tags="" position="600,600" size="100,100">This is the ending if you choose to talk to the cop the most.</tw-passagedata><tw-passagedata pid="46" name="The Blood Is Not On Your Hands" tags="" position="725,600" size="100,100">This is the ending if you choose not to turn in your work.</tw-passagedata><tw-passagedata pid="47" name="Did You Do Good?" tags="" position="850,600" size="100,100">This is the ending if you don&#39;t talk to someone the most.</tw-passagedata><tw-passagedata pid="48" name="Heading Back" tags="" position="975,600" size="100,100">As you sit down at your desk, you notice a new letter. 
-
-&lt;&lt;set $random_letter to random(1, 3)&gt;&gt; 
-
-&lt;&lt;print $random_letter &gt;&gt; 
-
-&lt;&lt;if $random_letter == 1&gt;&gt;
-&lt;&lt;print $family_content.one&gt;&gt;
-
-&lt;&lt;/if&gt;&gt;
-
-
-
-[[Put Away Letter -&gt; Passage 1]]</tw-passagedata><tw-passagedata pid="49" name="Family I" tags="" position="1100,600" size="100,100">This is the text that&#39;ll be executed when you get to this room. 
-This is the text that&#39;ll lead back to the [[desk-&gt;Desk Family]]</tw-passagedata><tw-passagedata pid="50" name="Family I2" tags="" position="1225,600" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
-This is the text that will lead back to the [[desk-&gt;Main Desk 2c]]</tw-passagedata><tw-passagedata pid="51" name="Family I3" tags="" position="100,725" size="100,100">This is the text for the family interview after the police
-This is the text to go back to the [[desk-&gt;Main Desk 2e]]</tw-passagedata><tw-passagedata pid="52" name="Family I4" tags="" position="225,725" size="100,100">This is the text for the family interview after everything else
-This is the text to go back to the [[desk-&gt;Main Desk 3c]]</tw-passagedata><tw-passagedata pid="53" name="StoryInit" tags="" position="350,725" size="100,100">&lt;&lt;set $days to 5&gt;&gt;
-&lt;&lt;set $family_letters to 0&gt;&gt;
-&lt;&lt;set $fan_letters to 0 &gt;&gt;
-&lt;&lt;set $true_crime to 0&gt;&gt; 
-
-
-&lt;&lt;set $family_content ={
-    &quot;one&quot; : &quot;this is letter one&quot;,
-    &quot;two&quot; : &quot;this is letter two&quot;, 
-    &quot;three&quot;: &quot;this is letter three&quot;
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Killer I" tags="" position="475,725" size="100,100">This is the text for the killer interview
-This is the text to go back to the [[desk-&gt;Desk Killer]]</tw-passagedata><tw-passagedata pid="55" name="Killer I2" tags="" position="600,725" size="100,100">This is the text for the killer interview after the family
-This is the text to go back to the [[desk-&gt;Main Desk 2a]]</tw-passagedata><tw-passagedata pid="56" name="Killer I3" tags="" position="725,725" size="100,100">This is the text for the killer interview after the police
-This is the text to go back to the [[desk-&gt;Main Desk 2f]]</tw-passagedata><tw-passagedata pid="57" name="Killer I4" tags="" position="850,725" size="100,100">This is the text for the killer after everything else
-This is the text to go back to the [[desk-&gt;Main Desk 3b]]</tw-passagedata><tw-passagedata pid="58" name="Police I" tags="" position="975,725" size="100,100">This is the text for the police interview
-This is the text to go back to the[[desk-&gt;Desk Police]]</tw-passagedata><tw-passagedata pid="59" name="Police I2" tags="" position="1100,725" size="100,100">This is the text for the police interview after the family
-This is the text to go back to the [[desk-&gt;Main Desk 2b]]</tw-passagedata><tw-passagedata pid="60" name="Police I3" tags="" position="1225,725" size="100,100">This is the text for the police interview after the killer
-This is the text to go back to the [[desk-&gt;Main Desk 2d]]</tw-passagedata><tw-passagedata pid="61" name="Police I4" tags="" position="100,850" size="100,100">This is the interview with the police after everything else 
-This is the text to go back to the [[desk-&gt;Main Desk 3a]]</tw-passagedata><tw-passagedata pid="62" name="Passage 1" tags="" position="225,850" size="100,100">&lt;&lt;set $days -= 1&gt;&gt;
+&lt;&lt;/timed&gt;&gt; &lt;/em&gt;
+*/</tw-passagedata><tw-passagedata pid="62" name="Police I" tags="" position="225,850" size="100,100">This is the text for the police interview
+This is the text to go back to the[[desk-&gt;Desk Police]]</tw-passagedata><tw-passagedata pid="63" name="Police I2" tags="" position="350,850" size="100,100">This is the text for the police interview after the family
+This is the text to go back to the [[desk-&gt;Main Desk 2b]]</tw-passagedata><tw-passagedata pid="64" name="Police I3" tags="" position="475,850" size="100,100">This is the text for the police interview after the killer
+This is the text to go back to the [[desk-&gt;Main Desk 2d]]</tw-passagedata><tw-passagedata pid="65" name="Police I4" tags="" position="600,850" size="100,100">This is the interview with the police after everything else 
+This is the text to go back to the [[desk-&gt;Main Desk 3a]]</tw-passagedata><tw-passagedata pid="66" name="Special Family" tags="" position="725,850" size="100,100"></tw-passagedata><tw-passagedata pid="67" name="Special Killer" tags="" position="850,850" size="100,100"></tw-passagedata><tw-passagedata pid="68" name="Special Police" tags="" position="975,850" size="100,100"></tw-passagedata><tw-passagedata pid="69" name="Passage 1" tags="" position="1100,850" size="100,100">&lt;&lt;set $days -= 1&gt;&gt;
 &lt;&lt;if $days == 0&gt;&gt;
 Today is your last day, choose wisely your last interview.
 
@@ -270,10 +384,10 @@ Do you do it?
 
 
 &lt;&lt;/if&gt;&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Passage K" tags="" position="350,850" size="100,100">You talk to the killer 
+    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Passage K" tags="" position="1225,850" size="100,100">You talk to the killer 
 
-[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="64" name="Passage F" tags="" position="475,850" size="100,100">You talk to the Family 
-[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="65" name="Passage C" tags="" position="600,850" size="100,100">You talk to the Cop
+[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="71" name="Passage F" tags="" position="100,975" size="100,100">You talk to the Family 
+[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="72" name="Passage C" tags="" position="225,975" size="100,100">You talk to the Cop
 [[Return to your office -&gt; Heading Back]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
