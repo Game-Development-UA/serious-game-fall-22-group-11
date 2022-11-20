@@ -220,13 +220,20 @@ Remember, this mini series and how it protrays the truth will be up to your rese
 
 [[You have 5 days. -&gt; First Day]]</tw-passagedata><tw-passagedata pid="6" name="First Day" tags="desk" position="725,100" size="100,100">You sit down at your desk, already overwhelmed by your new assigment. What do you do first?
 
-[[Visit the Family of the Victim -&gt; Passage F]]
-[[Visit the Killer -&gt; Passage K]]
-[[Visit the Police -&gt; Passage C ]]
+[[Visit the Family of the Victim -&gt; Family I]]
+[[Visit the Killer -&gt; Killer I]]
+[[Visit the Police -&gt; Police I]]
 
 
 
-[[Check Inventory -&gt; Inventory]]</tw-passagedata><tw-passagedata pid="7" name="Thriller Killer" tags="" position="850,100" size="100,100">This is the ending if you choose to talk to the killer the most.</tw-passagedata><tw-passagedata pid="8" name="Ethical Entertainment" tags="" position="975,100" size="100,100">This is the ending if you choose to talk to the family the most.</tw-passagedata><tw-passagedata pid="9" name="Nobody was Innocent" tags="" position="1100,100" size="100,100">This is the ending if you choose to talk to the cop the most.</tw-passagedata><tw-passagedata pid="10" name="The Blood Is Not On Your Hands" tags="" position="1225,100" size="100,100">This is the ending if you choose not to turn in your work.</tw-passagedata><tw-passagedata pid="11" name="Did You Do Good?" tags="" position="100,225" size="100,100">This is the ending if you don&#39;t talk to someone the most.</tw-passagedata><tw-passagedata pid="12" name="Inventory" tags="" position="225,225" size="100,100">&lt;&lt;if $fletters_content.length &lt; 1 &amp;&amp; $kletters_content.length &lt; 1 &amp;&amp; $tletters_content.length &lt; 1&gt;&gt;
+[[Check Inventory -&gt; Inventory]]</tw-passagedata><tw-passagedata pid="7" name="Thriller Killer" tags="" position="850,100" size="100,100">This is the ending if you choose to talk to the killer the most.</tw-passagedata><tw-passagedata pid="8" name="Ethical Entertainment" tags="" position="975,100" size="100,100">This is the ending if you choose to talk to the family the most.</tw-passagedata><tw-passagedata pid="9" name="Nobody was Innocent" tags="" position="1100,100" size="100,100">This is the ending if you choose to talk to the cop the most.</tw-passagedata><tw-passagedata pid="10" name="The Blood Is Not On Your Hands" tags="" position="1225,100" size="100,100">This is the ending if you choose not to turn in your work.</tw-passagedata><tw-passagedata pid="11" name="Did You Do Good?" tags="" position="100,225" size="100,100">This is the ending if you don&#39;t talk to someone the most.</tw-passagedata><tw-passagedata pid="12" name="Family I" tags="" position="225,225" size="100,100">This is the formatting of the dialogue
+[[Choice 1 -&gt; Family 2a]]
+[[Choice 2 -&gt; Family 2b]]</tw-passagedata><tw-passagedata pid="13" name="Family 2a" tags="" position="350,225" size="100,100">This is the text that&#39;ll be executed when you get to this room. 
+
+[[Choice 1 -&gt; Family 3.1a]]
+[[Choice 2 -&gt; Family 3.1b]]</tw-passagedata><tw-passagedata pid="14" name="Family 2b" tags="" position="475,225" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
+[[Choice 1 -&gt; Family 3.2a]]
+[[Choice 2 -&gt; Family 3.2b]]</tw-passagedata><tw-passagedata pid="15" name="Family 3.1a" tags="" position="600,225" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Family 3.1b" tags="" position="725,225" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="Family 3.2a" tags="" position="850,225" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Family 3.2b" tags="" position="975,225" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Inventory" tags="" position="1100,225" size="100,100">&lt;&lt;if $fletters_content.length &lt; 1 &amp;&amp; $kletters_content.length &lt; 1 &amp;&amp; $tletters_content.length &lt; 1&gt;&gt;
 You have no letters. 
 
 &lt;&lt;elseif $fletters_content.length &lt; 1&gt;&gt;
@@ -242,7 +249,14 @@ You have &lt;&lt;print $fletters_content[_index]&gt;&gt;, \
 
 &lt;&lt;/if&gt;&gt;
 
-[[Return to your desk -&gt; ]]</tw-passagedata><tw-passagedata pid="13" name="1FL" tags="fletter" position="350,225" size="100,100">&lt;&lt;set $read to $fletters_content.pluck()&gt;&gt;
+[[Return to your desk -&gt; ]]</tw-passagedata><tw-passagedata pid="20" name="Killer I" tags="killer" position="1225,225" size="100,100">This is the formatting of the dialogue
+[[Choice 1 -&gt; Killer 2a]]
+[[Choice 2 -&gt; Killer 2b]]</tw-passagedata><tw-passagedata pid="21" name="Killer 2a" tags="" position="100,350" size="100,100">This is the text that&#39;ll be executed when you get to this room. 
+
+[[Choice 1 -&gt; Killer 3.1a]]
+[[Choice 2 -&gt; Killer 3.1b]]</tw-passagedata><tw-passagedata pid="22" name="Killer 2b" tags="" position="225,350" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
+[[Choice 1 -&gt; Killer 3.2a]]
+[[Choice 2 -&gt; Killer 3.2b]]</tw-passagedata><tw-passagedata pid="23" name="Killer 3.1a" tags="" position="350,350" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Killer 3.1b" tags="" position="475,350" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Killer 3.2a" tags="" position="600,350" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Killer 3.2b" tags="" position="725,350" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="1FL" tags="fletter" position="850,350" size="100,100">&lt;&lt;set $read to $fletters_content.pluck()&gt;&gt;
 &lt;&lt;print $read&gt;&gt;
 
 &lt;&lt;if (typeof $read !== &#39;undefined&#39;)&gt;&gt;
@@ -258,7 +272,7 @@ You have &lt;&lt;print $fletters_read[_index]&gt;&gt;, \
 You have &lt;&lt;print $fletters_content[_index]&gt;&gt;, \
 &lt;&lt;/for&gt;&gt;
 
-[[Test2-&gt;1FL]]</tw-passagedata><tw-passagedata pid="14" name="1KL" tags="kletter" position="475,225" size="100,100">&lt;&lt;set $read to $kletters_content.pluck()&gt;&gt;
+[[Test2-&gt;1FL]]</tw-passagedata><tw-passagedata pid="28" name="1KL" tags="kletter" position="975,350" size="100,100">&lt;&lt;set $read to $kletters_content.pluck()&gt;&gt;
 &lt;&lt;print $read&gt;&gt;
 
 &lt;&lt;if (typeof $read !== &#39;undefined&#39;)&gt;&gt;
@@ -274,7 +288,7 @@ You have &lt;&lt;print $kletters_read[_index]&gt;&gt;, \
 You have &lt;&lt;print $kletters_content[_index]&gt;&gt;, \
 &lt;&lt;/for&gt;&gt;
 
-[[Test2-&gt;1KL]]</tw-passagedata><tw-passagedata pid="15" name="1TL" tags="tletter" position="600,225" size="100,100">&lt;&lt;set $read to $tletters_content.pluck()&gt;&gt;
+[[Test2-&gt;1KL]]</tw-passagedata><tw-passagedata pid="29" name="1TL" tags="tletter" position="1100,350" size="100,100">&lt;&lt;set $read to $tletters_content.pluck()&gt;&gt;
 &lt;&lt;print $read&gt;&gt;
 
 &lt;&lt;if (typeof $read !== &#39;undefined&#39;)&gt;&gt;
@@ -290,11 +304,14 @@ You have &lt;&lt;print $tletters_read[_index]&gt;&gt;, \
 You have &lt;&lt;print $tletters_content[_index]&gt;&gt;, \
 &lt;&lt;/for&gt;&gt;
 
-[[Test2-&gt;1TL]]</tw-passagedata><tw-passagedata pid="16" name="Police I" tags="policeinterview" position="725,225" size="100,100">This is the text for the police interview
-This is the text to go back to the[[desk-&gt;Desk Police]]</tw-passagedata><tw-passagedata pid="17" name="Police I2" tags="" position="850,225" size="100,100">This is the text for the police interview after the family
-This is the text to go back to the [[desk-&gt;Main Desk 2b]]</tw-passagedata><tw-passagedata pid="18" name="Police I3" tags="" position="975,225" size="100,100">This is the text for the police interview after the killer
-This is the text to go back to the [[desk-&gt;Main Desk 2d]]</tw-passagedata><tw-passagedata pid="19" name="Police I4" tags="" position="1100,225" size="100,100">This is the interview with the police after everything else 
-This is the text to go back to the [[desk-&gt;Main Desk 3a]]</tw-passagedata><tw-passagedata pid="20" name="Heading Back" tags="" position="1225,225" size="100,100">[[Test -&gt; 1FL]]</tw-passagedata><tw-passagedata pid="21" name="Special Event" tags="" position="100,350" size="100,100">&lt;&lt;if $family_letters == $crit_number&gt;&gt;
+[[Test2-&gt;1TL]]</tw-passagedata><tw-passagedata pid="30" name="Police I" tags="police" position="1225,350" size="100,100">This is the formatting of the dialogue
+[[Choice 1 -&gt; Police 2a]]
+[[Choice 2 -&gt; Police 2b]]</tw-passagedata><tw-passagedata pid="31" name="Police 2a" tags="" position="100,475" size="100,100">This is the text that&#39;ll be executed when you get to this room. 
+
+[[Choice 1 -&gt; Police 3.1a]]
+[[Choice 2 -&gt; Police 3.1b]]</tw-passagedata><tw-passagedata pid="32" name="Police 2b" tags="" position="225,475" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
+[[Choice 1 -&gt; Police 3.2a]]
+[[Choice 2 -&gt; Police 3.2b]]</tw-passagedata><tw-passagedata pid="33" name="Police 3.1a" tags="" position="350,475" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="Police 3.1b" tags="" position="475,475" size="100,100"></tw-passagedata><tw-passagedata pid="35" name="Police 3.2a" tags="" position="600,475" size="100,100"></tw-passagedata><tw-passagedata pid="36" name="Police 3.2b" tags="" position="725,475" size="100,100"></tw-passagedata><tw-passagedata pid="37" name="Heading Back" tags="" position="850,475" size="100,100">[[Test -&gt; 1FL]]</tw-passagedata><tw-passagedata pid="38" name="Special Event" tags="" position="975,475" size="100,100">&lt;&lt;if $family_letters == $crit_number&gt;&gt;
     As you head back today, you notice an old man running(well, more like hobbling) up to you.
 
     &quot;Please wait! I need to talk to you.&quot;
@@ -334,11 +351,7 @@ This is the text to go back to the [[desk-&gt;Main Desk 3a]]</tw-passagedata><tw
         
     [[Put Away Letter -&gt; Passage 1]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Family I" tags="" position="225,350" size="100,100">This is the text that&#39;ll be executed when you get to this room. 
-This is the text that&#39;ll lead back to the [[desk-&gt;Desk Family]]</tw-passagedata><tw-passagedata pid="23" name="Family I2" tags="" position="350,350" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
-This is the text that will lead back to the [[desk-&gt;Main Desk 2c]]</tw-passagedata><tw-passagedata pid="24" name="Family I3" tags="" position="475,350" size="100,100">This is the text for the family interview after the police
-This is the text to go back to the [[desk-&gt;Main Desk 2e]]</tw-passagedata><tw-passagedata pid="25" name="Family I4" tags="" position="600,350" size="100,100">This is the text for the family interview after everything else
-This is the text to go back to the [[desk-&gt;Main Desk 3c]]</tw-passagedata><tw-passagedata pid="26" name="StoryInit" tags="" position="725,350" size="100,100">/*Global Keys */
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="StoryInit" tags="" position="1100,475" size="100,100">/*Global Keys */
 &lt;&lt;set $crit_number to 5 &gt;&gt;
 &lt;&lt;set $killer to &quot;Martin&quot;&gt;&gt;
 
@@ -372,11 +385,7 @@ This is the text to go back to the [[desk-&gt;Main Desk 3c]]</tw-passagedata><tw
 
     &lt;&lt;set $tletters_read to []&gt;&gt;
 
-&lt;!-- --&gt;</tw-passagedata><tw-passagedata pid="27" name="Killer I" tags="" position="850,350" size="100,100">This is the text for the killer interview
-This is the text to go back to the [[desk-&gt;Desk Killer]]</tw-passagedata><tw-passagedata pid="28" name="Killer I2" tags="" position="975,350" size="100,100">This is the text for the killer interview after the family
-This is the text to go back to the [[desk-&gt;Main Desk 2a]]</tw-passagedata><tw-passagedata pid="29" name="Killer I3" tags="" position="1100,350" size="100,100">This is the text for the killer interview after the police
-This is the text to go back to the [[desk-&gt;Main Desk 2f]]</tw-passagedata><tw-passagedata pid="30" name="Killer I4" tags="" position="1225,350" size="100,100">This is the text for the killer after everything else
-This is the text to go back to the [[desk-&gt;Main Desk 3b]]</tw-passagedata><tw-passagedata pid="31" name="Special Family" tags="" position="100,475" size="100,100"></tw-passagedata><tw-passagedata pid="32" name="Special Killer" tags="" position="225,475" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="Special Police" tags="" position="350,475" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="Passage 1" tags="" position="475,475" size="100,100">&lt;&lt;set $days -= 1&gt;&gt;
+&lt;!-- --&gt;</tw-passagedata><tw-passagedata pid="40" name="Special Family" tags="" position="1225,475" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="Special Killer" tags="" position="100,600" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="Special Police" tags="" position="225,600" size="100,100"></tw-passagedata><tw-passagedata pid="43" name="Passage 1" tags="" position="350,600" size="100,100">&lt;&lt;set $days -= 1&gt;&gt;
 &lt;&lt;if $days == 0&gt;&gt;
 Today is your last day, choose wisely your last interview.
 
@@ -411,10 +420,10 @@ Do you do it?
 
 
 &lt;&lt;/if&gt;&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Passage K" tags="" position="600,475" size="100,100">You talk to the killer 
+    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Passage K" tags="" position="475,600" size="100,100">You talk to the killer 
 
-[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="36" name="Passage F" tags="" position="725,475" size="100,100">You talk to the Family 
-[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="37" name="Passage C" tags="" position="850,475" size="100,100">You talk to the Cop
+[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="45" name="Passage F" tags="" position="600,600" size="100,100">You talk to the Family 
+[[Return to your office -&gt; Heading Back]]</tw-passagedata><tw-passagedata pid="46" name="Passage C" tags="" position="725,600" size="100,100">You talk to the Cop
 [[Return to your office -&gt; Heading Back]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
