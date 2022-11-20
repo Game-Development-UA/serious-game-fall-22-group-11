@@ -1,5 +1,5 @@
 /* This is the police station interview. */
-:: Police I
+:: Police I [policeinterview]
 This is the text for the police interview
 This is the text to go back to the[[desk->Desk Police]]
 :: Police I2
