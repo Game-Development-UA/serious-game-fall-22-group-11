@@ -19,16 +19,29 @@ Angel of Death
 <<set $fan_letters to 0 >>
 <<set $true_crime to 0>> 
 
-/* Letters */
-<<set $fletters_content to 
-[ "this is letter one", "this is letter two",
-"this is letter three"]>>
+/* Family Letters */
+    <<set $fletters_content to 
+    [ "this is letter one", "this is letter two",
+    "this is letter three"]>>
 
-<<set $fletters_read to []>>
+    <<set $fletters_read to []>>
+<!-- -->
+
+/* Killer Fan Letters */
+    <<set $kletters_content to
+    []
+    >>
+
+    <<set $kletters_read to []>>
+
+<!-- -->
+
+/* True Crime Letters */
+    <<set $tletters_content to
+    []>>
 
 
+    <<set $tletters_read to []>>
 
-
-<<set $kletters_read to []>>
-<<set $tletters_read to []>>
+<!-- -->
 
