@@ -5,18 +5,18 @@
 
 <<timed 2s t8n>> <label>Please tell me your name.<<textbox "$name" "Jane/John Doe" "Intro I">></label> <</timed>>
 
-:: Intro I
-<div class = "image1"> <!--NOT WORKING - WHY??? -->
+:: Intro I [corp]
+
 Hello <<print $name>>, my name is Stella. 
 As you may know, the name "Angel of Death" has been popping off in all SEO search engines. 
 
 With so much attention on Doctor $killer, it was a no brainer to green light a new mini series on his crimes! 
 
 What do you think? 
-
+[[Test->1FL]]
 [[Completely agree! This series will be awesome! -> Intro 2a]]
 [[Do the victims' families know we are doing this? -> Intro 2b]]
-</div>
+
 :: Intro 2a
 I'm glad we are on the same page! 
 

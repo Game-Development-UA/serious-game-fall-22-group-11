@@ -1,4 +1,7 @@
 :: Heading Back
+[[Test -> 1FL]]
+
+:: Special Event
 <<if $family_letters == $crit_number>>
     As you head back today, you notice an old man running(well, more like hobbling) up to you.
 
