@@ -35,8 +35,8 @@
 }
 
 
-body[data-tags~="corp"]{
-	background-image: url("https://th.bing.com/th/id/OIP._fjqRJSQL0HopBQe-DlTGAHaEK?pid=ImgDet&rs=1");
+body.corp{
+	background-image: url("C:/Users/KuruJ/Documents/UOFA FALL 2022/ISTA 251/TwineCollab/serious-game-fall-22-group-11/source/Test1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -47,23 +47,42 @@ body.fletter{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
 }
 
-body[data-tags~="kletter"]{
+body.kletter{
     background-image: url("https://th.bing.com/th/id/OIP.Etl4APvQYasf086edjxNxAHaHa?pid=ImgDet&rs=1");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-body[data-tags~="tletter"]{
+body.tletter{
     background-image: url("https://th.bing.com/th/id/OIP.Q0pnsfCDS2XS7ES4zTeyQQHaEK?pid=ImgDet&rs=1");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
+body.policeinterview{
+	background-image: url("/media/images/Police man interview.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body.desk{
+	background-image: url("/source/media/images/Menu.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body.killer{
+	background-image: url("source/media/images/KillerInterview.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
 /* This class is specific to the text in the passages */
 .fletter.passage{
@@ -77,6 +96,3 @@ body[data-tags~="tletter"]{
     border: 1px solid #000000;
     font-family: calandine;
 }
-.green-background {
-    background-color: #2ecc71;
-  }
