@@ -3,43 +3,32 @@
 "ifid": "1F012455-6A83-4CCB-BCB1-49B9D77D4E03",
 "format": "SugarCube",
 "format-version": "2.30.0",
-"start": "The Beginning"
+"start": "1FL"
 }
 
 :: StoryTitle
 Angel of Death
 :: StoryInit
-/*Trackers */
-<<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
-<<set $family_letters to 0>>
-<<set $fan_letters to 0 >>
-<<set $true_crime to 5>> 
-
-
 /*Global Keys */
 <<set $crit_number to 5 >>
 <<set $killer to "Martin">>
 
-<<set $read_letters to [] >>
+/*Trackers */
+<<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
+<<set $family_letters to 0>>
+<<set $fan_letters to 0 >>
+<<set $true_crime to 0>> 
 
 /* Letters */
+<<set $fletters_content to 
+[ "this is letter one", "this is letter two",
+"this is letter three"]>>
+
+<<set $fletters_read to []>>
 
 
-<<set $family_content ={
-    "one" : "this is letter one",
-    "two" : "this is letter two", 
-    "three": "this is letter three"
-}>>
 
-<<set $killer_content ={
-    "one" : "this is letter one",
-    "two" : "this is letter two", 
-    "three": "this is letter three"
-}>>
 
-<<set $cop_content ={
-    "one" : "this is letter one",
-    "two" : "this is letter two", 
-    "three": "this is letter three"
-}>>
+<<set $kletters_read to []>>
+<<set $tletters_read to []>>
 

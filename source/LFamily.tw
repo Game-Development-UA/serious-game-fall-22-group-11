@@ -1,0 +1,24 @@
+/* Idea with this document - use background images of letters as unique passage story inserts. */
+
+:: 1FL [fletter]
+<<set $read to $fletters_content.pluck()>>
+<<print $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $fletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $fletters_read.length; _index++>>
+You have <<print $fletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $fletters_content.length; _index++>>
+You have <<print $fletters_content[_index]>>, \
+<</for>>
+
+
+[[Test2->1FL]]
+:: 1KL [kletter]
+
+:: 1TL [tletter]

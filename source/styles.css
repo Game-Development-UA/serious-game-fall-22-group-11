@@ -70,6 +70,7 @@ body[data-tags~="tletter"]{
     line-height: 1.6;
     text-align: justify;
     font-size: 1.6em;
+    color: #000000;
     background-color: rgba(253, 254, 254, 0.493);
     padding: 2em;
     box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
