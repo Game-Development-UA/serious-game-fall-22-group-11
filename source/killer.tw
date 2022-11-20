@@ -1,13 +1,24 @@
 /* This is the killer interview. */
-:: Killer I
-This is the text for the killer interview
-This is the text to go back to the [[desk->Desk Killer]]
-:: Killer I2
-This is the text for the killer interview after the family
-This is the text to go back to the [[desk->Main Desk 2a]]
-:: Killer I3
-This is the text for the killer interview after the police
-This is the text to go back to the [[desk->Main Desk 2f]]
-:: Killer I4 
-This is the text for the killer after everything else
-This is the text to go back to the [[desk->Main Desk 3b]]
+:: Killer I[killer]
+This is the formatting of the dialogue
+[[Choice 1 -> Killer 2a]]
+[[Choice 2 -> Killer 2b]]
+
+:: Killer 2a
+This is the text that'll be executed when you get to this room. 
+
+[[Choice 1 -> Killer 3.1a]]
+[[Choice 2 -> Killer 3.1b]]
+
+:: Killer 2b
+This is the text that'll be executed when you get to this room after the killer
+[[Choice 1 -> Killer 3.2a]]
+[[Choice 2 -> Killer 3.2b]]
+
+:: Killer 3.1a
+
+:: Killer 3.1b 
+
+:: Killer 3.2a
+
+:: Killer 3.2b 

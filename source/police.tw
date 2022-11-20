@@ -1,13 +1,24 @@
 /* This is the police station interview. */
-:: Police I [policeinterview]
-This is the text for the police interview
-This is the text to go back to the[[desk->Desk Police]]
-:: Police I2
-This is the text for the police interview after the family
-This is the text to go back to the [[desk->Main Desk 2b]]
-:: Police I3
-This is the text for the police interview after the killer
-This is the text to go back to the [[desk->Main Desk 2d]]
-:: Police I4
-This is the interview with the police after everything else 
-This is the text to go back to the [[desk->Main Desk 3a]]
+:: Police I [police]
+This is the formatting of the dialogue
+[[Choice 1 -> Police 2a]]
+[[Choice 2 -> Police 2b]]
+
+:: Police 2a
+This is the text that'll be executed when you get to this room. 
+
+[[Choice 1 -> Police 3.1a]]
+[[Choice 2 -> Police 3.1b]]
+
+:: Police 2b
+This is the text that'll be executed when you get to this room after the killer
+[[Choice 1 -> Police 3.2a]]
+[[Choice 2 -> Police 3.2b]]
+
+:: Police 3.1a
+
+:: Police 3.1b 
+
+:: Police 3.2a
+
+:: Police 3.2b 

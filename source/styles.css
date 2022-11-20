@@ -5,6 +5,15 @@ body.corp{
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
+	margin-left: -70em;
+}
+
+.corp.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(0, 140, 255);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
 }
 
 body.desk{
@@ -28,8 +37,6 @@ body.killer{
 	background-size: cover;
 }
 
-
-
 body.fletter{
     background-image: url("https://miro.medium.com/max/1200/1*xgv8zQgPai2P2kDmu1cpTQ.jpeg");
 	background-repeat: no-repeat;
@@ -51,7 +58,12 @@ body.tletter{
 	background-size: cover;
 }
 
-
+/* This id is specific to the sidebar */
+#ui-bar {
+	display: none;
+	padding:0%;
+	margin: 0mm;
+}
 
 
 
