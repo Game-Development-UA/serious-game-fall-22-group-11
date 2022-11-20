@@ -1,0 +1,19 @@
+:: Inventory
+
+<<if $fletters_content.length < 1 && $kletters_content.length < 1 && $tletters_content.length < 1>>
+You have no letters. 
+
+<<elseif $fletters_content.length < 1>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $fletters_read.length; _index++>>
+You have <<print $fletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $fletters_content.length; _index++>>
+You have <<print $fletters_content[_index]>>, \
+<</for>>
+
+<</if>>
+
+[[Return to your desk -> ]]
