@@ -36,9 +36,10 @@
 
 
 body.corp{
-	background-image: url("C:/Users/KuruJ/Documents/UOFA FALL 2022/ISTA 251/TwineCollab/serious-game-fall-22-group-11/source/Test1.png");
+	background-image: url("media/images/CEO render.png");
+	background-color: rgb(17, 104, 104);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-size: cover;
 }
 
