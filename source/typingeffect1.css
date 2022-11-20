@@ -33,3 +33,43 @@ body{
   from{border-right-color: rgba(0,255,0,.75);}
   to{border-right-color: transparent;}
 }
+
+/* REFERENCE CSS CODING */
+
+
+/* The body is everything displayed in the main text delivery area*/
+/* body {
+	background: blue;
+} */
+
+
+/* This class is specific to the text in the passages
+.passage {
+    border: 1px solid red;
+}
+*/
+
+/* This id is specific to the sidebar */
+/* #ui-bar {
+	display: none;
+	margin: 0mm;
+} */
+
+
+/* This id is specific to the header
+#header {
+	
+}
+*/
+
+/* This id is specific to the footer
+#footer {
+	
+}
+*/
+
+/* This class will override any styles on passages tagged "forest"*/
+/* .forest {
+	background: green;
+} */
+

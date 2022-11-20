@@ -1,40 +1,4 @@
-/* The body is everything displayed in the main text delivery area*/
-/* body {
-	background: blue;
-} */
-
-
-/* This class is specific to the text in the passages
-.passage {
-    border: 1px solid red;
-}
-*/
-
-/* This id is specific to the sidebar */
-/* #ui-bar {
-	display: none;
-	margin: 0mm;
-} */
-
-
-/* This id is specific to the header
-#header {
-	
-}
-*/
-
-/* This id is specific to the footer
-#footer {
-	
-}
-*/
-
-/* This class will override any styles on passages tagged "forest"*/
-.forest {
-	background: green;
-}
-
-
+/* ---MAIN STAGES--- */
 body.corp{
 	background-image: url("media/images/CEO render.png");
 	background-color: rgb(17, 104, 104);
@@ -42,6 +6,29 @@ body.corp{
 	background-position: top;
 	background-size: cover;
 }
+
+body.desk{
+	background-image: url("media/images/Menu.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+body.police{
+	background-image: url("media/images/Police man interview.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+body.killer{
+	background-image: url("media/images/KillerInterview.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+
 
 body.fletter{
     background-image: url("https://miro.medium.com/max/1200/1*xgv8zQgPai2P2kDmu1cpTQ.jpeg");
@@ -64,26 +51,9 @@ body.tletter{
 	background-size: cover;
 }
 
-body.policeinterview{
-	background-image: url("/media/images/Police man interview.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
 
-body.desk{
-	background-image: url("/source/media/images/Menu.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
 
-body.killer{
-	background-image: url("source/media/images/KillerInterview.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
+
 
 /* This class is specific to the text in the passages */
 .fletter.passage{
