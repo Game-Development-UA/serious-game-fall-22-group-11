@@ -23,6 +23,14 @@ body.desk{
 	background-size: cover;
 }
 
+.desk.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(146, 103, 39);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
 body.police{
 	background-image: url("media/images/Police man interview.png");
 	background-repeat: no-repeat;
@@ -30,12 +38,45 @@ body.police{
 	background-size: cover;
 }
 
+.police.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(0, 140, 255);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
 body.killer{
-	background-image: url("media/images/KillerInterview.jpg");
+	background-image: url("media/images/KillerInterview.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
+
+.killer.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.family{
+	background-image: url("media/images/Family_Interview.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.family.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+/* ---LETTER BACKGROUNDS--- */
 
 body.fletter{
     background-image: url("https://miro.medium.com/max/1200/1*xgv8zQgPai2P2kDmu1cpTQ.jpeg");
@@ -64,7 +105,6 @@ body.tletter{
 	padding:0%;
 	margin: 0mm;
 }
-
 
 
 /* This class is specific to the text in the passages */
