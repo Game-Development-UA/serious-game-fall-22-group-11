@@ -76,6 +76,21 @@ body.family{
 	margin: 0 auto;
 }
 
+body.inventory{
+	background-image: url("https://am.adventistmission.org/assets/public/resources/Mission-360-Magazine/Stories/v6n1/page1/6_1On7V94x29WKaAl7UKLY-0.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.interview.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
 /* ---LETTER BACKGROUNDS--- */
 
 body.fletter{

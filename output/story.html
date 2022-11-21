@@ -125,11 +125,27 @@ body.desk{
 	background-size: cover;
 }
 
+.desk.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(146, 103, 39);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
 body.police{
 	background-image: url("media/images/Police man interview.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
+}
+
+.police.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(0, 140, 255);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
 }
 
 body.killer{
@@ -138,6 +154,46 @@ body.killer{
 	background-position: top;
 	background-size: cover;
 }
+
+.killer.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.family{
+	background-image: url("media/images/Family_Interview.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.family.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.inventory{
+	background-image: url("https://am.adventistmission.org/assets/public/resources/Mission-360-Magazine/Stories/v6n1/page1/6_1On7V94x29WKaAl7UKLY-0.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.interview.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+/* ---LETTER BACKGROUNDS--- */
 
 body.fletter{
     background-image: url("https://miro.medium.com/max/1200/1*xgv8zQgPai2P2kDmu1cpTQ.jpeg");
@@ -166,7 +222,6 @@ body.tletter{
 	padding:0%;
 	margin: 0mm;
 }
-
 
 
 /* This class is specific to the text in the passages */
@@ -233,11 +288,10 @@ Remember, this mini series and how it protrays the truth will be up to your rese
 [[Choice 1 -&gt; Family 3.1a]]
 [[Choice 2 -&gt; Family 3.1b]]</tw-passagedata><tw-passagedata pid="14" name="Family 2b" tags="" position="475,225" size="100,100">This is the text that&#39;ll be executed when you get to this room after the killer
 [[Choice 1 -&gt; Family 3.2a]]
-[[Choice 2 -&gt; Family 3.2b]]</tw-passagedata><tw-passagedata pid="15" name="Family 3.1a" tags="" position="600,225" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Family 3.1b" tags="" position="725,225" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="Family 3.2a" tags="" position="850,225" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Family 3.2b" tags="" position="975,225" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Inventory" tags="" position="1100,225" size="100,100">&lt;&lt;if $fletters_content.length &lt; 1 &amp;&amp; $kletters_content.length &lt; 1 &amp;&amp; $tletters_content.length &lt; 1&gt;&gt;
+[[Choice 2 -&gt; Family 3.2b]]</tw-passagedata><tw-passagedata pid="15" name="Family 3.1a" tags="" position="600,225" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Family 3.1b" tags="" position="725,225" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="Family 3.2a" tags="" position="850,225" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Family 3.2b" tags="" position="975,225" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Inventory" tags="inventory" position="1100,225" size="100,100">&lt;&lt;if $fletters_read.length &lt; 1 &amp;&amp; $kletters_read.length &lt; 1 &amp;&amp; $tletters_read.length &lt; 1&gt;&gt;
 You have no letters. 
 
 &lt;&lt;elseif $fletters_content.length &lt; 1&gt;&gt;
-
 These are all the family letters you have read so far. 
 &lt;&lt;for _index to 0; _index &lt; $fletters_read.length; _index++&gt;&gt;
 You have &lt;&lt;print $fletters_read[_index]&gt;&gt;, \

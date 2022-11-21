@@ -1,24 +1,45 @@
 /* This is the killer interview. */
+/* Day 1 */
 :: Killer I [killer]
 This is the formatting of the dialogue
-[[Choice 1 -> Killer 2a]]
-[[Choice 2 -> Killer 2b]]
+[[Choice 1 -> Killer I 2a]]
+[[Choice 2 -> Killer I 2b]]
 
-:: Killer 2a
+:: Killer I 2a
 This is the text that'll be executed when you get to this room. 
 
-[[Choice 1 -> Killer 3.1a]]
-[[Choice 2 -> Killer 3.1b]]
+[[Choice 1 -> Killer I 3.1a]]
+[[Choice 2 -> Killer I 3.1b]]
 
-:: Killer 2b
+:: Killer I 2b
 This is the text that'll be executed when you get to this room after the killer
-[[Choice 1 -> Killer 3.2a]]
-[[Choice 2 -> Killer 3.2b]]
+[[Choice 1 -> Killer I 3.2a]]
+[[Choice 2 -> Killer I 3.2b]]
 
-:: Killer 3.1a
+:: Killer I 3.1a
 
-:: Killer 3.1b 
+:: Killer I 3.1b 
 
-:: Killer 3.2a
+:: Killer I 3.2a
 
-:: Killer 3.2b 
+:: Killer I 3.2b 
+
+
+
+/* Day 2 */
+:: Killer II 
+
+
+
+/* Day 3 */
+:: Killer III
+
+
+
+/* Day 4 */
+:: Killer IV 
+
+
+
+/* Day 5 */
+:: Killer V

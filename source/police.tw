@@ -1,24 +1,45 @@
 /* This is the police station interview. */
+/* Day 1 */
 :: Police I [police]
 This is the formatting of the dialogue
-[[Choice 1 -> Police 2a]]
-[[Choice 2 -> Police 2b]]
+[[Choice 1 -> Police I 2a]]
+[[Choice 2 -> Police I 2b]]
 
-:: Police 2a
+:: Police I 2a
 This is the text that'll be executed when you get to this room. 
 
-[[Choice 1 -> Police 3.1a]]
-[[Choice 2 -> Police 3.1b]]
+[[Choice 1 -> Police I 3.1a]]
+[[Choice 2 -> Police I 3.1b]]
 
-:: Police 2b
+:: Police I 2b
 This is the text that'll be executed when you get to this room after the killer
-[[Choice 1 -> Police 3.2a]]
-[[Choice 2 -> Police 3.2b]]
+[[Choice 1 -> Police I 3.2a]]
+[[Choice 2 -> Police I 3.2b]]
 
-:: Police 3.1a
+:: Police I 3.1a
 
-:: Police 3.1b 
+:: Police I 3.1b 
 
-:: Police 3.2a
+:: Police I 3.2a
 
-:: Police 3.2b 
+:: Police I 3.2b 
+
+
+
+/* Day 2 */
+:: Police II 
+
+
+
+/* Day 3 */
+:: Police III
+
+
+
+/* Day 4 */
+:: Police IV 
+
+
+
+/* Day 5 */
+:: Police V

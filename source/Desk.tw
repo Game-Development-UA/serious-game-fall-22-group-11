@@ -1,11 +1,67 @@
 :: First Day [desk]
 You sit down at your desk, already overwhelmed by your new assigment. What do you do first?
 
-[[Visit the Family of the Victim -> Family I]]
+[[Visit the Family -> Family I]]
 [[Visit the Killer -> Killer I]]
 [[Visit the Police -> Police I]]
 
-
-
 [[Check Inventory -> Inventory]]
 
+:: Main Desk [desk]
+
+<set $days -= 1>>
+
+<<if $days == 0>>
+    Today is your last day, choose wisely your last interview.
+
+    [[Visit the Family -> Family I]]
+    [[Visit the Killer -> Killer I]]
+    [[Visit the Police -> Police I]]
+
+    [[Check Inventory -> Inventory]]
+
+<<elseif $days >= 0>>
+
+    You have <<print $days >> days left....
+
+    Where would you like to go tomorrow? 
+
+    [[Visit the Family -> Family I]]
+    [[Visit the Killer -> Killer I]]
+    [[Visit the Police -> Police I]]
+
+    [[Check Inventory -> Inventory]]
+
+<<else>>
+    <<if $family_letters >= 5>>
+        Today is the today. Your work will be turned in to the Stella.
+
+        Do you do it?
+        [[Yes -> Ethical Entertainment]]
+        [[No -> The Blood Is Not On Your Hands]]
+
+    <<elseif $fan_letters >= 5 >>
+        Today is the today. Your work will be turned in to the Stella.
+
+        Do you do it?
+        [[Yes -> Thriller Killer]]
+        [[No -> The Blood Is Not On Your Hands]]
+
+    <<elseif $true_crime >= 5 >>
+
+        Today is the today. Your work will be turned in to the Stella.
+
+        Do you do it?
+        [[Yes -> Nobody was Innocent]]
+        [[No -> The Blood Is Not On Your Hands]]
+
+    <<else>>
+        Today is the today. Your work will be turned in to the Stella.
+
+        Do you do it?
+        [[Yes -> Did You Do Good? ]]
+        [[No -> The Blood Is Not On Your Hands]]
+
+    <</if>>
+    
+<</if>>
