@@ -3,6 +3,10 @@
 :: Family I [family]
 This is the formatting of the dialogue
 
+<<if $f_visited == 0>
+<</if >>
+
+
 [[Test -> 1FL]]
 [[Choice 1 -> Family I 2a]]
 [[Choice 2 -> Family I 2b]]
