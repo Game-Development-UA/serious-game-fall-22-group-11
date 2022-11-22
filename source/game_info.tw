@@ -12,12 +12,20 @@ Angel of Death
 /*Global Keys */
 <<set $crit_number to 5 >>
 <<set $killer to "Martin">>
+<<set $mother to "">>
+<<set $Mvictim to "">>
+<<set $police to "">>
+
 
 /*Trackers */
 <<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
 <<set $f_crit to 0>>
 <<set $k_crit to 0 >>
 <<set $t_crit to 0>> 
+
+<<set $f_visited to 0>>
+<<set $k_visited to 0>>
+<<set $t_visited to 0>>
 
 /* Family Letters */
     <<set $fletters_content to 
