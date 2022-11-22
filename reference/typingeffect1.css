@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+  padding: 40px;
+  background-color: #121212;  
+}
+
+.typing_effect1 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+.typing_effect1 {
+  animation: animated-text 30s steps(29) normal both,
+             animated-cursor 600ms steps(29) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 600px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* REFERENCE CSS CODING */
+
+
+/* The body is everything displayed in the main text delivery area*/
+/* body {
+	background: blue;
+} */
+
+
+/* This class is specific to the text in the passages
+.passage {
+    border: 1px solid red;
+}
+*/
+
+/* This id is specific to the sidebar */
+/* #ui-bar {
+	display: none;
+	margin: 0mm;
+} */
+
+
+/* This id is specific to the header
+#header {
+	
+}
+*/
+
+/* This id is specific to the footer
+#footer {
+	
+}
+*/
+
+/* This class will override any styles on passages tagged "forest"*/
+/* .forest {
+	background: green;
+} */
+

@@ -1,0 +1,58 @@
+/* Idea with this document - use background images of letters as unique passage story inserts. */
+
+:: 1FL [fletter]
+<<set $read to $fletters_content.pluck()>>
+<<print $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $fletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $fletters_read.length; _index++>>
+You have <<print $fletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $fletters_content.length; _index++>>
+You have <<print $fletters_content[_index]>>, \
+<</for>>
+
+[[Test2->Main Desk]]
+
+:: 1KL [kletter]
+<<set $read to $kletters_content.pluck()>>
+<<print $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $kletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $kletters_read.length; _index++>>
+You have <<print $kletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $kletters_content.length; _index++>>
+You have <<print $kletters_content[_index]>>, \
+<</for>>
+
+[[Test2->1KL]]
+
+:: 1TL [tletter]
+<<set $read to $tletters_content.pluck()>>
+<<print $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $tletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $kletters_read.length; _index++>>
+You have <<print $tletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $tletters_content.length; _index++>>
+You have <<print $tletters_content[_index]>>, \
+<</for>>
+
+[[Test2->1TL]]

@@ -1,13 +1,48 @@
 /* This is the family house. */
-:: Family I
+/* Day 1 */
+:: Family I [family]
+This is the formatting of the dialogue
+
+[[Test -> 1FL]]
+[[Choice 1 -> Family I 2a]]
+[[Choice 2 -> Family I 2b]]
+
+:: Family I 2a
 This is the text that'll be executed when you get to this room. 
-This is the text that'll lead back to the [[desk->Desk Family]]
-:: Family I2
+
+[[Choice 1 -> Family I 3.1a]]
+[[Choice 2 -> Family I 3.1b]]
+
+:: Family I 2b
 This is the text that'll be executed when you get to this room after the killer
-This is the text that will lead back to the [[desk->Main Desk 2c]]
-:: Family I3
-This is the text for the family interview after the police
-This is the text to go back to the [[desk->Main Desk 2e]]
-:: Family I4 
-This is the text for the family interview after everything else
-This is the text to go back to the [[desk->Main Desk 3c]]
+[[Choice 1 -> Family I 3.2a]]
+[[Choice 2 -> Family I 3.2b]]
+
+:: Family I 3.1a
+
+:: Family I 3.1b 
+
+:: Family I 3.2a
+
+:: Family I 3.2b 
+
+
+
+/* Day 2 */
+:: Family II 
+
+
+
+/* Day 3 */
+:: Family III
+
+
+
+/* Day 4 */
+:: Family IV 
+
+
+
+/* Day 5 */
+:: Family V
+

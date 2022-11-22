@@ -79,3 +79,4 @@ Go [[back|$lastPassage]]?
 <img src="media/trophy.png" width="256" height="256">
 <<cacheaudio "cheer" "media/cheer.mp3">> <!--Probably best to put this in StoryInit-->
 <<audio "cheer" play>>
+

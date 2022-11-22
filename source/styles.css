@@ -1,35 +1,136 @@
-/* The body is everything displayed in the main text delivery area
-body {
-	background: blue;
+/* ---MAIN STAGES--- */
+body.corp{
+	background-image: url("media/images/CEO render.png");
+	background-color: rgb(17, 104, 104);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	margin-left: -70em;
 }
-*/
 
-/* This class is specific to the text in the passages
-.passage {
-    border: 1px solid red;
+.corp.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(0, 140, 255);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
 }
-*/
 
-/* This id is specific to the sidebar
+body.desk{
+	background-image: url("media/images/Menu.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.desk.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(146, 103, 39);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.police{
+	background-image: url("media/images/Police man interview.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.police.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(0, 140, 255);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.killer{
+	background-image: url("media/images/KillerInterview.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.killer.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.family{
+	background-image: url("media/images/Family_Interview.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.family.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.inventory{
+	background-image: url("https://am.adventistmission.org/assets/public/resources/Mission-360-Magazine/Stories/v6n1/page1/6_1On7V94x29WKaAl7UKLY-0.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.interview.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+/* ---LETTER BACKGROUNDS--- */
+
+body.fletter{
+    background-image: url("https://miro.medium.com/max/1200/1*xgv8zQgPai2P2kDmu1cpTQ.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body.kletter{
+    background-image: url("https://th.bing.com/th/id/OIP.Etl4APvQYasf086edjxNxAHaHa?pid=ImgDet&rs=1");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body.tletter{
+    background-image: url("https://th.bing.com/th/id/OIP.Q0pnsfCDS2XS7ES4zTeyQQHaEK?pid=ImgDet&rs=1");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* This id is specific to the sidebar */
 #ui-bar {
 	display: none;
+	padding:0%;
+	margin: 0mm;
 }
-*/
 
-/* This id is specific to the header
-#header {
-	
-}
-*/
 
-/* This id is specific to the footer
-#footer {
-	
+/* This class is specific to the text in the passages */
+.fletter.passage{
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+    background-color: rgba(253, 254, 254, 0.493);
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: calandine;
 }
-*/
-
-/* This class will override any styles on passages tagged "forest"
-.forest {
-	background: green;
-}
-*/
