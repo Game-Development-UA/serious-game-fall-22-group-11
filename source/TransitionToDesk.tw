@@ -69,9 +69,9 @@
     [[Y-yeah... I'm the producer-> Special Killer]]
 
 <<elseif $t_crit == $crit_number >>
-    As you head back today, you grow uneasy - there is a person following you. 
-
-    You stop and turn around, turning on your phone to film them. 
+    As you are on your way back to the office that day, you think about the information you've gathered thus far. Taking walks is important for clearing your mind and concentrating on making connections, finding links, and thinking about how to present everything in an interesting way. 
+    
+    As you're deep in thought, a random man holding a camcorder appears out of nowhere, coming up close to you pointing his DSLR directly in your face - wait, did he come out of the bushes?
     
     <<nobr>>
          You shout:
