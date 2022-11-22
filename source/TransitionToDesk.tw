@@ -50,18 +50,23 @@
 
 :: Special Event
 <<if $f_crit == $crit_number>>
-    As you head back today, you notice an old man running(well, more like hobbling) up to you.
+    As you're on your way back to the office after an exhausting day of interrogations - both physically and emotionally - you notice a peculiar man wearing a trench coat walking towards you. He comes up close and suddenly speaks without warning.
 
-    "Please wait! I need to talk to you."
+    "H-hey... hey you're that producer for that TV show right? Angel of Death?"
 
-    [[What is it sir? -> Special Family]]
+    His voice was frail and weak. You could sense that he was mustering a large part of his energy to speak to you.
 
-<<elseif $k\_crit == $crit_number >>
-    As you head back today, you see a young woman run up to you.
 
-    "Hey! Hellloooo! Are you the person writing about my beautiful boo, $killer?"
+    [[Well yes, that's me, but how did you kn- -> Special Family]]
 
-    [[Why do you ask? -> Special Killer]]
+<<elseif $k_crit == $crit_number >>
+    As you are strolling back to the office, feeling everso worried about the future, you pass the entrance to the outlet mall next to the office. Just then, a girl bounds right up to you as if she had known you her whole life.
+
+    "Oh my god!!! You're the producer for the new TV show, right!! Angel of Death! It's about $killer!"
+
+    You are mystified as to how this girl, who can't be older than 17, knows your face AND the name of the show.
+
+    [[Y-yeah... I'm the producer-> Special Killer]]
 
 <<elseif $t_crit == $crit_number >>
     As you head back today, you grow uneasy - there is a person following you. 
