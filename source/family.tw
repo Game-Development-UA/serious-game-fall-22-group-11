@@ -3,8 +3,8 @@
 :: Family I [family]
 This is the formatting of the dialogue
 
-<<if $f_visited == 0>
-<</if >>
+<<if $f_visited == 0>>
+<</if>>
 
 
 [[Test -> 1FL]]
