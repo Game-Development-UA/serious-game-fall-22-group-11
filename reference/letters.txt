@@ -1,0 +1,103 @@
+To the producers of [show],
+
+My name is Debra, I was [victim]'s mother before that monster took her from me. [victim] was everything. The reason I got up in the morning, the reason I went to bed at night. To think someone could be so heartless as to take her away from me was more difficult than you could ever know. So when I heard a television show was in the works using my daughter's murder as part of a production made for entertainment, it made my blood boil. You have the opportunity to show the world that serial killers and horrible people shouldn't be made examples of, you can change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? Make us suffer even more than we already have? If so, please, by all means, continue what you're doing. Continue showing the world people like this are meant to be shown off, celebrated almost. Continue being a soulless, greedy little TV producer. People like you make me sick.
+
+----
+To whom it may concern,
+
+My name is Barbara, I was [victim]'s aunt. The damage this killer did to our family is irreparable, beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace and quiet. I've observed my sister and her remaining daughters suffer more than I've seen anyone suffer, both because of the murder itself and the fallout from the media coverage. Every news story on every channel served as constant reminders of what they had lost. To see them go through that was so incredibly painful. Thats why, when I heard a TV show was in the works about this event, I couldn't believe my ears. After so many daily reminders, so many painful moments that you will never know, you want to make this event a permanent spectacle? Unbelievable, but not surprising when it comes to you bloodsucking Hollywood idiots. 
+
+----
+Hello,
+
+My name is Kelly. Debra, [victim]'s mother, was a close friend of mine growing up. I hadn't talked to their family much in the last few years, but when I heard about what happened, I reached out and reconnected to give my condolences. The pain I saw in them was unimaginable, it was like their entire world was flipped upside down. It was pain you can only know if you go through a similar experience. Pain people like you and I will likely never understand in our comparably small, boring lives. This is why I ask of you, please don't make this production you and your team are putting together. They've suffered enough, have they not? To be reminded yet again of these events in the most selfish and horrible scope would be horrible.
+
+----
+Hello!
+
+Hi! I'm Jessie, big fan of what you guys are doing! [killer] is one of the most interesting individuals I think this planet has ever seen. Truly a person to admire and learn from. Killing is bad, of course, no doubt about that! But his intelligence is just off the charts, you have to admit. When I heard about your possible TV show about him I got so excited! I can't wait to see how you guys portray such a nuanced, complicated individual. Not to mention his great looks, but we don't have to get into all that.
+
+----
+To the producers of [show],
+
+My name is Jana, I'm a student at the local university studying psychology. I heard through the grapevine that a TV show was in the works revolving around [killer] and his crimes. I know people have mixed opinions about such a sensitive topic being covered on television, but I'd just like to say I think this is objectively positive. Not enough people know about the psychology behind serial killers and why they do it. It isn't for the reasons people think! Using and depicting the crimes as a way to illustrate his mental challenges is quite smart. People out there need to see serial killers in an unbiased light and learn more about their motives. This way, some of the stigma around serial killers can be removed and we as citizens of society can be better equipped to help them. Thank you for this production, I believe it will be a beneficial development.
+
+----
+Heyoooo!!
+
+I'm Sarah, HUUUUUUGE fan of [killer]!! He is so dreamy!! I can't believe he got away with those crimes for soooooo long... hes such a genius!! Not to mention he has to be the most handsome serial killer of all time!!! I absolutely cannot wait for this TV show to come out!! I follow all of your production company's social media accounts and like every single post!! I swear when it comes out I'll memorize every word!! I'll buy the DVD and put it on my wall next to all my handmade [killer] posters!! I'm crazy for him!!
+
+----
+Subject line: Nice Job
+
+Hello,
+
+My name is Howard, I work as a producer for True Crime. I heard about your recent endeavors with the [killer] case. I must say, from one filmmaker to another, I'm frankly impressed. To take such a horrible sequence of events and twist it around for the purpose of pure entertainment is genius. After all, what do people love more than grisly murder served in the form of a digestible 24 minute TV show episode? This could seriously be a career-defining production here. I urge you not to mess it up, since something like this can easily be piggybacked off of by my company into a True Crime spinoff, maybe some bonus footage to accompany your show? Think about it.
+
+----
+Subject line: *URGENT*
+
+Look, I'll keep this short and simple. I work for a production company that produces a show based around criminals and documents real crime. Because of my connections, I was able to secure evidence from the trial of [killer] that was never actually presented in court. This is major. I have things that could turn your TV show into the most accurate crime recreation ever told on television. If you're interested, email me back at evidence1234@protonmail.com. Nobody has to know. If the cops come asking how you knew certain details, just tell them it was a lucky guess.
+
+----
+As you're on your way back to the office after an exhausting day of interrogations - both physically and emotionally - you notice a peculiar man wearing a trench coat walking towards you. He comes up close and suddenly speaks without warning.
+
+"H-hey... hey you're that producer for that TV show right? Angel of Death?"
+
+His voice was frail and weak. You could sense that he was mustering a large part of his energy to speak to you.
+
+"Well yes, that's me, but how did you kn-"
+
+He cuts you off, taking another step closer. You can smell the stench of cigarettes and booze coming from his heavy breath.
+
+$victim2 + " was my daughter. She had her whole life ahead of her. Her whole fucking life."
+
+"Oh, you must be Mr. Jones. I'm so sorry for your lo-"
+
+Mr. Jones cuts you off again, this time he starts to raise his voice.
+
+"But she was a fighter! A goddamn fighter until the end I tell you!"
+
+"..."
+
+"I'm gonna say this one time and one time only. Tell her story and tell it right for God's sake. My daughter doesn't deserve to be forgotten. Hell, none o' them girls do!"
+
+"I completely agree Mr. Jones, our goal here is to-"
+
+"Just promise me one thing, alright? Promise me you'll tell her story, about how she was strong, she was a fighter, she was passionate, she was amazing. Can you promise that?"
+
+[choice? between something like "Yes, of course." and "I'll try my best" and "My hands are tied" depending on what info you have? idk]
+
+----
+As you are strolling back to the office, feeling everso worried about the future, you pass the entrance to the outlet mall next to the office. Just then, a girl bounds right up to you as if she had known you her whole life.
+
+"Oh my god!!! You're the producer for the new TV show, right!! Angel of Death! It's about " + $killer + "!"
+
+You are mystified as to how this girl, who can't be older than 17, knows your face and the name of the production.
+
+"Y-yeah... I'm the producer" you say reluctantly, knowing you shouldn't be interacting with the public with regards to the show.
+
+"Holy cow! I can't believe this! "+ $killer + " is sooooo hot!! Oh my god, if I met him I would just melt!"
+
+Her complete lack of empathy for what this man did takes you back... how many other people share this mindset?
+
+"I can't WAIT for the TV show! I've already watched every interview like a million times! Hes so smart and detailed, sometimes I lay in bed and just listen to his voice as I drift off to sleep, ahhhh."
+
+She begins staring at the sky, completely entranced by the idea of this horrible person. Hearing all this from a member of the public really puts things in perspective. You must leave, if anybody finds out you talked to some random teenager about the program, you'll be in big trouble. You walk away while shes distracted, hoping she won't snap out of it until you're out of her vision. Maybe if you're fast enough, you think, she might think it was all a hallucination.
+
+----
+As you are on your way back to the office that day, you think about the information you've gathered thus far. Taking walks is important for clearing your mind and concentrating on making connections, finding links, and thinking about how to present everything in an interesting way. As you're deep in thought, a random man holding a camcorder appears out of nowhere, coming up close to you pointing his DSLR directly in your face - wait, did he come out of the bushes?
+
+"Why are you using dead girls as entertainment, Mr producer? How do you feel about the backlash against your immoral show?"
+
+Oh no, TMZ. Stella gave you a couple words of advice on how to deal with situations like this: "keep your head down and don't say a word."
+
+"Is it true that your company is planning on depicting the gruesome death of " + $victim + " in your show? What kind of sick production company does something like that? Is it true that one of the families of the victims is planing to sue your TV show?"
+
+This man was lying, leaching off your existence in order to make a living. As if your job isn't hard enough, now you have to deal with this schmuck yelling lies at you, camera in hand no less. It takes all your strength not to snap at him. His words feel like poison, every lie a potential vector for more rumors, threatening the very show itself.
+
+"Why aren't you talking Mr producer? Is it true that you were caught having sexual relations with one of the crew members? People are saying this show is only about the money. They're saying you don't care about the victims at all, is this true?"
+
+You are at your breaking point, but luckily you reach the front steps to the office just in time. You sprint up them, open the door and slam it behind you, locking it swiftly. Stella takes notice and just shakes her head gingerly at the man outside, who is still yelling through the glass in a pathetic attempt to garner a reaction. 
+
+Its probably a good idea to start driving to and from the office, you think.
