@@ -15,13 +15,20 @@ Angel of Death
 
 /*Trackers */
 <<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
-<<set $family_letters to 0>>
-<<set $fan_letters to 0 >>
-<<set $true_crime to 0>> 
+<<set $f_crit to 0>>
+<<set $k_crit to 0 >>
+<<set $t_crit to 0>> 
 
 /* Family Letters */
     <<set $fletters_content to 
-    [ "this is letter one", "this is letter two",
+    [ "To the producers of the upcoming 'Angel of Death' series,\n
+        My name is Debra, I was [victim]&#39;s mother before that monster took her from me. [victim] was everything. The reason I got up in the morning, the reason I went to bed at night.\n
+        To think someone could be so heartless as to take her away from me was more difficult than you could ever know. So when I heard a television show was in the works using my daughter&#39;s murder\n
+        as part of a production made for entertainment, it made my blood boil. You have the opportunity to show the world that serial killers and horrible people\n
+        shouldn&#39;t be made examples of, you can change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? Make us suffer even more than we already have?\n
+        If so, please, by all means, continue what you&#39;re doing. Continue showing the world people like this are meant to be shown off, celebrated almost. Continue being a soulless, greedy little TV producer.\n
+        \nPeople like you make me sick.\n",
+     "this is letter two",
     "this is letter three"]>>
 
     <<set $fletters_read to []>>

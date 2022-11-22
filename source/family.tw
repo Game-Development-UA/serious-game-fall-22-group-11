@@ -1,7 +1,9 @@
 /* This is the family house. */
 /* Day 1 */
-:: Family I 
+:: Family I [family]
 This is the formatting of the dialogue
+
+[[Test -> 1FL]]
 [[Choice 1 -> Family I 2a]]
 [[Choice 2 -> Family I 2b]]
 

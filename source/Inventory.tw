@@ -1,18 +1,95 @@
 :: Inventory [inventory]
 
 <<if $fletters_read.length < 1 && $kletters_read.length < 1 && $tletters_read.length < 1>>
-You have no letters. 
+    You have no letters. 
 
-<<elseif $fletters_content.length < 1>>
-These are all the family letters you have read so far. 
-<<for _index to 0; _index < $fletters_read.length; _index++>>
-You have <<print $fletters_read[_index]>>, \
-<</for>>
+<<elseif $fletters_read.length < 1>>
+    You have no family letters at the moment. 
 
-<<for _index to 0; _index < $fletters_content.length; _index++>>
-You have <<print $fletters_content[_index]>>, \
-<</for>>
+    .............................................................
+
+    Here are all the killer fan letters you have so far:
+    <<for _index to 0; _index < $kletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $kletters_read[_index]>>
+    ---------
+    <</for>>
+    .............................................................
+
+    Here are all the true crime letters you have so far:
+    <<for _index to 0; _index < $tletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $tletters_read[_index]>>
+    ---------
+    <</for>>
+
+<<elseif $kletters_read.length < 1>>
+    You have no killer fan letters at the moment. 
+
+    .............................................................
+
+    Here are all the family letters you have so far:
+    <<for _index to 0; _index < $fletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $fletters_read[_index]>>
+    ---------
+    <</for>>
+    .............................................................
+
+    Here are all the true crime letters you have so far:
+    <<for _index to 0; _index < $tletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $tletters_read[_index]>>
+    ---------
+    <</for>>
+
+<<elseif $tletters_read.length > 1>>
+    You have no true crime letters at the moment. 
+
+    .............................................................
+
+    Here are all the family letters you have so far:
+    <<for _index to 0; _index < $fletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $fletters_read[_index]>>
+    ---------
+    <</for>>
+    .............................................................
+
+    Here are all the killer fan letters you have so far:
+    <<for _index to 0; _index < $kletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $kletters_read[_index]>>
+    ---------
+    <</for>>
+
+<<else>>
+    Here are all your letters so far. 
+
+    Family letters:
+    <<for _index to 0; _index < $fletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $fletters_read[_index]>>
+    ---------
+    <</for>>
+    .............................................................
+
+    Killer Fan letters:
+    <<for _index to 0; _index < $kletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $kletters_read[_index]>>
+    ---------
+    <</for>>
+    .............................................................
+
+    True Crime letters:
+    <<for _index to 0; _index < $tletters_read.length; _index++>>
+    No. <<print _index>>
+    <<print $tletters_read[_index]>>
+    ---------
+    <</for>>
 
 <</if>>
+
 
 [[Return to your desk -> Main Desk]]

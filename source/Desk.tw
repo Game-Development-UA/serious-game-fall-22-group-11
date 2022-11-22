@@ -33,21 +33,21 @@ You sit down at your desk, already overwhelmed by your new assigment. What do yo
     [[Check Inventory -> Inventory]]
 
 <<else>>
-    <<if $family_letters >= 5>>
+    <<if $f_crit >= 5>>
         Today is the today. Your work will be turned in to the Stella.
 
         Do you do it?
         [[Yes -> Ethical Entertainment]]
         [[No -> The Blood Is Not On Your Hands]]
 
-    <<elseif $fan_letters >= 5 >>
+    <<elseif $k_crit >= 5 >>
         Today is the today. Your work will be turned in to the Stella.
 
         Do you do it?
         [[Yes -> Thriller Killer]]
         [[No -> The Blood Is Not On Your Hands]]
 
-    <<elseif $true_crime >= 5 >>
+    <<elseif $t_crit >= 5 >>
 
         Today is the today. Your work will be turned in to the Stella.
 
@@ -63,5 +63,5 @@ You sit down at your desk, already overwhelmed by your new assigment. What do yo
         [[No -> The Blood Is Not On Your Hands]]
 
     <</if>>
-    
+
 <</if>>

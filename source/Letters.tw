@@ -17,7 +17,7 @@ You have <<print $fletters_read[_index]>>, \
 You have <<print $fletters_content[_index]>>, \
 <</for>>
 
-[[Test2->1FL]]
+[[Test2->Main Desk]]
 
 :: 1KL [kletter]
 <<set $read to $kletters_content.pluck()>>
