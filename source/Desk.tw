@@ -9,7 +9,7 @@ You sit down at your desk, already overwhelmed by your new assigment. What do yo
 
 :: Main Desk [desk]
 
-<set $days -= 1>>
+<<set $days -= 1>>
 
 <<if $days == 0>>
     Today is your last day, choose wisely your last interview.
