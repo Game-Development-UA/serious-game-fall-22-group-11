@@ -12,6 +12,9 @@ Angel of Death
 /*Global Keys */
 <<set $crit_number to 5 >>
 <<set $killer to "Martin">>
+<<set $show to "Angel of Death">>
+<<set $Mvictim to "Nahara Sia">>
+
 
 /*Trackers */
 <<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
@@ -25,20 +28,7 @@ Angel of Death
 
 /* Family Letters */
     <<set $fletters_content to 
-    ["To the producers of the upcoming 'Angel of Death' series,\n\nMy name is Debra, I was " + $victim + "'s mother before that monster took her from me. " + $victim + " was everything. The reason I got up in the morning, the reason I went to bed at night.\n
-    To think someone could be so heartless as to take her away from me was more difficult than you could ever know. So when I heard a television show was in the works using my daughter's murder\n
-    as part of a production made for entertainment, it made my blood boil. You have the opportunity to show the world that serial killers and horrible people\n
-    shouldn't be made examples of, you can change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? Make us suffer even more than we already have?\n
-    If so, please, by all means, continue what you're doing. Continue showing the world people like this are meant to be shown off, celebrated almost. Continue being a soulless, greedy little TV producer.\n
-    \nPeople like you make me sick.\n",
-    
-    "To whom it may concern,\n\nMy name is Barbara, I was " + $victim + "'s aunt. The damage this killer did to our family is irreparable, beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace and quiet.\nI've observed my sister and her remaining daughters suffer more than I've seen anyone suffer, both because of the murder itself and the fallout from the media coverage. Every news story on every channel served as constant reminders of what they had lost. To see them go through that was so incredibly painful.\nThats why, when I heard a TV show was in the works about this event, I couldn't believe my ears. After so many daily reminders, so many painful moments that you will never know, you want to make this event a permanent spectacle?\nUnbelievable, but not surprising when it comes to you bloodsucking Hollywood idiots.",
-    
-    "Hello,\n\nMy name is Kelly. Debra, " + $victim + "'s mother, was a close friend of mine growing up. I hadn't talked to their family much in the last few years, but when I heard about what happened, I reached out and reconnected to give my condolences.\nThe pain I saw in them was unimaginable, it was like their entire world was flipped upside down. It was pain you can only know if you go through a similar experience. Pain people like you and I will likely never understand in our comparably small, boring lives.\nThis is why I ask of you, please don't make this production you and your team are putting together. They've suffered enough, have they not? To be reminded yet again of these events in the most selfish and horrible scope would be horrible.",
-    
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"]>>
+    ["1FL","2FL","3FL","4FL","5FL"]>>
     
     <<set $fletters_read to []>>
 <!-- -->
