@@ -1,10 +1,10 @@
 /* Idea with this document - use background images of letters as unique passage story inserts. */
 
-:: 1FL [fletter]
+:: FamilyLettersT1 [fletter]
 <<set $read to $fletters_content.pluck()>>
 <<print $read>>
 
-[[test -> String($read) ]]
+<<goto $read>>
 
 <<if (typeof $read !== 'undefined')>>
 <<run $fletters_read.push($read)>>
@@ -58,3 +58,32 @@ You have <<print $tletters_content[_index]>>, \
 <</for>>
 
 [[Test2->1TL]]
+
+
+:: 1FL
+To the producers of $show,
+
+My name is Debra, I was $victim's mother before that monster took her from me. 
+$victim was everything. The reason I got up in the morning, the reason I went to bed at night.
+To think someone could be so heartless as to take her away from me was more difficult than you could ever know. 
+So when I heard a television show was in the works using my daughter's murder as part of a production made for entertainment, 
+it made my blood boil. You have the opportunity to show the world that serial killers and horrible people shouldn't be made examples of,
+you can change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? Make us suffer even more than we already have? 
+If so, please, by all means, continue what you're doing. Continue showing the world people like this are meant to be shown off, celebrated almost. 
+Continue being a soulless, greedy little TV producer. People like you make me sick.
+
+:: 2FL
+To whom it may concern,
+
+My name is Barbara, I was [victim]'s aunt. The damage this killer did to our family is irreparable, beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace and quiet. I've observed my sister and her remaining daughters suffer more than I've seen anyone suffer, both because of the murder itself and the fallout from the media coverage. Every news story on every channel served as constant reminders of what they had lost. To see them go through that was so incredibly painful. Thats why, when I heard a TV show was in the works about this event, I couldn't believe my ears. After so many daily reminders, so many painful moments that you will never know, you want to make this event a permanent spectacle? Unbelievable, but not surprising when it comes to you bloodsucking Hollywood idiots. 
+
+
+
+:: 3FL 
+This is letter three.
+
+
+:: 4FL
+This is letter four.
+
+:: 5FL
