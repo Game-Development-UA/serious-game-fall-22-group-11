@@ -1,45 +1,137 @@
 /* This is the police station interview. */
 /* Day 1 */
 :: Police I [police]
-This is the formatting of the dialogue
-[[Choice 1 -> Police I 2a]]
-[[Choice 2 -> Police I 2b]]
+How [[bad->Police I 2a]] was it?
+[[... -> Police I 2b]]
 
 :: Police I 2a
-This is the text that'll be executed when you get to this room. 
-
-[[Choice 1 -> Police I 3.1a]]
-[[Choice 2 -> Police I 3.1b]]
+"In all of my years here, I have never seen anything as gruesome as that little girl's mutilation."
+Jesus, that bad?
+"I mean, think of like a really bad Picasso painting with just different shades of red, her large and small intestines looked like spaghetti. Made me rethink if that was really my favorite food ever."
+At least you seem to be taking it well enough.
+"Well you know how it is. If you can't handle the field, then start doing paperwork."
+Where do we go from here?
+"Well considering this is just the start of the investigation, working with me might get us somewhere faster. You don't know if the killer is gonna be spouting nonsense your way or if the mother is going to want to cooperate, given this was her child."
+I don't know, you never know. Maybe they'd cooperate if I spent enough time with them.
+"I'm not saying that won't happen. Sometimes working with just one person makes things go by a lot smoother."
+I'll hold you too that.
+/*This is the end of the first conversation with the officer of this tree */
 
 :: Police I 2b
-This is the text that'll be executed when you get to this room after the killer
-[[Choice 1 -> Police I 3.2a]]
-[[Choice 2 -> Police I 3.2b]]
-
-:: Police I 3.1a
-
-:: Police I 3.1b 
-
-:: Police I 3.2a
-
-:: Police I 3.2b 
-
-
+"..."
+That bad huh?
+"I puked as soon as I saw her. You can't fucking imagine the sight of this girl after what this guy did to her. The smell is what got to me. Fresh blood just doesn't leave your nose, trust me. I wouldn't try it obviously."
+I'm getting sick just hearing about this. I'm sorry you had to be the one to see that, I can only imagine what it was like to be there.
+"You should be sorry for her mother. Have you talked to her yet?"
+No, I came to you first, thought it might've been a good idea.
+"Glad you did actually, you're the only other person that wants to take this case seriously. I tried to get so many other officers to help me with this case, they just don't seem to give a shit."
+Why not? Is it something with you?
+"Who knows. Funny enough, it's not that it was something with me, more it was something to do with the girl, at least from what I heard in passing. Maybe me wanting to provide help was enough for the other cops in this joint to shun me."
+I wouldn't dwell on it too much. Does that mean we should stick together?
+"I would suggest it. You don't know if the killer is going to talk or waste your time and you definitely don't know if the mother is going to want to work with you, since that was her kid as all."
+I understand, though it might not be that much of a waste. Who knows? Maybe it'll lead somewhere different.
+"I'm definitely not saying that isn't a good idea. Think about it."
+For sure.
+/*This is the end of the first conversation with the officer of this tree */
 
 /* Day 2 */
 :: Police II 
+[[How's it going so far?->Police II 2a]] 
+[[Found anything yet?->Police II 2b]]
 
+:: Police II 2a
+"It's going alright, how about yourself?"
+Not too bad, figured I'd visit again after what you said.
+"Appreciate it. All these other cops have been giving me a hard time."
+I wouldn't give them the time of day, if they don't want to bring justice to this girl, then they shouldn't be cops. I feel good doing this, you should too.
+"Thanks."
+No problem, have you found anything yet?
+"My suspicion about the cops hating on the idea of me being on the case was true."
+What exactly?
+"This girl was an illegal immigrant. Only got away with it because her mom was on a work visa. I applaude her for going through the right channels and trying to work her on an honest word."
+That doesn't sound as bad as I thought it would be.
+"It isn't, it's just a mystery why he would target someone like that. I mean, I understand there's a lot of people like her out there, but why her?"
+You got me. I couldn't think of a reason why.
+"Me neither. I mean, I was an illegal once. Earned my citizenship and made things a whole lot easier for me. I think the same would've applied for her."
+Too bad that bastard had to go and screw it all up.
+"I agree. We'll bring her justice. I know it."
+/*This is the end of the second conversation with the cop with this tree */
 
+:: Police II 2b
+"You won't believe it. My suspicion was true about the other cops."
+What do you mean?
+"The girl was a immigrant. Her mom had a work visa, let the kid focus on school."
+Okay... I fail to see how that would make you an outcast.
+"Most of the other officers in here could give less fucks about immigrants than me. I just want to help out this mother."
+That can't be the only reason. There has to be more.
+"I was an immigrant once. I feel for this family. It's hell out there for someone like us, no one treats you with respect, it feels like you get spit on every time someone looks at you. Going through the right channels is always commendable, and that's what they were trying to do."
+Didn't realize this meant that much to you.
+"It isn't everything, sometimes people try to cheat the system. But these people weren't trying to cheat, that's why it means this much to me."
+So, if this girl was an immigrant, why would that be the focus for this killer?
+"I haven't found anything else yet. I'll let you know if something comes up."
+Thanks, I'll see you later.
+/*This is the end of the second conversation with the cop with this tree */
 
 /* Day 3 */
 :: Police III
-
-
+[[Anything come up?->Police III 2a]]
+:: Police III 2a
+"There's this very weird detail that came up when I was looking over everything, though I didn't think it mattered as much until things started to click."
+What was it?
+"So, obviously this girl was an immigrant, we know that much."
+Sure.
+"This girl was outstanding in school. She did sports, had one of the higher GPA's in her class, and did so many extracurriculars outside of class."
+Okay... I don't know what you mean exactly, she sounds like any other aspiring academic.
+"You'd be right, if there were absolutely any outliers to her background, but on the surface it seems like nothing is there."
+What are you saying?
+"I'm saying I dug a bit deeper, more into her extracurriculars cause it didn't seem like good grades or sports would've been a reason to murder her, although they could have. Guess what she did."
+What was it?
+"She assisted disabled people with doing every day tasks."
+Okay? What's so bad about that?
+"It's the only one that seems niche enough to have a little hate behind it, don't you think? I mean, I know I dislike some assistive communities, I'm sure you do as well."
+As much as anyone else would, I guess.
+"This has gotta be it. Everything else just sounds too basic to have fueled a much greater desire."
+I mean, it could be it, I'm not saying it isn't. If it's true then it's really fucked up, who would hate disabled people?
+"I definitely don't, so there's one person to that total."
+Well look at you *heh* just kidding.
+"Just doing my job" *hahaha*
+We'll pick this back up later, if that's okay with you.
+"Yeah, no problem."
+Just before I go, can I ask you something?
+"What is it?"
+How do you think this story should be handled?
+"Well... hmm... Umm, do you mind if I think about it?"
+Yeah sure, sorry about the last minute question, it's always something that pops up in my head.
+"No, you're good. I'll get back to you soon on it."
+Thanks. See you later.
+/*This is the end of the third conversation with the cop */
 
 /* Day 4 */
 :: Police IV 
-
-
+[["I have an answer for you."->Police IV 2a]]
+:: Police IV 2a
+Answer?
+"You know, for what you asked me the last time we spoke."
+Oh, about what to do with the story?
+"Yeah, took me a bit to figure it out. I was stumped as soon as you asked me, it had been a long day."
+What was it?
+"Well, if I were in the mother's shoes right now? I would want my kid's story out. For educational reasons. Knowing that I had put in all this effort, knowing that it was all for my daughter, knowing that I would be proud of the end result, I would want the story out. The mother might not agree with that if she was with us right now, but that's what I would do."
+Why though? Aren't you worried about her image at all? What about being at the mercy of all the people that idolize this guy that killed her?
+"To me, it's not about who she was. It's about what she did that makes her who she is. Her work would've dictated her legacy, if I was her dad? I would've been the proudest dad ever, knowing my kid wasn't going to grow up like a disrespectful shithead. That's why I wouldn't be worried."
+Huh. Well when you put it like that, I don't see any reason to disagree with you.
+"I mean, you don't even have to agree with me either, it's just what I would do. Now, I can easily tell you what these other cops would do, they'd give less shits even if she became a citizen of this country. In their eyes? Once an immigrant, always and immigrant. There's no redemption for this girl to those people."
+There's redemption within us though.
+"I agree. This case is almost finished, we should come to a decision the next time we meet."
+I wouldn't have it any other way. I want this all to be done.
+/*This is the end of the fourth conversation with the cop */
 
 /* Day 5 */
 :: Police V
+[[Have we made a decision yet?->Police V 2a]]
+"Have you thought about it more?"
+Yeah, honestly. I mean what you said before felt genuine, I wouldn't want that passion to go to waste.
+"I mean, I care about this family. I wanted this situation to be treated the way I'd wanted it to be treated. Being in their position is tough, you kind of have to keep your head low and make the best of it. You only feel the hard work pay off once you actually become a citizen."
+It's something I'll never understand but I appreciate that I had your help along the way. You put a lot of light on the subject.
+"It's my job, but this time, it felt personal."
+I think I know what my decision is.
+"Can't wait to see it. Thank you."
