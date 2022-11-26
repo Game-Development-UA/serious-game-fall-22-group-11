@@ -1,52 +1,146 @@
 /* This is the family house. */
 /* Day 1 */
 :: Family I [family]
-This is the formatting of the dialogue
 
 <<if $f_visited == 0>>
 <</if >>
 
-
 [[Test -> FamilyLettersT1]]
-[[Choice 1 -> Family I 2a]]
-[[Choice 2 -> Family I 2b]]
+[[Hello there. -> Family I 2a]]
+[[Can I get you anything? I brought stuff that might help. -> Family I 2b]]
+[[...->Family I 2c]]
 
 :: Family I 2a
-This is the text that'll be executed when you get to this room. 
-
-[[Choice 1 -> Family I 3.1a]]
-[[Choice 2 -> Family I 3.1b]]
-
-:: Family I 2b
-This is the text that'll be executed when you get to this room after the killer
-[[Choice 1 -> Family I 3.2a]]
-[[Choice 2 -> Family I 3.2b]]
+"I'm only agreeing to do this so she'll stay out of the papers."
+I understand ma'am, I take it this hasn't been very easy for you to deal with.
+"Obviously. My child is dead, so no. It hasn't been that easy. Have they charged him with anything yet?"
+No, he hasn't been officially charged yet, we are waiting for his statement.
+"So why are you [[interviewing me?->Family I 3.1a]] Shouldn't you be interviewing him first?"
 
 :: Family I 3.1a
+I needed more information, what better person to speak with that the [[mother.->Family I 3.2a]]
 
-:: Family I 3.1b 
+[[I don't know,->Family I 3.1b]] this is my first case, I apologize for this inconvenience.
 
 :: Family I 3.2a
+"Well, what do you [[need to know?->Family I 3.3a]]"
+:: Family I 3.1b
+"Inconvenience? My child is dead. Am I able to get anyone else on the case? Maybe someone with more experience, I don't need this situation to be taken lightly."
+I didn't mean to suggest that I am taking it lightly, this is a very serious case, I am completely aware of that. To be honest, there's only one other person that gives a crap about this case, other than me.
+"Well, what do you [[need to know?->Family I 3.3a]] "
+:: Family I 3.3a
+Anything ma'am. It'll go a long way with your help.
+"Well, she was in highschool still, she was brilliant. Intelligent, beautiful, bright, she was anything you could ask for in a daughter."
+Anything else?
+"I'm sorry... This is really hard to deal with. Could we do this another time?"
+Of course, I'll come visit again soon.
+/*This is the end of the first conversation with the mother with this choice */
 
-:: Family I 3.2b 
+:: Family I 2b
+"What I need is for him to be put down. Why hasn't that happened yet, I know you guys have him already."
+Ma'm, I'm sorry, we're currently doing everything we can as of right now. I'm just here to speak with you about your kid.
+"Well what do you need to know?"
+Anything ma'am, it'll help with everything.
+"Well, she was in highschool still, she was brilliant. Intelligent, beautiful, bright, she was anything you could ask for in a daughter."
+Anything else?
+"I'm sorry... This is really hard to deal with. Could we do this another time?"
+Of course, I'll come visit again soon.
+/*This is the end of the first conversation with the mother with this choice */
 
-
+:: Family I 2c
+"Well has he been charged?"
+No, he hasn't.
+"Well why not?"
+I don't know. This is my first gig.
+"Well, this is my first gig on this side too, the least you can do is give me some information on what is going to happen to my child's killer!"
+Ma'am, I'm completely aware of this. To be honest, I don't know what's going to happen with the case. It could go in a number of directions.
+*scoff* "Some fucking cop you are, my child is dead and you're gonna let the killer walk free? I don't have time for this. If you're not going to take this seriously, then send someone who will."
+Well, I'm the one assigned to the case. Now if we can continue this conversation, if you want the killer to dealt with, I need some information.
+"What do you need to know?"
+Anything ma'am, it'll help with everything.
+"Well, she was in highschool still, she was brilliant. Intelligent, beautiful, bright, she was anything you could ask for in a daughter."
+Anything else?
+"I'm sorry... This is really hard to deal with. Could we do this another time?"
+Of course, I'll come visit again soon.
+/*This is the end of the first conversation with the mother with this choice */
 
 /* Day 2 */
 :: Family II 
+[[Hello again-> Family II 2a]]
+[[I brought the snacks again, in case you wanted some-> Family II 2b]]
 
-
+:: Family II 2a
+"Hello. How are you?"
+I could be better. How are you holding up?
+"Just getting by. It's really hard without her."
+I know ma'am. If you need anything, please let me know. Shall we continue with where [[we left off?-> Family II 3]]
+:: Family II 2b
+"No, I'm fine, thank you though. Any news yet?"
+Nothing as of right now, things are moving as fast as they can with this case. Could we continue with where [[we left off-> Family II 3]] actually?
+:: Family II 3
+"Sure."
+Now, I know you mentioned only a little bit about your daughter. Is there anything specific about her that you could share with me?
+"How specific are we talking..."
+Anything you say to me will help with the case greatly. It has to be something that you haven't said to me yet though.
+"I mean..." *sigh* "I mean, we're currently unregistered for the country. I came here on a work visa hoping it would give her the opportunity to grow and nurish in a better environment that where we came from. She was doing so well in school too, she had a plan to attend college and become a lawyer. Her hope was to defend other illegal immigrants from suffering."
+I'm sorry to hear that. Do know that there's an officer assisting with the case who's on your side completely. If that means anything to you.
+"Any support helps right now. It's good to know that there's people on my side that want the same justice as I currently do."
+We're here for you.
+"Thank you. Oh goodness, the time. I hope it doesn't ruin anything or waste more time, I'm meeting with family soon. Could we continue this another time?"
+Yeah, no problem, sorry for almost intruding on your plans.
+"It's okay. I'll speak with you soon."
+For sure.
+/*This is the end of the second conversation with the mother */
 
 /* Day 3 */
 :: Family III
-
-
+[[There's got to be more with her.-> Family III 2a]]
+:: Family III 2a
+"What do you mean?"
+I mean, it doesn't make sense with what you've given me so far. Why would her killer go after someone like her? I mean, no offense with what I'm about to say, but there's so many undocumented people that live here, why her?
+"No. I know what you mean. I know I'm taking a risk living here, I tried choosing the safest route for the both of us, it was paying off until it was ruined. I hate that man so much."
+I understand ma'am. But other than that, was there anything else she did? What did she do in school?
+"She wanted to do everything, just so she could have a shot at a good college. I was proud of everything, she was into sports, she had good grades, she was apart of a group that would assist disabled people every other weekend. She was incredible. A manifestation of selflessness."
+Hmmm...
+"What is it?"
+I mean, I don't know why someone would murder a girl over straight A's, or being in sports, unless they were regretful of some early life choices. But murdering over the disabled? Wouldn't that be a little messed up?
+"I don't know, I'm not the detective here. Personally, and I think anyone would agree with me, I wouldn't murder a sweet girl that wanted to give back to their community in a way that meant something to her."
+No I know. I didn't mean to ask you directly. I'm just trying to think out loud. Here, I won't waste more of your time, what you just gave me is good. Thank you for that.
+"Of course, will you be visiting again?"
+Yes. I've got a funny feeling this is going to continue for just a little bit longer. I'll see you soon.
+/*This is the end of the fourth conversation with the mother */
 
 /* Day 4 */
 :: Family IV 
-
-
+[[Can I ask you something?->Family IV 2a]]
+:: Family IV 2a
+"Sure, what is it?"
+I can't remember if you told me that wanted her story out or not, could you remind me please?
+"I don't want her story out in the open."
+Okay. Why? If you don't mind me asking.
+"What does this matter? How is this going to help the case?"
+It's helping more than you know. The case is going to be wrapped up soon, do you mind answering the question for me please?
+"Why don't I want the story of my daughter out in the public eye? Sir, do you watch television at all?"
+I try to avoid it during my spare time, usually I put it on if I'm bored.
+"Do you use any kind of social media at all?"
+Yes actually, more than watching TV all the damn time.
+"Have you ever seen a stan before?"
+What's a stan, if you don't mind me asking?
+"A fan. A person whose a big fan of something. Could be an idea, could be a person, a type of personality. Most of the time though it's someone. I know they're everywhere on the internet."
+What's your point?
+"They would tear this story to shreds. Those freaks would glorify my daughter's killer as if he were a saint, a prophet from God, an idol. I of all people believe that man should never see the light of day ever again. If her story was out for anyone to grab, I wouldn't be able to do anything about it. I'd be forced to watch the fire burn from the bleachers. I don't want her story out, if there's one thing I want from this... it would be to bring back my daughter. But I can't have that. The next thing I want is to keep her story hidden, for her legacy."
+*sigh* I'll see what I can do. Thank you for your help. I forget how hard this must be to talk about her. I guess I couldn't understand seeing that I need someone to talk about her so I can help. So, thank you, again. If it means anything.
+"Your help doesn't go unnoticed."
+/*This is the end of the fourth conversation with the mother */
 
 /* Day 5 */
 :: Family V
-
+[[Hello ma'am. I have good news->Family V 2a]]
+:: Family V 2a
+"What is the news?"
+The case is about wrapped up, the final decision is yet to be made on what to do with your daughter's case.
+"It's felt like forever since this all began. I miss her so much."
+I understand that you do. I don't know exactly how you feel, I haven't lost a family member, yet. But I've seen friends and other family members that talk about people they've lost and you share similarites with them. I hope I've been able to help you get through this, if there was one other thing I could do, I would go back to the moment your daughter was murdered and save her. It might be corny to say, but other people have said it before me so it must mean something.
+"Thank you."
+Of course.
+/*This is the end of the mother conversation */
