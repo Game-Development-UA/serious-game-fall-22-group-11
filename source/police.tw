@@ -37,6 +37,7 @@ I don't know, you never know. Maybe they'd cooperate if I spent enough time with
 "I'm not saying that won't happen. Sometimes working with just one person makes things go by a lot smoother."
 I'll hold you too that.
 /*This is the end of the first conversation with the officer of this tree */
+<<set $morning to true>>
 [[Return to your desk -> True Crime Letter]]
 
 :: Police I 2b [police]
@@ -55,6 +56,7 @@ I understand, though it might not be that much of a waste. Who knows? Maybe it'l
 "I'm definitely not saying that isn't a good idea. Think about it."
 For sure.
 /*This is the end of the first conversation with the officer of this tree */
+<<set $morning to true>>
 [[Return to your desk -> True Crime Letter]]
 
 /* Day 2 */
@@ -82,6 +84,7 @@ You got me. I couldn't think of a reason why.
 Too bad that bastard had to go and screw it all up.
 "I agree. We'll bring her justice. I know it."
 /*This is the end of the second conversation with the cop with this tree */
+<<set $morning to true>>
 [[Return to your desk -> True Crime Letter]]
 
 :: Police II 2b [police]
@@ -98,6 +101,7 @@ So, if this girl was an immigrant, why would that be the focus for this killer?
 "I haven't found anything else yet. I'll let you know if something comes up."
 Thanks, I'll see you later.
 /*This is the end of the second conversation with the cop with this tree */
+<<set $morning to true>>
 [[Return to your desk -> True Crime Letter]]
 
 /* Day 3 */
@@ -136,6 +140,7 @@ Yeah sure, sorry about the last minute question, it's always something that pops
 "No, you're good. I'll get back to you soon on it."
 Thanks. See you later.
 /*This is the end of the third conversation with the cop */
+<<set $morning to true>>
 [[Return to your desk -> True Crime Letter]]
 
 /* Day 4 */
@@ -159,6 +164,7 @@ There's redemption within us though.
 "I agree. This case is almost finished, we should come to a decision the next time we meet."
 I wouldn't have it any other way. I want this all to be done.
 /*This is the end of the fourth conversation with the cop */
+<<set $morning to true>>
 [[Return to your desk -> True Crime Letter]]
 
 /* Day 5 */
@@ -173,3 +179,6 @@ It's something I'll never understand but I appreciate that I had your help along
 "It's my job, but this time, it felt personal."
 I think I know what my decision is.
 "Can't wait to see it. Thank you."
+
+<<set $morning to true>>
+[[Return to your desk -> True Crime Letter]]

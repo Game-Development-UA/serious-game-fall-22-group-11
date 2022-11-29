@@ -55,7 +55,7 @@ Anything else?
 "I'm sorry... This is really hard to deal with. Could we do this another time?"
 Of course, I'll come visit again soon.
 /*This is the end of the first conversation with the mother with this choice */
-
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]
 
 :: Family I 2b [family]
@@ -68,6 +68,7 @@ Anything else?
 "I'm sorry... This is really hard to deal with. Could we do this another time?"
 Of course, I'll come visit again soon.
 /*This is the end of the first conversation with the mother with this choice */
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]
 
 :: Family I 2c [family]
@@ -86,7 +87,7 @@ Anything else?
 "I'm sorry... This is really hard to deal with. Could we do this another time?"
 Of course, I'll come visit again soon.
 /*This is the end of the first conversation with the mother with this choice */
-
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]
 
 /* Day 2 */
@@ -120,6 +121,7 @@ Yeah, no problem, sorry for almost intruding on your plans.
 "It's okay. I'll speak with you soon."
 For sure.
 /*This is the end of the second conversation with the mother */
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]
 
 /* Day 3 */
@@ -142,7 +144,7 @@ No I know. I didn't mean to ask you directly. I'm just trying to think out loud.
 "Of course, will you be visiting again?"
 Yes. I've got a funny feeling this is going to continue for just a little bit longer. I'll see you soon.
 /*This is the end of the fourth conversation with the mother */
-
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]
 
 
@@ -171,7 +173,7 @@ What's your point?
 *sigh* I'll see what I can do. Thank you for your help. I forget how hard this must be to talk about her. I guess I couldn't understand seeing that I need someone to talk about her so I can help. So, thank you, again. If it means anything.
 "Your help doesn't go unnoticed."
 /*This is the end of the fourth conversation with the mother */
-
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]
 
 
@@ -189,5 +191,5 @@ I understand that you do. I don't know exactly how you feel, I haven't lost a fa
 "Thank you."
 Of course.
 /*This is the end of the mother conversation */
-
+<<set $morning to true>>
 [[Return to your desk -> Family Letter]]

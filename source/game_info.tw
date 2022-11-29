@@ -15,6 +15,7 @@ Angel of Death
 <<set $killer to "Martin">>
 <<set $show to "Angel of Death">>
 <<set $Mvictim to "Nahara Sia">>
+<<set $victim2 to "Ari Allai">>
 
 
 /*Trackers */

@@ -1,15 +1,15 @@
 /*This is the police special scene if the player gets over critical number of true crime letters */
-:: Special Police
+:: Special Police [tspecial]
 "Why are you using dead girls as entertainment, Mr producer? How do you feel about the backlash against your immoral show?"
 
 Oh no, [[TMZ|TMZ]]. Stella gave you a couple words of advice on how to deal with situations like this: "keep your head down and don't say a word."
 
-:: anymeans
+:: anymeans [tspecial]
 "Is it true that your company is planning on depicting the gruesome death of $victim in your show? What kind of sick production company does something like that? Is it true that one of the families of the victims is planing to sue your TV show?"
 
 This man was lying, leaching off your existence in order to make a living. As if your job isn't hard enough, now you have to deal with this schmuck yelling lies at you, [[camera in hand|camera]] no less. It takes all your strength not to snap at him. His words feel like poison, every lie a potential vector for more rumors, threatening the very show itself.
 
-:: rage
+:: rage [tspecial]
 "Why aren't you talking Mr producer? Is it true that you were caught having sexual relations with one of the crew members? People are saying this show is only about the money. They're saying you don't care about the victims at all, is this true?"
 
 You are at your breaking point, but luckily you reach the front steps to the office just in time. You sprint up them, open the door and slam it behind you, locking it swiftly. 
@@ -18,8 +18,8 @@ Stella takes notice and just shakes her head gingerly at the man outside, who is
 
 Its probably a good idea to start driving to and from the office, you think.
 
-:: TMZ
+:: TMZ [tspecial]
 A tabloid dedicated to getting the story by [[any means necessary.|anymeans]] Their only "news" is celebrity drama. Its just reality TV in magazine form.
 
-:: camera
+:: camera [tspecial]
 Their methods of intentionally aggravating subjects while holding a camera are rude at best, [[rage-inducing|rage]] at worst
