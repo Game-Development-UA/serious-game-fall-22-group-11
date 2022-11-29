@@ -2,7 +2,6 @@
 
 <<if $fletters_read.length < 1 && $kletters_read.length < 1 && $tletters_read.length < 1>>
     You have no letters. 
-
 <<else>>
     <<if $fletters_read.length < 1>>
 
@@ -46,8 +45,6 @@
 <</if>>
 
 <<elseif $kletters_read.length < 1>>
-
-     
 
     .............................................................
 
