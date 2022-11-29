@@ -1,60 +1,226 @@
 /* Idea with this document - use background images of letters as unique passage story inserts. */
 
+/* FAMILY LETTERS */
 :: 1FL [fletter]
-<<set $read to $fletters_content.pluck()>>
-<<print $read>>
+To the producers of $show,
 
-[[test -> String($read) ]]
+My name is Leila, I was $Mvictim's sister before that monster took her from me. $Mvictim was everything. The reason I got up in the morning, the reason I went to bed at night. To think someone could be so heartless as to take her away from me was more difficult than you could ever know. So when I heard a television show was in the works using my sister's murder as part of a production made for entertainment, it made my blood boil. 
 
-<<if (typeof $read !== 'undefined')>>
-<<run $fletters_read.push($read)>>
-<</if>>
+You have the opportunity to show the world that serial killers and horrible people shouldn't be made examples of, you can change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? Make us suffer even more than we already have? 
 
-These are all the family letters you have read so far. 
-<<for _index to 0; _index < $fletters_read.length; _index++>>
-You have <<print $fletters_read[_index]>>, \
-<</for>>
+If so, please, by all means, continue what you're doing. 
 
-<<for _index to 0; _index < $fletters_content.length; _index++>>
-You have <<print $fletters_content[_index]>>, \
-<</for>>
+Continue showing the world people like this are meant to be shown off, celebrated almost. Continue being a soulless, greedy little TV producer. 
 
-[[Test2->Main Desk]]
+People like you make me sick.
 
+[[Put Away Letter -> Main Desk]]
+
+:: 2FL [fletter]
+To whom it may concern,
+
+My name is Barbara, I was $Mvictim's aunt. The damage this killer did to our family is irreparable, beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace and quiet. I've observed my sister and her remaining daughters suffer more than I've seen anyone suffer, both because of the murder itself and the fallout from the media coverage. Every news story on every channel served as constant reminders of what they had lost. 
+
+To see them go through that was so incredibly painful.
+
+That's why, when I heard a TV show was in the works about this event, I couldn't believe my ears. After so many daily reminders, so many painful moments that you will never know, you want to make this event a permanent spectacle? 
+
+Unbelievable, but not surprising when it comes to you bloodsucking Hollywood idiots. 
+
+[[Put Away Letter -> Main Desk]]
+
+:: 3FL [fletter]
+Hello,
+
+My name is Kelly. Debra, $Mvictim's mother, was a close friend of mine growing up. I hadn't talked to their family much in the last few years, but when I heard about what happened, I reached out and reconnected to give my condolences. The pain I saw in them was unimaginable, it was like their entire world was flipped upside down. It was pain you can only know if you go through a similar experience. Pain people like you and I will likely never understand in our comparably small, boring lives. This is why I ask of you, please don't make this production you and your team are putting together. They've suffered enough, have they not?
+
+To be reminded yet again of these events in the most selfish and horrible scope would be horrible.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 4FL [fletter]
+Hello,
+
+I'm Howard, $Mvictim's uncle. What happened to $Mvictim was one of the most atrocious and violent acts one can inflict on another person. If I were to get my hands on the one responsible, Lord only knows what I'd do to him. Going through this horrible pain and suffering was bad enough, it changed me as a person. It changed all of us. The last thing any of us want to do is revisit any of these memories, or think about what happened for even 1 second longer than is necessary. 
+
+I implore you to think twice about this show. The continued mentioning of the situation by the news is annoying enough, but to see an entire TV show being prouduced around the event sounds like it would be 10 times worse. 
+
+Please, don't make our family suffer any longer.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 5FL [fletter]
+To the producers of $show,
+
+My name is Robert. I was the former father of $Mvictim. The absolute atrocity that has been afflicted on our family is impossible to overstate. My life since the event is a blur, everything has changed. No man on earth should feel the pain of having their daughter ripped away from them, especially in such a horrific way. Knowing she suffered as she took her last breath, knowing she wasn't able to fight back against that man - its overwhelming. I now imagine my life as being divided into 2 simple sections; before and after. 
+
+This is why I was so taken aback by the prospect of a TV show, a representation of my daughter's last moments in the worst context I can imagine. Have you no shame? 
+
+Think twice.
+
+[[Put Away Letter -> Main Desk]]
+
+/* KILLER FAN LETTERS */
 :: 1KL [kletter]
-<<set $read to $kletters_content.pluck()>>
-<<print $read>>
+Hello!
 
-<<if (typeof $read !== 'undefined')>>
-<<run $kletters_read.push($read)>>
-<</if>>
+Hi! I'm Jessie, big fan of what you guys are doing! $killer is one of the most interesting individuals I think this planet has ever seen. Truly a person to admire and learn from. Killing is bad, of course, no doubt about that! But his intelligence is just off the charts, you have to admit. 
 
-These are all the family letters you have read so far. 
-<<for _index to 0; _index < $kletters_read.length; _index++>>
-You have <<print $kletters_read[_index]>>, \
-<</for>>
+When I heard about your possible TV show about him I got so excited! I can't wait to see how you guys portray such a nuanced, complicated individual. Not to mention his great looks, but we don't have to get into all that.
 
-<<for _index to 0; _index < $kletters_content.length; _index++>>
-You have <<print $kletters_content[_index]>>, \
-<</for>>
+XOXO - Can't wait for the show! - Jessie ;P 
 
-[[Test2->1KL]]
+[[Put Away Letter -> Main Desk]]
 
+:: 2KL [kletter]
+Heyoooo!!
+
+I'm Sarah, HUUUUUUGE fan of $killer!! He is so dreamy!! I can't believe he got away with those crimes for soooooo long... hes such a genius!!
+
+Not to mention he has to be the most handsome serial killer of all time!!! I absolutely cannot wait for this TV show to come out!! I follow all of your production company's social media accounts and like every single post!! I swear when it comes out I'll memorize every word!! 
+
+I'll buy the DVD and put it on my wall next to all my handmade $killer posters!! I'm crazy for him!!
+
+This show's #1 fan,
+Sarah
+
+[[Put Away Letter -> Main Desk]]
+
+:: 3KL [kletter]
+To the producers of the upcoming 'Angel of Death' series,
+
+My name is Jana, I'm a student at the local university studying psychology. I heard through the grapevine that a TV show was in the works revolving around $killer and his crimes. I know people have mixed opinions about such a sensitive topic being covered on television, but I'd just like to say I think this is objectively positive. Not enough people know about the psychology behind serial killers and why they do it. It isn't for the reasons people think!
+
+Using and depicting the crimes as a way to illustrate his mental challenges is quite smart. 
+People out there need to see serial killers in an unbiased light and learn more about their motives. 
+
+This way, some of the stigma around serial killers can be removed and we as citizens of society can be better equipped to help them.
+
+Thank you for this production, I believe it will be a beneficial development.
+
+Sincerely,
+Jana
+
+[[Put Away Letter -> Main Desk]]
+
+:: 4KL [kletter]
+To the producers of Angel of Death,
+
+My name is Kayla, I'm 17 years old and I live in Twin Falls, Idaho. I'm on the autistic spectrum, and so is my little sister. $killer is a big inspiration and motivating factor for my sister and I. He is so misunderstood and his actions get misinterpreted, which is exactly how I feel sometimes. He has shown me that there are other people who get so frustrated with the world that they feel like they need to do something insane! I get so angry sometimes I start shaking, I feel like I'm going to explode! 
+
+I love the TV show you guys are making about him. I watch tons of TV shows - mostly anime - and can't wait to binge Angel of Death once it comes out! I really feel like it'll become my favorite show. 
+
+Love from Idaho
+- Kayla
+
+[[Put Away Letter -> Main Desk]]
+
+:: 5KL [kletter]
+To the producers of Angel of Death,
+
+Hello there, my name is Priscilla, and I'm the mother of one very eccentric little girl who happens to be a huge fan of your prospective show and of $killer. There is just something so captivating about his story and methodology. I know its unhealthy to obsess about such objectively digusting acts, but hey, we can't help it! We sit up sometimes at night watching $killer's interviews even though we've already seen them all. We just can't get enough, and are so excited about this show! 
+
+Just wanted to thank you guys for investing in such an interesting story, finally we can see an excellent and entertaining portrayal of $killer!
+- Priscilla
+
+[[Put Away Letter -> Main Desk]]
+
+:: 6KL [kletter]
+Before reading the letter, you notice something strange about the envelope: its thicker than it should be. You open it cautiously and fish a pair of women's underwear out of the letter. Disgusted and quite frankly scared for your health, you immediately throw the letter and underwear in the nearest trash bin and run to wash your hands. Who could have predicted that a job at a production studio would land me opening letters with dirty underwear in them, you think to yourself. 
+
+You assume the letter came from an overzealous fan that fell victim to their massive obsession and ended up committing an act of passion, one that you had to deal with, unfortunately.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 7KL [kletter]
+Hi there,
+
+I'm Richard, my dad and I heard about your TV show and are very excited! We think as horrible as $killer is, he is undoubtedly a very complex person with many intricacies that will be difficult to portray accurately on-screen. We have faith that you and your team will do a great job casting the right actor though! 
+
+It would mean the world to us if you were able to send some merchandise, maybe just a poster? I have tons of posters in my room of other figures I admire; Lebron James, Isaac Newton, and lets not forget my biggest one, Ted Bundy. I left a return address on the envelope in case you guys feel so inclined! 
+
+Can't wait for the show!
+- Richard
+
+[[Put Away Letter -> Main Desk]]
+
+:: 8KL [kletter]
+To the producers of Angel of Death,
+
+I'm Josh, and I'm going to university for media production, hoping to become a television show producer like you. How do you guys do it?! I can't think of a better idea for a TV show in the current era. Everybody I talk to in my courses all agree, we're so excited to see how the show turns out! To think someone is actually attempting to portray the murders, those horribly interesting, graphic murders, for TV gives me chills. You truly are doing amazing work over there. 
+
+I wanted to ask if I, as part of my studies, could come see the set and maybe ask you a few questions about producing? If not, no worries, I know you must have your hands full 24/7. But it would just about make my year if you managed to find the time!
+
+Think about it!
+- Josh
+
+[[Put Away Letter -> Main Desk]]
+
+:: 9KL [kletter]
+To the producers of Angel of Death,
+
+I'm Gina, I grew up in the same town as $killer, and actually went to the same school as him. He was always a quiet kid, a little weird some might say, but he was quite an interesting guy once you got to know him. I was his friend, as much as anyone could be with how cold he was. Its beyond bizarre seeing what happened and hearing about the terrible murders he committed. I just never thought something like this would happen to me, you know? 
+
+Anyway, I think its great you're making a show about him. He was a misunderstood and lonely man, in retrospect I wish I would've just given him a hug.
+
+Can't wait to see the show.
+- Gina
+
+[[Put Away Letter -> Main Desk]]
+
+/* TRUE CRIME LETTERS */
 :: 1TL [tletter]
-<<set $read to $tletters_content.pluck()>>
-<<print $read>>
+Subject line: Nice Job
 
-<<if (typeof $read !== 'undefined')>>
-<<run $tletters_read.push($read)>>
-<</if>>
+Hello,
 
-These are all the family letters you have read so far. 
-<<for _index to 0; _index < $kletters_read.length; _index++>>
-You have <<print $tletters_read[_index]>>, \
-<</for>>
+My name is Howard, I work as a producer for True Crime. I heard about your recent endeavors with the $killer case. I must say, from one filmmaker to another, I'm frankly impressed. To take such a horrible sequence of events and twist it around for the purpose of pure entertainment is genius. After all, what do people love more than grisly murder served in the form of a digestible 24 minute TV show episode? This could seriously be a career-defining production here. 
 
-<<for _index to 0; _index < $tletters_content.length; _index++>>
-You have <<print $tletters_content[_index]>>, \
-<</for>>
+Iurge you not to mess it up, since something like this can easily be piggybacked off of by my company into a True Crime spinoff, maybe some bonus footage to accompany your show?
+ 
+Think about it.
+- Howard 
 
-[[Test2->1TL]]
+[[Put Away Letter -> Main Desk]]
+
+:: 2TL [tletter]
+Subject line: *URGENT*
+
+Look, I'll keep this short and simple. I work for a production company that produces a show based around criminals and documents real crime. Because of my connections, I was able to secure evidence from the trial of $killer that was never actually presented in court. This is major. I have things that could turn your TV show into the most accurate crime recreation ever told on television. If you're interested, email me back at evidence1234@protonmail.com. 
+
+Nobody has to know. If the cops come asking how you knew certain details, just tell them it was a lucky guess.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 3TL [tletter]
+Subject line: Seeking Opportunities
+
+I'm Jake, an intern working for another crime TV drama. Lets just say its one of the more popular ones. I must say, I really enjoy the operation you guys have going on there. The whole premise is fascinating, I love the spin you all are putting on the typical serial killer trope! Basing it around a real killer is just, well, awesome. 
+
+Look, my job is great and all but soon I'll be looking for full-time employment, and to be completely honest your gig looks much more attractive than the lowball offers I've received here. I'm good for it, ask anyone at my network, CBA. 
+
+Let me know, I would absolutely love to come onboard and work my ass off for a real show.
+- Jake
+
+[[Put Away Letter -> Main Desk]]
+
+:: 4TL [tletter]
+Subject line: Business Opportunity
+
+Heyo, Kyle Brown here, executive producer for True Crime. Amazing stuff you guys have going there. I wish I thought of it first! I love it so much in fact, that I want to extend an offer to produce a spin-off show once your current production has been released. I send you a contract, you sign it, we both work on it together, you know how it goes. We can work out the details later, but just know I have quite a bit of faith in you and what you guys are doing. 
+
+I've been doing this a long time, so I know a good show when I see one.
+- Kyle Brown
+
+[[Put Away Letter -> Main Desk]]
+
+:: 5TL [tletter]
+Subject line: Be Careful
+
+Who I am isn't important. Be careful how you make this little show of yours, buddy. I don't appreciate undermining others' ideas, especially in show business. If your show is anything close to successful, there will be an intervention of massive proportions in the way of intellectual property and plagiarism. 
+
+What, you think you can just watch some crime show and attempt to emulate it, but with some small twist? Think again, and think long and hard about the decisions you make from now on. 
+
+I don't like people jeopardizing my paycheck.
+
+[[Put Away Letter -> Main Desk]]

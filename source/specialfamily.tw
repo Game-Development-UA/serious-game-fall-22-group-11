@@ -1,10 +1,10 @@
 /*This is the family special scene if the player gets over critical number of family letters */
-:: Special Family 
+:: Special Family [fspecial]
 He cuts you off, taking another step closer. You can smell the stench of cigarettes and booze coming from his heavy breath.
 
 [[$victim2|victim2]] was my daughter. She had her whole life ahead of her. Her whole fucking life."
 
-:: Jones
+:: Jones [fspecial]
 "Oh, you must be Mr. Jones. I'm so sorry for your lo-"
 
 Mr. Jones cuts you off again, but this time he starts to raise his voice.
@@ -15,15 +15,15 @@ Mr. Jones cuts you off again, but this time he starts to raise his voice.
 
 "I'm gonna say this one time and one time only. Tell her story and tell it right for God's sake. My daughter doesn't deserve to be forgotten. Hell, [[none o' them girls|Knowsmore]] do!"
 
-:: blame
+:: blame [fspecial]
 "I completely agree Mr. Jones, our goal here is to-"
 
 "Just promise me one thing, alright? Promise me you'll tell her story, about how she was strong, she was a fighter, she was passionate, she was amazing. Can you promise that?"
 
 [choice? between something like "Yes, of course." and "I'll try my best" and "My hands are tied" depending on what info you have? idk]
 
-:: victim2
+:: victim2 [fspecial]
 $victim2 [[Jones|Jones]] was the last victim of $killer. A stanford student and acclaimed dancer, she was smart enough to leave behind evidence that she knew the police would find. Thanks to her, investigators were able to find the identity of $killer and take him into custody.
 
-:: Knowsmore
+:: Knowsmore [fspecial]
 This man has intimate knowledge of the case. He is clearly obsessed with the killer, the potential trial, and all the details of his murders. I mean, who can [[blame|blame]] him?

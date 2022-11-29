@@ -1,0 +1,126 @@
+/* Idea with this document - use background images of letters as unique passage story inserts. */
+
+:: FamilyLettersT1 [fletter]
+<<set $read to $fletters_content.pluck()>>
+<<print $read>>
+
+<<goto $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $fletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $fletters_read.length; _index++>>
+You have <<print $fletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $fletters_content.length; _index++>>
+You have <<print $fletters_content[_index]>>, \
+<</for>>
+
+[[Test2->Main Desk]]
+
+:: 1KL [kletter]
+<<set $read to $kletters_content.pluck()>>
+<<print $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $kletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $kletters_read.length; _index++>>
+You have <<print $kletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $kletters_content.length; _index++>>
+You have <<print $kletters_content[_index]>>, \
+<</for>>
+
+[[Test2->1KL]]
+
+:: 1TL [tletter]
+<<set $read to $tletters_content.pluck()>>
+<<print $read>>
+
+<<if (typeof $read !== 'undefined')>>
+<<run $tletters_read.push($read)>>
+<</if>>
+
+These are all the family letters you have read so far. 
+<<for _index to 0; _index < $kletters_read.length; _index++>>
+You have <<print $tletters_read[_index]>>, \
+<</for>>
+
+<<for _index to 0; _index < $tletters_content.length; _index++>>
+You have <<print $tletters_content[_index]>>, \
+<</for>>
+
+[[Test2->1TL]]
+
+
+:: 1FL
+To the producers of $show,
+
+My name is Debra, I was $victim's mother before that monster took her from me. 
+$victim was everything. The reason I got up in the morning, the reason I went to bed at night.
+To think someone could be so heartless as to take her away from me was more difficult than you
+could ever know. So when I heard a television show was in the works using my daughter's murder 
+as part of a production made for entertainment, it made my blood boil. You have the opportunity
+to show the world that serial killers and horrible people shouldn't be made examples of, you can
+change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? 
+Make us suffer even more than we already have? 
+
+If so, please, by all means, continue what you're doing. 
+
+Continue showing the world people like this are meant to be shown off, celebrated almost. 
+Continue being a soulless, greedy little TV producer. 
+
+People like you make me sick.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 2FL
+To whom it may concern,
+
+My name is Barbara, I was $victim's aunt. The damage this killer did to our family is irreparable,
+beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace 
+and quiet. I've observed my sister and her remaining daughters suffer more than I've seen anyone 
+suffer, both because of the murder itself and the fallout from the media coverage. Every news story
+on every channel served as constant reminders of what they had lost. 
+
+To see them go through that was so incredibly painful.
+
+That's why, when I heard a TV show was in the works about this event, I couldn't believe my ears. 
+After so many daily reminders, so many painful moments that you will never know, you want to make
+this event a permanent spectacle? 
+
+Unbelievable, but not surprising when it comes to you bloodsucking Hollywood idiots. 
+
+[[Put Away Letter -> Main Desk]]
+
+:: 3FL 
+Hello,
+
+My name is Kelly. Debra, $victim's mother, was a close friend of mine growing up. I hadn't talked to
+their family much in the last few years, but when I heard about what happened, I reached out and
+reconnected to give my condolences. The pain I saw in them was unimaginable, it was like their entire
+world was flipped upside down. It was pain you can only know if you go through a similar experience.
+Pain people like you and I will likely never understand in our comparably small, boring lives.
+This is why I ask of you, please don't make this production you and your team are putting together.
+They've suffered enough, have they not?
+
+To be reminded yet again of these events in the most selfish and horrible scope would be horrible.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 4FL
+This is letter four.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 5FL
+This is letter five. 
+
+[[Put Away Letter -> Main Desk]]

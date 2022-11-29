@@ -1,23 +1,49 @@
+/* ---FONTS--- */
+@font-face {
+	font-family: 'PWSolar';
+	src: url("media/Fonts/PWScolarpaper.ttf");
+}
+
+@font-face {
+	font-family: "TypeWriter";
+	src: url("media/Fonts/TYPEWR_B.ttf");
+}
+
+@font-face {
+	font-family: "Semi-Coder";
+	src:url("media/Fonts/Semi-Coder-Regular.otf")
+}
+
+@font-face {
+	font-family: "Crystania";
+	src: url("media/Fonts/Crystania-PERSONAL USE ONLY.ttf")
+}
+
+@font-face{
+	font-family:"Fancy";
+	src: url("media/Fonts/Fancy-PersonalUse.ttf")
+}
+
 /* ---MAIN STAGES--- */
 body.corp{
-	background-image: url("media/images/CEO render.png");
-	background-color: rgb(17, 104, 104);
+	background-image: url("media/images/CEO.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	margin-left: -70em;
 }
 
 .corp.passage{
+	align-self: space-evenly;
 	font-family: "Georgia", Georgia, serif;
-	color:rgb(0, 140, 255);
+	font-size: medium;
+	font-weight: 500;
+	color:rgb(0, 63, 114);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.desk{
-	background-image: url("media/images/Menu.jpg");
+	background-image: url("media/images/desk.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -27,53 +53,54 @@ body.desk{
 	font-family: "Georgia", Georgia, serif;
 	color:rgb(146, 103, 39);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.police{
-	background-image: url("media/images/Police man interview.png");
+	background-image: url("media/images/Police interview.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
 
 .police.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(0, 140, 255);
+	font-family: "TypeWriter";
+	color:rgb(46, 13, 13);
+	text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.killer{
-	background-image: url("media/images/KillerInterview.png");
+	background-image: url("media/images/Killer interview.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
 
 .killer.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Fancy";
+	font-weight: bolder;
+	font-size: x-large;
+	color:rgb(139, 0, 0);
+	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.family{
-	background-image: url("media/images/Family_Interview.png");
+	background-image: url("media/images/mother.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
 
 .family.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Crystania";
+	color:rgb(0, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
+	font-weight: bold;
 }
 
 body.inventory{
@@ -87,10 +114,53 @@ body.inventory{
 	font-family: "Georgia", Georgia, serif;
 	color:rgb(255, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
+	margin: 0 auto;
+}
+
+body.fspecial{
+	background-image: url("media/images/Alleyway.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.fspecial.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
 	padding-right: -100px;
 	margin: 0 auto;
 }
 
+body.kspecial{
+	background-image: url("media/images/woman.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.kspecial.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.tspecial{
+	background-image: url("media/images/crime fan.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.tspecial.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
 /* ---LETTER BACKGROUNDS--- */
 
 body.fletter{
@@ -98,6 +168,19 @@ body.fletter{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+/* This class is specific to the text in the passages */
+.fletter.passage{
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+    background-color: rgba(253, 254, 254, 0.493);
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: "PWSolar";
 }
 
 body.kletter{
@@ -113,6 +196,28 @@ body.tletter{
 	background-position: center;
 	background-size: cover;
 }
+.tletter.passage{
+	line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+    background-color: rgba(235, 255, 255, 0.493);
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: "Semi-Coder";
+}
+
+.passage a:hover{
+	color: red;
+}
+
+.passage a{
+	cursor:pointer;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:var(--bodyfont);
+	font-weight: 300;  
+  }
 
 /* This id is specific to the sidebar */
 #ui-bar {
@@ -122,15 +227,4 @@ body.tletter{
 }
 
 
-/* This class is specific to the text in the passages */
-.fletter.passage{
-    line-height: 1.6;
-    text-align: justify;
-    font-size: 1.6em;
-    color: #000000;
-    background-color: rgba(253, 254, 254, 0.493);
-    padding: 2em;
-    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
-    border: 1px solid #000000;
-    font-family: calandine;
-}
+
