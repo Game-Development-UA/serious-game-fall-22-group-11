@@ -143,6 +143,7 @@ What do you think my answer is.
 I can't believe you even considered that your actions are justified, you sick freak. They could've amounted to something great. They had a chance, regardless of who they were. I can't believe you.
 "You should start doing so, detective. Its for your own good."
 /*This is the end of the third conversation for this dialogue set */
+<<set $morning to true>>
 [[Return to your desk -> Killer Letter]]
 
 /* Day 4 */
@@ -170,6 +171,7 @@ I've been humoring you for days now, little by little, I get almost nothing exce
 I'm getting fucking sick of you. You need to be put down.
 "I did the world a favor. I'm sorry you'll never understand."
 /*This is the end of the fourth conversation  */
+<<set $morning to true>>
 [[Return to your desk -> Killer Letter]]
 
 /* Day 5 */
@@ -190,4 +192,5 @@ You'd be a valueable asset six feet under.
 "Its been an honor speaking with you detective. I hope you come to regret this decision once I am gone."
 Goodbye, $killer.
 /*This is the end of the killer tree */
+<<set $morning to true>>
 [[Return to your desk -> Killer Letter]]
