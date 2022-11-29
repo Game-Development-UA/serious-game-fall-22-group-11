@@ -36,14 +36,14 @@ Angel of Death
 
 /* Killer Fan Letters */
     <<set $kletters_content to
-    ["1KL","2KL","3KL"]>>
+    ["1KL","2KL","3KL","4KL","5KL","6KL","7KL","8KL","9KL"]>>
 
     <<set $kletters_read to []>>
 <!-- -->
 
 /* True Crime Letters */
     <<set $tletters_content to
-    ["1TL", "2TL"]>>
+    ["1TL", "2TL","3TL","4TL","5TL"]>>
 
     <<set $tletters_read to []>>
 <!-- -->
