@@ -55,7 +55,7 @@
     <<else>>
     As you leave the police station, you grit your teeth in anger. So much of this injustice could have been avoided... 
 
-    Maybe you could be the one that delievers the justice the victims deserve.   
+    Maybe you could be the one that delivers the justice the victims deserve.   
 
     <<nobr>>
         <<set $t_crit += 1>>
@@ -67,6 +67,7 @@
 
             <<else>>
                 But how would you make sure you don't do injustice to those who tried to help in a broken system?
+
                 [[Return to your desk -> Main Desk]]
 
             <</if>>
@@ -115,7 +116,7 @@ You open the letter..... only to find out it was spam mail.
 
     "H-hey... hey you're that producer for that TV show right? Angel of Death?"
 
-    His voice was frail and weak. You could sense that he was mustering a large part of his energy to speak to you.
+    His voice is frail and weak. You could sense that he is mustering a large part of his energy to speak to you.
 
     [[Well yes, that's me, but how did you kn- -> Special Family]]
 
