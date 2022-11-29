@@ -11,13 +11,14 @@ Angel of Death
 :: StoryInit
 /*Global Keys */
 <<set $crit_number to 5 >>
+<<set $morning to true>>
 <<set $killer to "Martin">>
 <<set $show to "Angel of Death">>
 <<set $Mvictim to "Nahara Sia">>
 
 
 /*Trackers */
-<<set $days to 6>> <!--Set 1 up to deal with automatic count down.-->
+<<set $days to 5>> <!--Set 1 up to deal with automatic count down.-->
 <<set $f_crit to 0>>
 <<set $k_crit to 0 >>
 <<set $t_crit to 0>> 
@@ -35,34 +36,15 @@ Angel of Death
 
 /* Killer Fan Letters */
     <<set $kletters_content to
-    ["Hello!\n\nHi! I'm Jessie, big fan of what you guys are doing! " + $killer + " is one of the most interesting individuals I think this planet has ever seen. Truly a person to admire and learn from. Killing is bad, of course, no doubt about that! But his intelligence is just off the charts, you have to admit. When I heard about your possible TV show about him I got so excited! I can't wait to see how you guys portray such a nuanced, complicated individual. Not to mention his great looks, but we don't have to get into all that!",
-
-    "To the producers of the upcoming 'Angel of death' series,\n\nMy name is Jana, I'm a student at the local university studying psychology. I heard through the grapevine that a TV show was in the works revolving around " + $killer + " and his crimes\nI know people have mixed opinions about such a sensitive topic being covered on television, but I'd just like to say I think this is objectively positive. Not enough people know about the psychology behind serial killers and why they do it. It isn't for the reasons people think!\nUsing and depicting the crimes as a way to illustrate his mental challenges is quite smart. People out there need to see serial killers in an unbiased light and learn more about their motives. This way, some of the stigma around serial killers can be removed and we as citizens of society can be better equipped to help them. Thank you for this production, I believe it will be a beneficial development.",
-    
-    "Heyoooo!!\n\nI'm Sarah, HUUUUUUGE fan of " + $killer + "!! He is so dreamy!! I can't believe he got away with those crimes for soooooo long... hes such a genius!! Not to mention he has to be the most handsome serial killer of all time!!!\nI absolutely cannot wait for this TV show to come out!! I follow all of your production company's social media accounts and like every single post!! I swear when it comes out I'll memorize every word!! I'll buy the DVD and put it on my wall next to all my handmade " + $killer + " posters!! I'm crazy for him!!", 
-    
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"]
-    >>
+    ["1KL","2KL","3KL","4KL","5KL","6KL","7KL","8KL","9KL"]>>
 
     <<set $kletters_read to []>>
-
 <!-- -->
 
 /* True Crime Letters */
     <<set $tletters_content to
-    ["Subject line: Nice Job\n\nHello, My name is Howard, I work as a producer for True Crime.\nI heard about your recent endeavors with the " + $killer + " case. I must say, from one filmmaker to another, I'm frankly impressed. To take such a horrible sequence of events and twist it around for the purpose of pure entertainment is genius. After all, what do people love more than grisly murder served in the form of a digestible 24 minute TV show episode? This could seriously be a career-defining production here. I urge you not to mess it up, since something like this can easily be piggybacked off of by my company into a True Crime spinoff, maybe some bonus footage to accompany your show? Think about it.",
-
-    "Subject line: *URGENT*\n\nLook, I'll keep this short and simple.\nI work for a production company that produces a show based around criminals and documents real crime. Because of my connections, I was able to secure evidence from the crime scene of the latest " + $killer + " killing that will never be admissable in court.\nThis is major.\nI have details that could turn your lousy TV special into the most accurate crime recreation ever depicted on television. If you're interested, email me back at evidence1234@protonmail.com. Nobody has to know. If the cops come asking how you knew certain details, just tell them it was a lucky guess.", 
-    
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", 
-    
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"]>>
+    ["1TL", "2TL","3TL","4TL","5TL"]>>
 
     <<set $tletters_read to []>>
-
 <!-- -->
 

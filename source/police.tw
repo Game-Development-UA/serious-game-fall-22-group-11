@@ -1,10 +1,31 @@
 /* This is the police station interview. */
+:: Police Base
+<<if $t_visited == 0>>
+<<goto "Police I">>
+
+<<elseif $t_visited == 1>>
+<<goto "Police II">>
+
+<<elseif $t_visited == 2>>
+<<goto "Police III">>
+
+<<elseif $t_visited == 3>>
+<<goto "Police IV">>
+
+<<else>>
+<<goto "Police V">>
+
+<</if>>
+
 /* Day 1 */
 :: Police I [police]
+<<set $t_visited += 1>>
+<<set $days -= 1>>
+
 How [[bad->Police I 2a]] was it?
 [[... -> Police I 2b]]
 
-:: Police I 2a
+:: Police I 2a [police]
 "In all of my years here, I have never seen anything as gruesome as that little girl's mutilation."
 Jesus, that bad?
 "I mean, think of like a really bad Picasso painting with just different shades of red, her large and small intestines looked like spaghetti. Made me rethink if that was really my favorite food ever."
@@ -16,8 +37,9 @@ I don't know, you never know. Maybe they'd cooperate if I spent enough time with
 "I'm not saying that won't happen. Sometimes working with just one person makes things go by a lot smoother."
 I'll hold you too that.
 /*This is the end of the first conversation with the officer of this tree */
+[[Return to your desk -> True Crime Letter]]
 
-:: Police I 2b
+:: Police I 2b [police]
 "..."
 That bad huh?
 "I puked as soon as I saw her. You can't fucking imagine the sight of this girl after what this guy did to her. The smell is what got to me. Fresh blood just doesn't leave your nose, trust me. I wouldn't try it obviously."
@@ -33,13 +55,17 @@ I understand, though it might not be that much of a waste. Who knows? Maybe it'l
 "I'm definitely not saying that isn't a good idea. Think about it."
 For sure.
 /*This is the end of the first conversation with the officer of this tree */
+[[Return to your desk -> True Crime Letter]]
 
 /* Day 2 */
-:: Police II 
+:: Police II [police]
+<<set $t_visited += 1>>
+<<set $days -= 1>>
+
 [[How's it going so far?->Police II 2a]] 
 [[Found anything yet?->Police II 2b]]
 
-:: Police II 2a
+:: Police II 2a [police]
 "It's going alright, how about yourself?"
 Not too bad, figured I'd visit again after what you said.
 "Appreciate it. All these other cops have been giving me a hard time."
@@ -56,8 +82,9 @@ You got me. I couldn't think of a reason why.
 Too bad that bastard had to go and screw it all up.
 "I agree. We'll bring her justice. I know it."
 /*This is the end of the second conversation with the cop with this tree */
+[[Return to your desk -> True Crime Letter]]
 
-:: Police II 2b
+:: Police II 2b [police]
 "You won't believe it. My suspicion was true about the other cops."
 What do you mean?
 "The girl was a immigrant. Her mom had a work visa, let the kid focus on school."
@@ -71,11 +98,15 @@ So, if this girl was an immigrant, why would that be the focus for this killer?
 "I haven't found anything else yet. I'll let you know if something comes up."
 Thanks, I'll see you later.
 /*This is the end of the second conversation with the cop with this tree */
+[[Return to your desk -> True Crime Letter]]
 
 /* Day 3 */
-:: Police III
+:: Police III [police]
+<<set $t_visited += 1>>
+<<set $days -= 1>>
 [[Anything come up?->Police III 2a]]
-:: Police III 2a
+
+:: Police III 2a [police]
 "There's this very weird detail that came up when I was looking over everything, though I didn't think it mattered as much until things started to click."
 What was it?
 "So, obviously this girl was an immigrant, we know that much."
@@ -105,11 +136,15 @@ Yeah sure, sorry about the last minute question, it's always something that pops
 "No, you're good. I'll get back to you soon on it."
 Thanks. See you later.
 /*This is the end of the third conversation with the cop */
+[[Return to your desk -> True Crime Letter]]
 
 /* Day 4 */
-:: Police IV 
+:: Police IV [police]
+<<set $t_visited += 1>>
+<<set $days -= 1>>
 [["I have an answer for you."->Police IV 2a]]
-:: Police IV 2a
+
+:: Police IV 2a [police]
 Answer?
 "You know, for what you asked me the last time we spoke."
 Oh, about what to do with the story?
@@ -124,9 +159,12 @@ There's redemption within us though.
 "I agree. This case is almost finished, we should come to a decision the next time we meet."
 I wouldn't have it any other way. I want this all to be done.
 /*This is the end of the fourth conversation with the cop */
+[[Return to your desk -> True Crime Letter]]
 
 /* Day 5 */
-:: Police V
+:: Police V [police]
+<<set $t_visited += 1>>
+<<set $days -= 1>>
 [[Have we made a decision yet?->Police V 2a]]
 "Have you thought about it more?"
 Yeah, honestly. I mean what you said before felt genuine, I wouldn't want that passion to go to waste.

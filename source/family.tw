@@ -1,34 +1,54 @@
 /* This is the family house. */
 /* Day 1 */
-:: Family I [family]
 
+:: Family Base
 <<if $f_visited == 0>>
-<</if >>
+<<goto "Family I">>
 
-[[Test -> FamilyLettersT1]]
+<<elseif $f_visited == 1>>
+<<goto "Family II">>
+
+<<elseif $f_visited == 2>>
+<<goto "Family III">>
+
+<<elseif $f_visited == 3>>
+<<goto "Family IV">>
+
+<<else>>
+<<goto "Family V">>
+
+<</if>>
+
+
+:: Family I [family]
+<<set $f_visited += 1>>
+<<set $days -= 1>>
+
 [[Hello there. -> Family I 2a]]
 [[Can I get you anything? I brought stuff that might help. -> Family I 2b]]
 [[...->Family I 2c]]
 
-:: Family I 2a
+:: Family I 2a [family]
 "I'm only agreeing to do this so she'll stay out of the papers."
 I understand ma'am, I take it this hasn't been very easy for you to deal with.
 "Obviously. My child is dead, so no. It hasn't been that easy. Have they charged him with anything yet?"
 No, he hasn't been officially charged yet, we are waiting for his statement.
 "So why are you [[interviewing me?->Family I 3.1a]] Shouldn't you be interviewing him first?"
 
-:: Family I 3.1a
+:: Family I 3.1a [family]
 I needed more information, what better person to speak with that the [[mother.->Family I 3.2a]]
 
 [[I don't know,->Family I 3.1b]] this is my first case, I apologize for this inconvenience.
 
-:: Family I 3.2a
+:: Family I 3.2a [family]
 "Well, what do you [[need to know?->Family I 3.3a]]"
-:: Family I 3.1b
+
+:: Family I 3.1b [family]
 "Inconvenience? My child is dead. Am I able to get anyone else on the case? Maybe someone with more experience, I don't need this situation to be taken lightly."
 I didn't mean to suggest that I am taking it lightly, this is a very serious case, I am completely aware of that. To be honest, there's only one other person that gives a crap about this case, other than me.
 "Well, what do you [[need to know?->Family I 3.3a]] "
-:: Family I 3.3a
+
+:: Family I 3.3a [family]
 Anything ma'am. It'll go a long way with your help.
 "Well, she was in highschool still, she was brilliant. Intelligent, beautiful, bright, she was anything you could ask for in a daughter."
 Anything else?
@@ -36,7 +56,9 @@ Anything else?
 Of course, I'll come visit again soon.
 /*This is the end of the first conversation with the mother with this choice */
 
-:: Family I 2b
+[[Return to your desk -> Family Letter]]
+
+:: Family I 2b [family]
 "What I need is for him to be put down. Why hasn't that happened yet, I know you guys have him already."
 Ma'm, I'm sorry, we're currently doing everything we can as of right now. I'm just here to speak with you about your kid.
 "Well what do you need to know?"
@@ -46,8 +68,9 @@ Anything else?
 "I'm sorry... This is really hard to deal with. Could we do this another time?"
 Of course, I'll come visit again soon.
 /*This is the end of the first conversation with the mother with this choice */
+[[Return to your desk -> Family Letter]]
 
-:: Family I 2c
+:: Family I 2c [family]
 "Well has he been charged?"
 No, he hasn't.
 "Well why not?"
@@ -64,20 +87,26 @@ Anything else?
 Of course, I'll come visit again soon.
 /*This is the end of the first conversation with the mother with this choice */
 
+[[Return to your desk -> Family Letter]]
+
 /* Day 2 */
-:: Family II 
+:: Family II [family]
+<<set $f_visited += 1>>
+<<set $days -= 1>>
 [[Hello again-> Family II 2a]]
 [[I brought the snacks again, in case you wanted some-> Family II 2b]]
 
-:: Family II 2a
+:: Family II 2a [family]
 "Hello. How are you?"
 I could be better. How are you holding up?
 "Just getting by. It's really hard without her."
 I know ma'am. If you need anything, please let me know. Shall we continue with where [[we left off?-> Family II 3]]
-:: Family II 2b
+
+:: Family II 2b [family]
 "No, I'm fine, thank you though. Any news yet?"
 Nothing as of right now, things are moving as fast as they can with this case. Could we continue with where [[we left off-> Family II 3]] actually?
-:: Family II 3
+
+:: Family II 3 [family]
 "Sure."
 Now, I know you mentioned only a little bit about your daughter. Is there anything specific about her that you could share with me?
 "How specific are we talking..."
@@ -91,11 +120,15 @@ Yeah, no problem, sorry for almost intruding on your plans.
 "It's okay. I'll speak with you soon."
 For sure.
 /*This is the end of the second conversation with the mother */
+[[Return to your desk -> Family Letter]]
 
 /* Day 3 */
-:: Family III
+:: Family III [family]
+<<set $f_visited += 1>>
+<<set $days -= 1>>
 [[There's got to be more with her.-> Family III 2a]]
-:: Family III 2a
+
+:: Family III 2a [family]
 "What do you mean?"
 I mean, it doesn't make sense with what you've given me so far. Why would her killer go after someone like her? I mean, no offense with what I'm about to say, but there's so many undocumented people that live here, why her?
 "No. I know what you mean. I know I'm taking a risk living here, I tried choosing the safest route for the both of us, it was paying off until it was ruined. I hate that man so much."
@@ -110,10 +143,16 @@ No I know. I didn't mean to ask you directly. I'm just trying to think out loud.
 Yes. I've got a funny feeling this is going to continue for just a little bit longer. I'll see you soon.
 /*This is the end of the fourth conversation with the mother */
 
+[[Return to your desk -> Family Letter]]
+
+
 /* Day 4 */
-:: Family IV 
+:: Family IV [family]
+<<set $f_visited += 1>>
+<<set $days -= 1>>
 [[Can I ask you something?->Family IV 2a]]
-:: Family IV 2a
+
+:: Family IV 2a [family]
 "Sure, what is it?"
 I can't remember if you told me that wanted her story out or not, could you remind me please?
 "I don't want her story out in the open."
@@ -133,10 +172,16 @@ What's your point?
 "Your help doesn't go unnoticed."
 /*This is the end of the fourth conversation with the mother */
 
+[[Return to your desk -> Family Letter]]
+
+
 /* Day 5 */
-:: Family V
+:: Family V [family]
+<<set $f_visited += 1>>
+<<set $days -= 1>>
 [[Hello ma'am. I have good news->Family V 2a]]
-:: Family V 2a
+
+:: Family V 2a [family]
 "What is the news?"
 The case is about wrapped up, the final decision is yet to be made on what to do with your daughter's case.
 "It's felt like forever since this all began. I miss her so much."
@@ -144,3 +189,5 @@ I understand that you do. I don't know exactly how you feel, I haven't lost a fa
 "Thank you."
 Of course.
 /*This is the end of the mother conversation */
+
+[[Return to your desk -> Family Letter]]

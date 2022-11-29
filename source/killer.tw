@@ -1,13 +1,33 @@
 /* This is the killer interview. */
+:: Killer Base
+<<if $k_visited == 0>>
+<<goto "Killer I">>
+
+<<elseif $k_visited == 1>>
+<<goto "Killer II">>
+
+<<elseif $k_visited == 2>>
+<<goto "Killer III">>
+
+<<elseif $k_visited == 3>>
+<<goto "Killer IV">>
+
+<<else>>
+<<goto "Killer V">>
+
+<</if>>
+
 /* Day 1 */
 :: Killer I [killer]
+<<set $k_visited += 1>>
+<<set $days -= 1>>
 [[Why don't you make this easier on yourself and just tell me what happened. -> Killer I 2a]]
 [[Why did you do it? -> Killer I 2b]]
 [[...->Killer I 2c]]
 
-:: Killer I 2a
+:: Killer I 2a [killer]
 "How about I don't do that."
-*sigh* Why are trying to make this harder for yourself?
+//sigh// Why are trying to make this harder for yourself?
 "I'm not making anything harder for myself, I am completely content with what I've done. They didn't deserve their lives anyways."
 Well considering you're stuck in here with me and have literally nowhere to go on top of having all this free time to use, you might as well start talking.
 "Like I said. Those aliens didn't deserve to live."
@@ -16,10 +36,11 @@ And why exactly do you think that, cause I see no reason to kill those innocent,
 What's hard to understand is your train of thought, you fucking monster.
 "Not. To. Me."
 /*This is the end of the first conversation for this dialogue set */
-[[Choice 1 -> Killer I 3.1a]]
-[[Choice 2 -> Killer I 3.1b]]
+/* [[Choice 1 -> Killer I 3.1a]]
+[[Choice 2 -> Killer I 3.1b]] */
+[[Return to your desk -> Killer Letter]]
 
-:: Killer I 2b
+:: Killer I 2b [killer]
 "What may you be alluding to?"
 You know exactly what I'm talking about, don't play stupid with me.
 "You know, what with having a doctorate by my side, I wouldn't consider myself an idiot. Moreso, a role model that people should look up to, don't you think?"
@@ -32,10 +53,11 @@ Doing them a service by taking their one chance at a dream?
 Jesus Christ. This is going nowhere.
 "You'd be right on that one, detective. I'd take my leave if I were you."
 /*This is the end of the first conversation for this dialogue set */
-[[Choice 1 -> Killer I 3.2a]]
-[[Choice 2 -> Killer I 3.2b]]
+/* [[Choice 1 -> Killer I 3.2a]]
+[[Choice 2 -> Killer I 3.2b]] */
+[[Return to your desk -> Killer Letter]]
 
-:: Killer I 2c
+:: Killer I 2c [killer]
 "..."
 ...
 "Isn't this the part where you start asking me questions?"
@@ -47,8 +69,9 @@ You deserve nothing nice. Taking away the lives of innocent little girls doesn't
 "I guess not detective."
 What is wrong with you? Why don't you take this seriously?
 "I don't need to take anything seriously; I have made my peace with what I've done."
-*sigh* Oh my god...
+//sigh// Oh my god...
 /*This is the end of the first conversation for this dialogue set */
+[[Return to your desk -> Killer Letter]]
 
 :: Killer I 3.1a
 
@@ -58,14 +81,14 @@ What is wrong with you? Why don't you take this seriously?
 
 :: Killer I 3.2b 
 
-
-
 /* Day 2 */
-:: Killer II
+:: Killer II [killer]
+<<set $k_visited += 1>>
+<<set $days -= 1>>
 [[Ready to talk now?->Killer II 2a]]
 [[...->Killer II 2b]]
 
-:: Killer II 2a
+:: Killer II 2a [killer]
 "Talk about what?"
 We've been through this. All I need you to do is tell me what happened.
 "You know. I enjoy thinking about what I did to them. God. Detective. Have you ever experienced raw power before? Something that felt so good, you couldn't stop yourself from having more and more?"
@@ -76,8 +99,9 @@ I don't have to answer to you.
 You wish, you monster.
 "Suit yourself, detective."
 /*This is the end of the second conversation for this dialogue set */
+[[Return to your desk -> Killer Letter]]
 
-:: Killer II 2b
+:: Killer II 2b [killer]
 "..."
 ...
 "Being silent again, are we detective?"
@@ -92,12 +116,15 @@ I'm running this case, so I guess I have.
 With anything else, absolutely anything else, I would agree. With what you did, I don't think anyone would agree.
 "Give it time detective, soon you'll be able to see clearly."
 /*This is the end of the second conversation for this dialouge set */
+[[Return to your desk -> Killer Letter]]
 
 /* Day 3 */
-:: Killer III
+:: Killer III [killer]
+<<set $k_visited += 1>>
+<<set $days -= 1>>
 [[...->Killer III 2a]]
 
-:: Killer III 2a
+:: Killer III 2a [killer]
 "Three."
 Hmm?
 "This marks three times you've come to see me"
@@ -116,11 +143,15 @@ What do you think my answer is.
 I can't believe you even considered that your actions are justified, you sick freak. They could've amounted to something great. They had a chance, regardless of who they were. I can't believe you.
 "You should start doing so, detective. Its for your own good."
 /*This is the end of the third conversation for this dialogue set */
+[[Return to your desk -> Killer Letter]]
 
 /* Day 4 */
-:: Killer IV
+:: Killer IV [killer]
+<<set $k_visited += 1>>
+<<set $days -= 1>>
 [[I have a question for you.->Killer IV 2a]] 
-:: Killer IV 2a
+
+:: Killer IV 2a [killer]
 "Hmm?"
 What if I did agree with you on your views? What would I gain from agreeing with your sick point of view?
 "So, you wish to be enlightened detective? Finally coming to your senses?"
@@ -139,11 +170,15 @@ I've been humoring you for days now, little by little, I get almost nothing exce
 I'm getting fucking sick of you. You need to be put down.
 "I did the world a favor. I'm sorry you'll never understand."
 /*This is the end of the fourth conversation  */
+[[Return to your desk -> Killer Letter]]
 
 /* Day 5 */
-:: Killer V
+:: Killer V [killer]
+<<set $k_visited += 1>>
+<<set $days -= 1>>
 [[Anything else you want to tell me before we end this?->Killer V 2a]]
-:: Killer V 2a
+
+:: Killer V 2a [killer]
 "Oh are we finally done with this? I was just starting to enjoy it."
 Unlike how you've been feeling, this'll be one less creature off the face of this planet.
 "You're gonna miss me detective. There's too many people like her that need to be eradicated from this world."
@@ -155,3 +190,4 @@ You'd be a valueable asset six feet under.
 "Its been an honor speaking with you detective. I hope you come to regret this decision once I am gone."
 Goodbye, $killer.
 /*This is the end of the killer tree */
+[[Return to your desk -> Killer Letter]]
