@@ -4,10 +4,10 @@
 :: 1FL [fletter]
 To the producers of $show,
 
-My name is Debra, I was $victim's mother before that monster took her from me. 
-$victim was everything. The reason I got up in the morning, the reason I went to bed at night.
+My name is Leila, I was $Mvictim's sister before that monster took her from me. 
+$Mvictim was everything. The reason I got up in the morning, the reason I went to bed at night.
 To think someone could be so heartless as to take her away from me was more difficult than you
-could ever know. So when I heard a television show was in the works using my daughter's murder 
+could ever know. So when I heard a television show was in the works using my sister's murder 
 as part of a production made for entertainment, it made my blood boil. You have the opportunity
 to show the world that serial killers and horrible people shouldn't be made examples of, you can
 change the narrative. Why are you choosing to make us suffer? Is that what you intend to do? 
@@ -57,12 +57,24 @@ To be reminded yet again of these events in the most selfish and horrible scope 
 [[Put Away Letter -> Main Desk]]
 
 :: 4FL [fletter]
-This is letter four.
+Hello,
+
+I'm Howard, $Mvictim's uncle. What happened to $Mvictim was one of the most atrocious and violent acts one can inflict on another person. If I were to get my hands on the one responsible, Lord only knows what I'd do to him. Going through this horrible pain and suffering was bad enough, it changed me as a person. It changed all of us. The last thing any of us want to do is revisit any of these memories, or think about what happened for even 1 second longer than is necessary. 
+
+I implore you to think twice about this show. The continued mentioning of the situation by the news is annoying enough, but to see an entire TV show being prouduced around the event sounds like it would be 10 times worse. 
+
+Please, don't make our family suffer any longer.
 
 [[Put Away Letter -> Main Desk]]
 
 :: 5FL [fletter]
-This is letter five. 
+To the producers of $show,
+
+My name is Robert. I was the former father of $Mvictim. The absolute atrocity that has been afflicted on our family is impossible to overstate. My life since the event is a blur, everything has changed. No man on earth should feel the pain of having their daughter ripped away from them, especially in such a horrific way. Knowing she suffered as she took her last breath, knowing she wasn't able to fight back against that man - its overwhelming. I now imagine my life as being divided into 2 simple sections; before and after. 
+
+This is why I was so taken aback by the prospect of a TV show, a representation of my daughter's last moments in the worst context I can imagine. Have you no shame? 
+
+Think twice.
 
 [[Put Away Letter -> Main Desk]]
 
@@ -120,6 +132,71 @@ Jana
 
 [[Put Away Letter -> Main Desk]]
 
+:: 4KL
+To the producers of Angel of Death,
+
+My name is Kayla, I'm 17 years old and I live in Twin Falls, Idaho. I'm on the autistic spectrum, and so is my little sister. $killer is a big inspiration and motivating factor for my sister and I. He is so misunderstood and his actions get misinterpreted, which is exactly how I feel sometimes. He has shown me that there are other people who get so frustrated with the world that they feel like they need to do something insane! I get so angry sometimes I start shaking, I feel like I'm going to explode! 
+
+I love the TV show you guys are making about him. I watch tons of TV shows - mostly anime - and can't wait to binge Angel of Death once it comes out! I really feel like it'll become my favorite show. 
+
+Love from Idaho
+- Kayla
+
+[[Put Away Letter -> Main Desk]]
+
+:: 5KL
+To the producers of Angel of Death,
+
+Hello there, my name is Priscilla, and I'm the mother of one very eccentric little girl who happens to be a huge fan of your prospective show and of $killer. There is just something so captivating about his story and methodology. I know its unhealthy to obsess about such objectively digusting acts, but hey, we can't help it! We sit up sometimes at night watching $killer's interviews even though we've already seen them all. We just can't get enough, and are so excited about this show! 
+
+Just wanted to thank you guys for investing in such an interesting story, finally we can see an excellent and entertaining portrayal of $killer!
+- Priscilla
+
+[[Put Away Letter -> Main Desk]]
+
+:: 6KL
+Before reading the letter, you notice something strange about the envelope: its thicker than it should be. You open it cautiously and fish a pair of women's underwear out of the letter. Disgusted and quite frankly scared for your health, you immediately throw the letter and underwear in the nearest trash bin and run to wash your hands. Who could have predicted that a job at a production studio would land me opening letters with dirty underwear in them, you think to yourself. 
+
+You assume the letter came from an overzealous fan that fell victim to their massive obsession and ended up committing an act of passion, one that you had to deal with, unfortunately.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 7KL
+Hi there,
+
+I'm Richard, my dad and I heard about your TV show and are very excited! We think as horrible as $killer is, he is undoubtedly a very complex person with many intricacies that will be difficult to portray accurately on-screen. We have faith that you and your team will do a great job casting the right actor though! 
+
+It would mean the world to us if you were able to send some merchandise, maybe just a poster? I have tons of posters in my room of other figures I admire; Lebron James, Isaac Newton, and lets not forget my biggest one, Ted Bundy. I left a return address on the envelope in case you guys feel so inclined! 
+
+Can't wait for the show!
+- Richard
+
+[[Put Away Letter -> Main Desk]]
+
+:: 8KL
+To the producers of Angel of Death,
+
+I'm Josh, and I'm going to university for media production, hoping to become a television show producer like you. How do you guys do it?! I can't think of a better idea for a TV show in the current era. Everybody I talk to in my courses all agree, we're so excited to see how the show turns out! To think someone is actually attempting to portray the murders, those horribly interesting, graphic murders, for TV gives me chills. You truly are doing amazing work over there. 
+
+I wanted to ask if I, as part of my studies, could come see the set and maybe ask you a few questions about producing? If not, no worries, I know you must have your hands full 24/7. But it would just about make my year if you managed to find the time!
+
+Think about it!
+- Josh
+
+[[Put Away Letter -> Main Desk]]
+
+:: 9KL
+To the producers of Angel of Death,
+
+I'm Gina, I grew up in the same town as $killer, and actually went to the same school as him. He was always a quiet kid, a little weird some might say, but he was quite an interesting guy once you got to know him. I was his friend, as much as anyone could be with how cold he was. Its beyond bizarre seeing what happened and hearing about the terrible murders he committed. I just never thought something like this would happen to me, you know? 
+
+Anyway, I think its great you're making a show about him. He was a misunderstood and lonely man, in retrospect I wish I would've just given him a hug.
+
+Can't wait to see the show.
+- Gina
+
+[[Put Away Letter -> Main Desk]]
+
 /* TRUE CRIME LETTERS */
 :: 1TL [tletter]
 Subject line: Nice Job
@@ -132,10 +209,9 @@ horrible sequence of events and twist it around for the purpose of pure entertai
 After all, what do people love more than grisly murder served in the form of a digestible 24 minute
 TV show episode? This could seriously be a career-defining production here. 
 
- urge you not to mess it up, since something like this can easily be piggybacked off of by my company
- into a True Crime spinoff, maybe some bonus footage to accompany your show?
+Iurge you not to mess it up, since something like this can easily be piggybacked off of by my company into a True Crime spinoff, maybe some bonus footage to accompany your show?
  
- Think about it.
+Think about it.
 - Howard 
 
 [[Put Away Letter -> Main Desk]]
@@ -150,5 +226,38 @@ show into the most accurate crime recreation ever told on television. If you're 
 evidence1234@protonmail.com. 
 
 Nobody has to know. If the cops come asking how you knew certain details, just tell them it was a lucky guess.
+
+[[Put Away Letter -> Main Desk]]
+
+:: 3TL
+Subject line: Seeking Opportunities
+
+I'm Jake, an intern working for another crime TV drama. Lets just say its one of the more popular ones. I must say, I really enjoy the operation you guys have going on there. The whole premise is fascinating, I love the spin you all are putting on the typical serial killer trope! Basing it around a real killer is just, well, awesome. 
+
+Look, my job is great and all but soon I'll be looking for full-time employment, and to be completely honest your gig looks much more attractive than the lowball offers I've received here. I'm good for it, ask anyone at my network, CBA. 
+
+Let me know, I would absolutely love to come onboard and work my ass off for a real show.
+- Jake
+
+[[Put Away Letter -> Main Desk]]
+
+:: 4TL
+Subject line: Business Opportunity
+
+Heyo, Kyle Brown here, executive producer for True Crime. Amazing stuff you guys have going there. I wish I thought of it first! I love it so much in fact, that I want to extend an offer to produce a spin-off show once your current production has been released. I send you a contract, you sign it, we both work on it together, you know how it goes. We can work out the details later, but just know I have quite a bit of faith in you and what you guys are doing. 
+
+I've been doing this a long time, so I know a good show when I see one.
+- Kyle Brown
+
+[[Put Away Letter -> Main Desk]]
+
+:: 5TL
+Subject line: Be Careful
+
+Who I am isn't important. Be careful how you make this little show of yours, buddy. I don't appreciate undermining others' ideas, especially in show business. If your show is anything close to successful, there will be an intervention of massive proportions in the way of intellectual property and plagiarism. 
+
+What, you think you can just watch some crime show and attempt to emulate it, but with some small twist? Think again, and think long and hard about the decisions you make from now on. 
+
+I don't like people jeopardizing my paycheck.
 
 [[Put Away Letter -> Main Desk]]
