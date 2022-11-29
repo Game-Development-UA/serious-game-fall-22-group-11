@@ -12,7 +12,7 @@ This is the ending if you choose to talk to the cop the most.
 
 "Weeks of work, thousands of dollars spent by the studio, and this is what it comes to?
 
-Some fucking [[MORALS? -> morals]]?"
+Some fucking [[MORALS?! -> morals]]"
 
 :: fiercer
 "You are a waste of space. I knew you didn't have it in you when I hired you.
@@ -25,7 +25,7 @@ You're done. Kaput. Might as well go running home to [[mommy -> mommy]] and tell
 :: tiradeover
 Stella's words weigh heavily on you. She's right after all, you did waste thousands of dollars arranging those interviews, traveling, and investigating everything you found, only to turn in nothing.
 
-"Does this make me a bad person?" You think to yourself. You let down all those fans, all those people that were ecstatic to finally be able to watch $killer on TV. You invested all that time to [[make them happy. -> thebloodfinal]] 
+"Does this make me a bad person?" You think to yourself. You let down all those fans, all those people that were ecstatic to finally be able to watch $killer on TV. You invested all that time to [[make them happy -> thebloodfinal]] with nothing to show for it.
 
 :: morals
 "Is it that bad to have morals?" you think to yourself, trying not to furrow your brow for fear that Stella might notice and yell even more [[fiercely -> fiercer]]
@@ -34,9 +34,9 @@ Stella's words weigh heavily on you. She's right after all, you did waste thousa
 She's right, Stella knows just about every production company in town. If she wills it, you'll never have another job in media production again. Why is it that the [[worst people -> worst]] always sit in the most powerful positions? 
 
 :: mommy
-Stella must have overheard one of your nightly calls to your mother. You call to vent, which is entirely appropriate given the circumstances of your position. What in Stella's mind makes her think its okay to poke fun at something like that?
+Stella must have overheard one of your nightly calls to your mother. You call her to vent, which is entirely appropriate given the circumstances of your position. What in Stella's mind makes her think its okay to poke fun at something like that?
 
-Finally her tirade seemed to be [[over -> tiradeover]]
+Finally her tirade seems to be [[over -> tiradeover]]
 
 :: thebloodfinal
 Wait... make them happy? 
@@ -50,10 +50,29 @@ What you were forced to do was immoral, difficult, and extremely taxing. It dawn
 You decide in your mind that you did good, and nobody, especially not Stella, can tell you any different.
 
 :: Did You Do Good? 
-This is the ending if you don't talk to someone the most. 
+Despite the weeks of effort and thousands of dollars put into the project, you can't help but feel a strong sense of uncertainty. You interviewed everyone you could in the [[short time -> shorttime]] you had. You did everything you could, and yet you're still so unsure.
 
+Did you do the right thing? Who knows. 
 
+:: shorttime
+5 days is a fraction of the time a normal TV show would have for their research period. Realistically, you should have had 5 months for something of this caliber, not 5 days. Its not your fault the company - no, [[Stella -> didyoustella]], decided we need to make this thing while $killer is still #1 on Twitter's trending list.
 
+:: didyoustella
+"Great job committing yourself to this project. I have a feeling this will be a great success"
+
+You hear her words, but they simply pass through you. You feel hollow, like absolutely nothing you've done, nothing you've struggled for actually mattered in the end. 
+
+Was it that important to strain yourself and others just to get this result? It feels half-assed, like [[any regular guy -> regguy]] could have gleaned just as much information from these subjects as you did.
+
+:: regguy
+But then again, you aren't just a regular guy. A regular guy would have caved on day 1. A regular guy wouldn't have gone to the lengths you did, and for what? Because you want to make a good show? Or was it because you were told to, you were looking for a paycheck, going through the motions to [[keep up appearances. -> didyouend]]
+
+:: didyouend
+As Stella continues to give you praise for your thorough investigation work, you sit there in a daze, only half aware of whats going on around you.
+
+After a few minutes, the realization sets in that you now must continue with the rest of production. What kind of show are you going to make? You have no idea, and don't even want to think about that. 
+
+Did you do a good thing here? Was the effort worth it? Only time will tell, you have a long road ahead of you.
 
 
 
