@@ -48,7 +48,7 @@
     <</nobr>>
     <</if>>
 
-:: True Crime Letter [tletter]
+:: True Crime Letter
     <<if $f_crit == $crit_number || $k_crit == $crit_number || $t_crit == $crit_number>>
         <<goto "Special Event">>
 

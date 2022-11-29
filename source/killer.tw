@@ -25,9 +25,9 @@
 [[Why did you do it? -> Killer I 2b]]
 [[...->Killer I 2c]]
 
-:: Killer I 2a
+:: Killer I 2a [killer]
 "How about I don't do that."
-*sigh* Why are trying to make this harder for yourself?
+//sigh// Why are trying to make this harder for yourself?
 "I'm not making anything harder for myself, I am completely content with what I've done. They didn't deserve their lives anyways."
 Well considering you're stuck in here with me and have literally nowhere to go on top of having all this free time to use, you might as well start talking.
 "Like I said. Those aliens didn't deserve to live."
@@ -40,7 +40,7 @@ What's hard to understand is your train of thought, you fucking monster.
 [[Choice 2 -> Killer I 3.1b]] */
 [[Return to your desk -> Killer Letter]]
 
-:: Killer I 2b
+:: Killer I 2b [killer]
 "What may you be alluding to?"
 You know exactly what I'm talking about, don't play stupid with me.
 "You know, what with having a doctorate by my side, I wouldn't consider myself an idiot. Moreso, a role model that people should look up to, don't you think?"
@@ -57,7 +57,7 @@ Jesus Christ. This is going nowhere.
 [[Choice 2 -> Killer I 3.2b]] */
 [[Return to your desk -> Killer Letter]]
 
-:: Killer I 2c
+:: Killer I 2c [killer]
 "..."
 ...
 "Isn't this the part where you start asking me questions?"
@@ -69,7 +69,7 @@ You deserve nothing nice. Taking away the lives of innocent little girls doesn't
 "I guess not detective."
 What is wrong with you? Why don't you take this seriously?
 "I don't need to take anything seriously; I have made my peace with what I've done."
-*sigh* Oh my god...
+//sigh// Oh my god...
 /*This is the end of the first conversation for this dialogue set */
 [[Return to your desk -> Killer Letter]]
 
@@ -82,13 +82,13 @@ What is wrong with you? Why don't you take this seriously?
 :: Killer I 3.2b 
 
 /* Day 2 */
-:: Killer II
+:: Killer II [killer]
 <<set $k_visited += 1>>
 <<set $days -= 1>>
 [[Ready to talk now?->Killer II 2a]]
 [[...->Killer II 2b]]
 
-:: Killer II 2a
+:: Killer II 2a [killer]
 "Talk about what?"
 We've been through this. All I need you to do is tell me what happened.
 "You know. I enjoy thinking about what I did to them. God. Detective. Have you ever experienced raw power before? Something that felt so good, you couldn't stop yourself from having more and more?"
@@ -101,7 +101,7 @@ You wish, you monster.
 /*This is the end of the second conversation for this dialogue set */
 [[Return to your desk -> Killer Letter]]
 
-:: Killer II 2b
+:: Killer II 2b [killer]
 "..."
 ...
 "Being silent again, are we detective?"
@@ -119,12 +119,12 @@ With anything else, absolutely anything else, I would agree. With what you did, 
 [[Return to your desk -> Killer Letter]]
 
 /* Day 3 */
-:: Killer III
+:: Killer III [killer]
 <<set $k_visited += 1>>
 <<set $days -= 1>>
 [[...->Killer III 2a]]
 
-:: Killer III 2a
+:: Killer III 2a [killer]
 "Three."
 Hmm?
 "This marks three times you've come to see me"
@@ -146,12 +146,12 @@ I can't believe you even considered that your actions are justified, you sick fr
 [[Return to your desk -> Killer Letter]]
 
 /* Day 4 */
-:: Killer IV
+:: Killer IV [killer]
 <<set $k_visited += 1>>
 <<set $days -= 1>>
 [[I have a question for you.->Killer IV 2a]] 
 
-:: Killer IV 2a
+:: Killer IV 2a [killer]
 "Hmm?"
 What if I did agree with you on your views? What would I gain from agreeing with your sick point of view?
 "So, you wish to be enlightened detective? Finally coming to your senses?"
@@ -173,12 +173,12 @@ I'm getting fucking sick of you. You need to be put down.
 [[Return to your desk -> Killer Letter]]
 
 /* Day 5 */
-:: Killer V
+:: Killer V [killer]
 <<set $k_visited += 1>>
 <<set $days -= 1>>
 [[Anything else you want to tell me before we end this?->Killer V 2a]]
 
-:: Killer V 2a
+:: Killer V 2a [killer]
 "Oh are we finally done with this? I was just starting to enjoy it."
 Unlike how you've been feeling, this'll be one less creature off the face of this planet.
 "You're gonna miss me detective. There's too many people like her that need to be eradicated from this world."

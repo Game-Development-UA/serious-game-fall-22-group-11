@@ -23,7 +23,7 @@
 :: Family I [family]
 <<set $f_visited += 1>>
 <<set $days -= 1>>
-[[Test -> FamilyLettersT1]]
+
 [[Hello there. -> Family I 2a]]
 [[Can I get you anything? I brought stuff that might help. -> Family I 2b]]
 [[...->Family I 2c]]

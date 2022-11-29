@@ -100,26 +100,52 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Angel of Death" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* ---MAIN STAGES--- */
+	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Angel of Death" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* ---FONTS--- */
+@font-face {
+	font-family: 'PWSolar';
+	src: url("media/Fonts/PWScolarpaper.ttf");
+}
+
+@font-face {
+	font-family: "TypeWriter";
+	src: url("media/Fonts/TYPEWR_B.ttf");
+}
+
+@font-face {
+	font-family: "Semi-Coder";
+	src:url("media/Fonts/Semi-Coder-Regular.otf")
+}
+
+@font-face {
+	font-family: "Crystania";
+	src: url("media/Fonts/Crystania-PERSONAL USE ONLY.ttf")
+}
+
+@font-face{
+	font-family:"Fancy";
+	src: url("media/Fonts/Fancy-PersonalUse.ttf")
+}
+
+/* ---MAIN STAGES--- */
 body.corp{
-	background-image: url("media/images/CEO render.png");
-	background-color: rgb(17, 104, 104);
+	background-image: url("media/images/CEO.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	margin-left: -70em;
 }
 
 .corp.passage{
+	align-self: space-evenly;
 	font-family: "Georgia", Georgia, serif;
-	color:rgb(0, 140, 255);
+	font-size: medium;
+	font-weight: 500;
+	color:rgb(0, 63, 114);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.desk{
-	background-image: url("media/images/Menu.jpg");
+	background-image: url("media/images/desk.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -129,53 +155,54 @@ body.desk{
 	font-family: "Georgia", Georgia, serif;
 	color:rgb(146, 103, 39);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.police{
-	background-image: url("media/images/Police man interview.png");
+	background-image: url("media/images/Police interview.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
 
 .police.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(0, 140, 255);
+	font-family: "TypeWriter";
+	color:rgb(46, 13, 13);
+	text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.killer{
-	background-image: url("media/images/KillerInterview.png");
+	background-image: url("media/images/Killer interview.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
 
 .killer.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Fancy";
+	font-weight: bolder;
+	font-size: x-large;
+	color:rgb(139, 0, 0);
+	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
 }
 
 body.family{
-	background-image: url("media/images/Family_Interview.png");
+	background-image: url("media/images/mother.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
 }
 
 .family.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Crystania";
+	color:rgb(0, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
-	padding-right: -100px;
 	margin: 0 auto;
+	font-weight: bold;
 }
 
 body.inventory{
@@ -189,10 +216,53 @@ body.inventory{
 	font-family: "Georgia", Georgia, serif;
 	color:rgb(255, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
+	margin: 0 auto;
+}
+
+body.fspecial{
+	background-image: url("media/images/Alleyway.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.fspecial.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
 	padding-right: -100px;
 	margin: 0 auto;
 }
 
+body.kspecial{
+	background-image: url("media/images/woman.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.kspecial.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
+
+body.tspecial{
+	background-image: url("media/images/crime fan.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.tspecial.passage{
+	font-family: "Georgia", Georgia, serif;
+	color:rgb(255, 0, 0);
+	backdrop-filter: blur(10px) saturate(70%);
+	padding-right: -100px;
+	margin: 0 auto;
+}
 /* ---LETTER BACKGROUNDS--- */
 
 body.fletter{
@@ -200,6 +270,19 @@ body.fletter{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+/* This class is specific to the text in the passages */
+.fletter.passage{
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+    background-color: rgba(253, 254, 254, 0.493);
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: "PWSolar";
 }
 
 body.kletter{
@@ -215,6 +298,28 @@ body.tletter{
 	background-position: center;
 	background-size: cover;
 }
+.tletter.passage{
+	line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+    background-color: rgba(235, 255, 255, 0.493);
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: "Semi-Coder";
+}
+
+.passage a:hover{
+	color: red;
+}
+
+.passage a{
+	cursor:pointer;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:var(--bodyfont);
+	font-weight: 300;  
+  }
 
 /* This id is specific to the sidebar */
 #ui-bar {
@@ -224,18 +329,7 @@ body.tletter{
 }
 
 
-/* This class is specific to the text in the passages */
-.fletter.passage{
-    line-height: 1.6;
-    text-align: justify;
-    font-size: 1.6em;
-    color: #000000;
-    background-color: rgba(253, 254, 254, 0.493);
-    padding: 2em;
-    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
-    border: 1px solid #000000;
-    font-family: calandine;
-}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Stow the sidebar initially
 config.ui.stowBarInitially = true;
 */
@@ -255,7 +349,6 @@ As you may know, the name &quot;Angel of Death&quot; has been popping off in all
 With so much attention on Doctor $killer, it was a no brainer to green light a new mini series on his crimes!
 
 What do you think? 
-[[Test-&gt;1FL]]
 [[Completely agree! This series will be awesome! -&gt; Intro 2a]]
 [[Do the victims&#39; families know we are doing this? -&gt; Intro 2b]]</tw-passagedata><tw-passagedata pid="3" name="Intro 2a" tags="corp" position="350,100" size="100,100">I&#39;m glad we are on the same page! 
 
@@ -376,7 +469,7 @@ Remember, this mini series and how it protrays the truth will be up to your rese
 
             &lt;&lt;/if&gt;&gt;
     &lt;&lt;/nobr&gt;&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="True Crime Letter" tags="tletter" position="600,225" size="100,100">&lt;&lt;if $f_crit == $crit_number || $k_crit == $crit_number || $t_crit == $crit_number&gt;&gt;
+    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="True Crime Letter" tags="" position="600,225" size="100,100">&lt;&lt;if $f_crit == $crit_number || $k_crit == $crit_number || $t_crit == $crit_number&gt;&gt;
         &lt;&lt;goto &quot;Special Event&quot;&gt;&gt;
 
     &lt;&lt;else&gt;&gt;
@@ -494,7 +587,7 @@ Remember, this mini series and how it protrays the truth will be up to your rese
     &lt;&lt;/if&gt;&gt; 
 &lt;&lt;/if&gt;&gt;
     .............................................................
-[[Return to your desk -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="20" name="1FL" tags="" position="1225,225" size="100,100">To the producers of $show,
+[[Return to your desk -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="20" name="1FL" tags="fletter" position="1225,225" size="100,100">To the producers of $show,
 
 My name is Debra, I was $victim&#39;s mother before that monster took her from me. 
 $victim was everything. The reason I got up in the morning, the reason I went to bed at night.
@@ -512,9 +605,9 @@ Continue being a soulless, greedy little TV producer.
 
 People like you make me sick.
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="21" name="2FL" tags="" position="100,350" size="100,100">To whom it may concern,
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="21" name="2FL" tags="fletter" position="100,350" size="100,100">To whom it may concern,
 
-My name is Barbara, I was $victim&#39;s aunt. The damage this killer did to our family is irreparable,
+My name is Barbara, I was $Mvictim&#39;s aunt. The damage this killer did to our family is irreparable,
 beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace 
 and quiet. I&#39;ve observed my sister and her remaining daughters suffer more than I&#39;ve seen anyone 
 suffer, both because of the murder itself and the fallout from the media coverage. Every news story
@@ -528,9 +621,9 @@ this event a permanent spectacle?
 
 Unbelievable, but not surprising when it comes to you bloodsucking Hollywood idiots. 
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="22" name="3FL" tags="" position="225,350" size="100,100">Hello,
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="22" name="3FL" tags="fletter" position="225,350" size="100,100">Hello,
 
-My name is Kelly. Debra, $victim&#39;s mother, was a close friend of mine growing up. I hadn&#39;t talked to
+My name is Kelly. Debra, $Mvictim&#39;s mother, was a close friend of mine growing up. I hadn&#39;t talked to
 their family much in the last few years, but when I heard about what happened, I reached out and
 reconnected to give my condolences. The pain I saw in them was unimaginable, it was like their entire
 world was flipped upside down. It was pain you can only know if you go through a similar experience.
@@ -540,13 +633,13 @@ They&#39;ve suffered enough, have they not?
 
 To be reminded yet again of these events in the most selfish and horrible scope would be horrible.
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="23" name="4FL" tags="" position="350,350" size="100,100">This is letter four.
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="23" name="4FL" tags="fletter" position="350,350" size="100,100">This is letter four.
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="24" name="5FL" tags="" position="475,350" size="100,100">This is letter five. 
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="24" name="5FL" tags="fletter" position="475,350" size="100,100">This is letter five. 
 
 [[Put Away Letter -&gt; Main Desk]]
 
-/* KILLER FAN LETTERS */</tw-passagedata><tw-passagedata pid="25" name="1KL" tags="" position="600,350" size="100,100">Hello!
+/* KILLER FAN LETTERS */</tw-passagedata><tw-passagedata pid="25" name="1KL" tags="kletter" position="600,350" size="100,100">Hello!
 
 Hi! I&#39;m Jessie, big fan of what you guys are doing! $killer is one of the most interesting individuals
 I think this planet has ever seen. Truly a person to admire and learn from. Killing is bad, of course,
@@ -558,7 +651,7 @@ get into all that.
 
 XOXO - Can&#39;t wait for the show! - Jessie ;P 
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="26" name="2KL" tags="" position="725,350" size="100,100">Heyoooo!!
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="26" name="2KL" tags="kletter" position="725,350" size="100,100">Heyoooo!!
 
 I&#39;m Sarah, HUUUUUUGE fan of $killer!! He is so dreamy!! I can&#39;t believe he got away with those crimes
 for soooooo long... hes such a genius!!
@@ -572,7 +665,7 @@ I&#39;ll buy the DVD and put it on my wall next to all my handmade $killer poste
 This show&#39;s #1 fan,
 Sarah
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="27" name="3KL" tags="" position="850,350" size="100,100">&quot;To the producers of the upcoming &#39;Angel of death&#39; series,
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="27" name="3KL" tags="kletter" position="850,350" size="100,100">&quot;To the producers of the upcoming &#39;Angel of death&#39; series,
 
 My name is Jana, I&#39;m a student at the local university studying psychology. 
 I heard through the grapevine that a TV show was in the works revolving around $killer and his crimes.
@@ -592,7 +685,7 @@ Jana
 
 [[Put Away Letter -&gt; Main Desk]]
 
-/* TRUE CRIME LETTERS */</tw-passagedata><tw-passagedata pid="28" name="1TL" tags="" position="975,350" size="100,100">Subject line: Nice Job
+/* TRUE CRIME LETTERS */</tw-passagedata><tw-passagedata pid="28" name="1TL" tags="tletter" position="975,350" size="100,100">Subject line: Nice Job
 
 Hello,
 
@@ -608,7 +701,7 @@ TV show episode? This could seriously be a career-defining production here.
  Think about it.
 - Howard 
 
-[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="29" name="2TL" tags="" position="1100,350" size="100,100">Subject line: *URGENT*
+[[Put Away Letter -&gt; Main Desk]]</tw-passagedata><tw-passagedata pid="29" name="2TL" tags="tletter" position="1100,350" size="100,100">Subject line: *URGENT*
 
 Look, I&#39;ll keep this short and simple. I work for a production company that produces a show based around
 criminals and documents real crime. Because of my connections, I was able to secure evidence from the trial
@@ -635,7 +728,7 @@ Nobody has to know. If the cops come asking how you knew certain details, just t
 
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Family I" tags="family" position="100,475" size="100,100">&lt;&lt;set $f_visited += 1&gt;&gt;
 &lt;&lt;set $days -= 1&gt;&gt;
-[[Test -&gt; FamilyLettersT1]]
+
 [[Hello there. -&gt; Family I 2a]]
 [[Can I get you anything? I brought stuff that might help. -&gt; Family I 2b]]
 [[...-&gt;Family I 2c]]</tw-passagedata><tw-passagedata pid="32" name="Family I 2a" tags="family" position="225,475" size="100,100">&quot;I&#39;m only agreeing to do this so she&#39;ll stay out of the papers.&quot;
@@ -757,7 +850,7 @@ Of course.
 
 [[Return to your desk -&gt; Family Letter]]</tw-passagedata><tw-passagedata pid="49" name="StoryInit" tags="" position="1100,600" size="100,100">/*Global Keys */
 &lt;&lt;set $crit_number to 5 &gt;&gt;
-&lt;&lt;set $morning to TRUE&gt;&gt;
+&lt;&lt;set $morning to true&gt;&gt;
 &lt;&lt;set $killer to &quot;Martin&quot;&gt;&gt;
 &lt;&lt;set $show to &quot;Angel of Death&quot;&gt;&gt;
 &lt;&lt;set $Mvictim to &quot;Nahara Sia&quot;&gt;&gt;
@@ -810,10 +903,11 @@ Of course.
 &lt;&lt;/if&gt;&gt;
 
 /* Day 1 */</tw-passagedata><tw-passagedata pid="51" name="Killer I" tags="killer" position="100,725" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
+&lt;&lt;set $days -= 1&gt;&gt;
 [[Why don&#39;t you make this easier on yourself and just tell me what happened. -&gt; Killer I 2a]]
 [[Why did you do it? -&gt; Killer I 2b]]
-[[...-&gt;Killer I 2c]]</tw-passagedata><tw-passagedata pid="52" name="Killer I 2a" tags="" position="225,725" size="100,100">&quot;How about I don&#39;t do that.&quot;
-*sigh* Why are trying to make this harder for yourself?
+[[...-&gt;Killer I 2c]]</tw-passagedata><tw-passagedata pid="52" name="Killer I 2a" tags="killer" position="225,725" size="100,100">&quot;How about I don&#39;t do that.&quot;
+//sigh// Why are trying to make this harder for yourself?
 &quot;I&#39;m not making anything harder for myself, I am completely content with what I&#39;ve done. They didn&#39;t deserve their lives anyways.&quot;
 Well considering you&#39;re stuck in here with me and have literally nowhere to go on top of having all this free time to use, you might as well start talking.
 &quot;Like I said. Those aliens didn&#39;t deserve to live.&quot;
@@ -824,7 +918,7 @@ What&#39;s hard to understand is your train of thought, you fucking monster.
 /*This is the end of the first conversation for this dialogue set */
 /* [[Choice 1 -&gt; Killer I 3.1a]]
 [[Choice 2 -&gt; Killer I 3.1b]] */
-[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="53" name="Killer I 2b" tags="" position="350,725" size="100,100">&quot;What may you be alluding to?&quot;
+[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="53" name="Killer I 2b" tags="killer" position="350,725" size="100,100">&quot;What may you be alluding to?&quot;
 You know exactly what I&#39;m talking about, don&#39;t play stupid with me.
 &quot;You know, what with having a doctorate by my side, I wouldn&#39;t consider myself an idiot. Moreso, a role model that people should look up to, don&#39;t you think?&quot;
 What I think is that you&#39;re a complete, insane, monster. What you did is completely inexcusable, vicious, and completely disrespectful to not only those girls, but their families as friends.
@@ -838,7 +932,7 @@ Jesus Christ. This is going nowhere.
 /*This is the end of the first conversation for this dialogue set */
 /* [[Choice 1 -&gt; Killer I 3.2a]]
 [[Choice 2 -&gt; Killer I 3.2b]] */
-[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="54" name="Killer I 2c" tags="" position="475,725" size="100,100">&quot;...&quot;
+[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="54" name="Killer I 2c" tags="killer" position="475,725" size="100,100">&quot;...&quot;
 ...
 &quot;Isn&#39;t this the part where you start asking me questions?&quot;
 I could start it off like that, or I could just wait for you to start talking.
@@ -849,11 +943,12 @@ You deserve nothing nice. Taking away the lives of innocent little girls doesn&#
 &quot;I guess not detective.&quot;
 What is wrong with you? Why don&#39;t you take this seriously?
 &quot;I don&#39;t need to take anything seriously; I have made my peace with what I&#39;ve done.&quot;
-*sigh* Oh my god...
+//sigh// Oh my god...
 /*This is the end of the first conversation for this dialogue set */
-[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="55" name="Killer I 3.1a" tags="" position="600,725" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Killer I 3.1b" tags="" position="725,725" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="Killer I 3.2a" tags="" position="850,725" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="Killer I 3.2b" tags="" position="975,725" size="100,100">/* Day 2 */</tw-passagedata><tw-passagedata pid="59" name="Killer II" tags="" position="1100,725" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
+[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="55" name="Killer I 3.1a" tags="" position="600,725" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Killer I 3.1b" tags="" position="725,725" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="Killer I 3.2a" tags="" position="850,725" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="Killer I 3.2b" tags="" position="975,725" size="100,100">/* Day 2 */</tw-passagedata><tw-passagedata pid="59" name="Killer II" tags="killer" position="1100,725" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
+&lt;&lt;set $days -= 1&gt;&gt;
 [[Ready to talk now?-&gt;Killer II 2a]]
-[[...-&gt;Killer II 2b]]</tw-passagedata><tw-passagedata pid="60" name="Killer II 2a" tags="" position="1225,725" size="100,100">&quot;Talk about what?&quot;
+[[...-&gt;Killer II 2b]]</tw-passagedata><tw-passagedata pid="60" name="Killer II 2a" tags="killer" position="1225,725" size="100,100">&quot;Talk about what?&quot;
 We&#39;ve been through this. All I need you to do is tell me what happened.
 &quot;You know. I enjoy thinking about what I did to them. God. Detective. Have you ever experienced raw power before? Something that felt so good, you couldn&#39;t stop yourself from having more and more?&quot;
 Temptation? Yeah, I&#39;m sure every shithead like you has experienced something like that.
@@ -863,7 +958,7 @@ I don&#39;t have to answer to you.
 You wish, you monster.
 &quot;Suit yourself, detective.&quot;
 /*This is the end of the second conversation for this dialogue set */
-[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="61" name="Killer II 2b" tags="" position="100,850" size="100,100">&quot;...&quot;
+[[Return to your desk -&gt; Killer Letter]]</tw-passagedata><tw-passagedata pid="61" name="Killer II 2b" tags="killer" position="100,850" size="100,100">&quot;...&quot;
 ...
 &quot;Being silent again, are we detective?&quot;
 Figured I try it again. I don&#39;t respect you.
@@ -879,8 +974,9 @@ With anything else, absolutely anything else, I would agree. With what you did, 
 /*This is the end of the second conversation for this dialouge set */
 [[Return to your desk -&gt; Killer Letter]]
 
-/* Day 3 */</tw-passagedata><tw-passagedata pid="62" name="Killer III" tags="" position="225,850" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
-[[...-&gt;Killer III 2a]]</tw-passagedata><tw-passagedata pid="63" name="Killer III 2a" tags="" position="350,850" size="100,100">&quot;Three.&quot;
+/* Day 3 */</tw-passagedata><tw-passagedata pid="62" name="Killer III" tags="killer" position="225,850" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
+&lt;&lt;set $days -= 1&gt;&gt;
+[[...-&gt;Killer III 2a]]</tw-passagedata><tw-passagedata pid="63" name="Killer III 2a" tags="killer" position="350,850" size="100,100">&quot;Three.&quot;
 Hmm?
 &quot;This marks three times you&#39;ve come to see me&quot;
 You keeping score?
@@ -900,8 +996,9 @@ I can&#39;t believe you even considered that your actions are justified, you sic
 /*This is the end of the third conversation for this dialogue set */
 [[Return to your desk -&gt; Killer Letter]]
 
-/* Day 4 */</tw-passagedata><tw-passagedata pid="64" name="Killer IV" tags="" position="475,850" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
-[[I have a question for you.-&gt;Killer IV 2a]]</tw-passagedata><tw-passagedata pid="65" name="Killer IV 2a" tags="" position="600,850" size="100,100">&quot;Hmm?&quot;
+/* Day 4 */</tw-passagedata><tw-passagedata pid="64" name="Killer IV" tags="killer" position="475,850" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
+&lt;&lt;set $days -= 1&gt;&gt;
+[[I have a question for you.-&gt;Killer IV 2a]]</tw-passagedata><tw-passagedata pid="65" name="Killer IV 2a" tags="killer" position="600,850" size="100,100">&quot;Hmm?&quot;
 What if I did agree with you on your views? What would I gain from agreeing with your sick point of view?
 &quot;So, you wish to be enlightened detective? Finally coming to your senses?&quot;
 More like trying to humor you, I obviously don&#39;t agree with anything that you have done. But this is the fourth conversation we&#39;ve had, I feel like I&#39;m getting closer and closer to something here.
@@ -921,8 +1018,9 @@ I&#39;m getting fucking sick of you. You need to be put down.
 /*This is the end of the fourth conversation  */
 [[Return to your desk -&gt; Killer Letter]]
 
-/* Day 5 */</tw-passagedata><tw-passagedata pid="66" name="Killer V" tags="" position="725,850" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
-[[Anything else you want to tell me before we end this?-&gt;Killer V 2a]]</tw-passagedata><tw-passagedata pid="67" name="Killer V 2a" tags="" position="850,850" size="100,100">&quot;Oh are we finally done with this? I was just starting to enjoy it.&quot;
+/* Day 5 */</tw-passagedata><tw-passagedata pid="66" name="Killer V" tags="killer" position="725,850" size="100,100">&lt;&lt;set $k_visited += 1&gt;&gt;
+&lt;&lt;set $days -= 1&gt;&gt;
+[[Anything else you want to tell me before we end this?-&gt;Killer V 2a]]</tw-passagedata><tw-passagedata pid="67" name="Killer V 2a" tags="killer" position="850,850" size="100,100">&quot;Oh are we finally done with this? I was just starting to enjoy it.&quot;
 Unlike how you&#39;ve been feeling, this&#39;ll be one less creature off the face of this planet.
 &quot;You&#39;re gonna miss me detective. There&#39;s too many people like her that need to be eradicated from this world.&quot;
 No, there&#39;s too many fucks like you that roam the streets and it sickens me. I know exactly what we should do with you.
@@ -954,7 +1052,7 @@ Goodbye, $killer.
 &lt;&lt;set $days -= 1&gt;&gt;
 
 How [[bad-&gt;Police I 2a]] was it?
-[[... -&gt; Police I 2b]]</tw-passagedata><tw-passagedata pid="70" name="Police I 2a" tags="" position="1225,850" size="100,100">&quot;In all of my years here, I have never seen anything as gruesome as that little girl&#39;s mutilation.&quot;
+[[... -&gt; Police I 2b]]</tw-passagedata><tw-passagedata pid="70" name="Police I 2a" tags="police" position="1225,850" size="100,100">&quot;In all of my years here, I have never seen anything as gruesome as that little girl&#39;s mutilation.&quot;
 Jesus, that bad?
 &quot;I mean, think of like a really bad Picasso painting with just different shades of red, her large and small intestines looked like spaghetti. Made me rethink if that was really my favorite food ever.&quot;
 At least you seem to be taking it well enough.
@@ -965,7 +1063,7 @@ I don&#39;t know, you never know. Maybe they&#39;d cooperate if I spent enough t
 &quot;I&#39;m not saying that won&#39;t happen. Sometimes working with just one person makes things go by a lot smoother.&quot;
 I&#39;ll hold you too that.
 /*This is the end of the first conversation with the officer of this tree */
-[[Return to your desk -&gt; True Crime Letter]]</tw-passagedata><tw-passagedata pid="71" name="Police I 2b" tags="" position="100,975" size="100,100">&quot;...&quot;
+[[Return to your desk -&gt; True Crime Letter]]</tw-passagedata><tw-passagedata pid="71" name="Police I 2b" tags="police" position="100,975" size="100,100">&quot;...&quot;
 That bad huh?
 &quot;I puked as soon as I saw her. You can&#39;t fucking imagine the sight of this girl after what this guy did to her. The smell is what got to me. Fresh blood just doesn&#39;t leave your nose, trust me. I wouldn&#39;t try it obviously.&quot;
 I&#39;m getting sick just hearing about this. I&#39;m sorry you had to be the one to see that, I can only imagine what it was like to be there.
@@ -982,11 +1080,11 @@ For sure.
 /*This is the end of the first conversation with the officer of this tree */
 [[Return to your desk -&gt; True Crime Letter]]
 
-/* Day 2 */</tw-passagedata><tw-passagedata pid="72" name="Police II" tags="" position="225,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
+/* Day 2 */</tw-passagedata><tw-passagedata pid="72" name="Police II" tags="police" position="225,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
 &lt;&lt;set $days -= 1&gt;&gt;
 
 [[How&#39;s it going so far?-&gt;Police II 2a]] 
-[[Found anything yet?-&gt;Police II 2b]]</tw-passagedata><tw-passagedata pid="73" name="Police II 2a" tags="" position="350,975" size="100,100">&quot;It&#39;s going alright, how about yourself?&quot;
+[[Found anything yet?-&gt;Police II 2b]]</tw-passagedata><tw-passagedata pid="73" name="Police II 2a" tags="police" position="350,975" size="100,100">&quot;It&#39;s going alright, how about yourself?&quot;
 Not too bad, figured I&#39;d visit again after what you said.
 &quot;Appreciate it. All these other cops have been giving me a hard time.&quot;
 I wouldn&#39;t give them the time of day, if they don&#39;t want to bring justice to this girl, then they shouldn&#39;t be cops. I feel good doing this, you should too.
@@ -1002,7 +1100,7 @@ You got me. I couldn&#39;t think of a reason why.
 Too bad that bastard had to go and screw it all up.
 &quot;I agree. We&#39;ll bring her justice. I know it.&quot;
 /*This is the end of the second conversation with the cop with this tree */
-[[Return to your desk -&gt; True Crime Letter]]</tw-passagedata><tw-passagedata pid="74" name="Police II 2b" tags="" position="475,975" size="100,100">&quot;You won&#39;t believe it. My suspicion was true about the other cops.&quot;
+[[Return to your desk -&gt; True Crime Letter]]</tw-passagedata><tw-passagedata pid="74" name="Police II 2b" tags="police" position="475,975" size="100,100">&quot;You won&#39;t believe it. My suspicion was true about the other cops.&quot;
 What do you mean?
 &quot;The girl was a immigrant. Her mom had a work visa, let the kid focus on school.&quot;
 Okay... I fail to see how that would make you an outcast.
@@ -1017,9 +1115,9 @@ Thanks, I&#39;ll see you later.
 /*This is the end of the second conversation with the cop with this tree */
 [[Return to your desk -&gt; True Crime Letter]]
 
-/* Day 3 */</tw-passagedata><tw-passagedata pid="75" name="Police III" tags="" position="600,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
+/* Day 3 */</tw-passagedata><tw-passagedata pid="75" name="Police III" tags="police" position="600,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
 &lt;&lt;set $days -= 1&gt;&gt;
-[[Anything come up?-&gt;Police III 2a]]</tw-passagedata><tw-passagedata pid="76" name="Police III 2a" tags="" position="725,975" size="100,100">&quot;There&#39;s this very weird detail that came up when I was looking over everything, though I didn&#39;t think it mattered as much until things started to click.&quot;
+[[Anything come up?-&gt;Police III 2a]]</tw-passagedata><tw-passagedata pid="76" name="Police III 2a" tags="police" position="725,975" size="100,100">&quot;There&#39;s this very weird detail that came up when I was looking over everything, though I didn&#39;t think it mattered as much until things started to click.&quot;
 What was it?
 &quot;So, obviously this girl was an immigrant, we know that much.&quot;
 Sure.
@@ -1050,9 +1148,9 @@ Thanks. See you later.
 /*This is the end of the third conversation with the cop */
 [[Return to your desk -&gt; True Crime Letter]]
 
-/* Day 4 */</tw-passagedata><tw-passagedata pid="77" name="Police IV" tags="" position="850,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
+/* Day 4 */</tw-passagedata><tw-passagedata pid="77" name="Police IV" tags="police" position="850,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
 &lt;&lt;set $days -= 1&gt;&gt;
-[[&quot;I have an answer for you.&quot;-&gt;Police IV 2a]]</tw-passagedata><tw-passagedata pid="78" name="Police IV 2a" tags="" position="975,975" size="100,100">Answer?
+[[&quot;I have an answer for you.&quot;-&gt;Police IV 2a]]</tw-passagedata><tw-passagedata pid="78" name="Police IV 2a" tags="police" position="975,975" size="100,100">Answer?
 &quot;You know, for what you asked me the last time we spoke.&quot;
 Oh, about what to do with the story?
 &quot;Yeah, took me a bit to figure it out. I was stumped as soon as you asked me, it had been a long day.&quot;
@@ -1068,7 +1166,7 @@ I wouldn&#39;t have it any other way. I want this all to be done.
 /*This is the end of the fourth conversation with the cop */
 [[Return to your desk -&gt; True Crime Letter]]
 
-/* Day 5 */</tw-passagedata><tw-passagedata pid="79" name="Police V" tags="" position="1100,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
+/* Day 5 */</tw-passagedata><tw-passagedata pid="79" name="Police V" tags="police" position="1100,975" size="100,100">&lt;&lt;set $t_visited += 1&gt;&gt;
 &lt;&lt;set $days -= 1&gt;&gt;
 [[Have we made a decision yet?-&gt;Police V 2a]]
 &quot;Have you thought about it more?&quot;

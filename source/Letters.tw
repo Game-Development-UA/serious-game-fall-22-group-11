@@ -1,7 +1,7 @@
 /* Idea with this document - use background images of letters as unique passage story inserts. */
 
 /* FAMILY LETTERS */
-:: 1FL
+:: 1FL [fletter]
 To the producers of $show,
 
 My name is Debra, I was $victim's mother before that monster took her from me. 
@@ -22,10 +22,10 @@ People like you make me sick.
 
 [[Put Away Letter -> Main Desk]]
 
-:: 2FL
+:: 2FL [fletter]
 To whom it may concern,
 
-My name is Barbara, I was $victim's aunt. The damage this killer did to our family is irreparable,
+My name is Barbara, I was $Mvictim's aunt. The damage this killer did to our family is irreparable,
 beyond any shadow of a doubt. We will never be the same, and all we want at this point is peace 
 and quiet. I've observed my sister and her remaining daughters suffer more than I've seen anyone 
 suffer, both because of the murder itself and the fallout from the media coverage. Every news story
@@ -41,10 +41,10 @@ Unbelievable, but not surprising when it comes to you bloodsucking Hollywood idi
 
 [[Put Away Letter -> Main Desk]]
 
-:: 3FL 
+:: 3FL [fletter]
 Hello,
 
-My name is Kelly. Debra, $victim's mother, was a close friend of mine growing up. I hadn't talked to
+My name is Kelly. Debra, $Mvictim's mother, was a close friend of mine growing up. I hadn't talked to
 their family much in the last few years, but when I heard about what happened, I reached out and
 reconnected to give my condolences. The pain I saw in them was unimaginable, it was like their entire
 world was flipped upside down. It was pain you can only know if you go through a similar experience.
@@ -56,18 +56,18 @@ To be reminded yet again of these events in the most selfish and horrible scope 
 
 [[Put Away Letter -> Main Desk]]
 
-:: 4FL
+:: 4FL [fletter]
 This is letter four.
 
 [[Put Away Letter -> Main Desk]]
 
-:: 5FL
+:: 5FL [fletter]
 This is letter five. 
 
 [[Put Away Letter -> Main Desk]]
 
 /* KILLER FAN LETTERS */
-:: 1KL
+:: 1KL [kletter]
 Hello!
 
 Hi! I'm Jessie, big fan of what you guys are doing! $killer is one of the most interesting individuals
@@ -82,7 +82,7 @@ XOXO - Can't wait for the show! - Jessie ;P
 
 [[Put Away Letter -> Main Desk]]
 
-:: 2KL
+:: 2KL [kletter]
 Heyoooo!!
 
 I'm Sarah, HUUUUUUGE fan of $killer!! He is so dreamy!! I can't believe he got away with those crimes
@@ -99,7 +99,7 @@ Sarah
 
 [[Put Away Letter -> Main Desk]]
 
-:: 3KL 
+:: 3KL [kletter]
 "To the producers of the upcoming 'Angel of death' series,
 
 My name is Jana, I'm a student at the local university studying psychology. 
@@ -121,7 +121,7 @@ Jana
 [[Put Away Letter -> Main Desk]]
 
 /* TRUE CRIME LETTERS */
-:: 1TL
+:: 1TL [tletter]
 Subject line: Nice Job
 
 Hello,
@@ -140,7 +140,7 @@ TV show episode? This could seriously be a career-defining production here.
 
 [[Put Away Letter -> Main Desk]]
 
-:: 2TL
+:: 2TL [tletter]
 Subject line: *URGENT*
 
 Look, I'll keep this short and simple. I work for a production company that produces a show based around
