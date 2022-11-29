@@ -9,7 +9,12 @@ You sit down at your desk, already overwhelmed by your new assigment. What do yo
 
 :: Main Desk [desk]
 
-<<if $days == 0>>
+<<if $morning == true>>
+<<set $morning to false>>
+<<goto "Random Letter">>
+
+<<else>>
+<<if $days == 0 && $morning !== false >>
     Today is your last day, choose wisely your last interview.
 
     [[Visit the Family -> Family Base]]
@@ -61,5 +66,5 @@ You sit down at your desk, already overwhelmed by your new assigment. What do yo
         [[No -> The Blood Is Not On Your Hands]]
 
     <</if>>
-
+<</if>>
 <</if>>
