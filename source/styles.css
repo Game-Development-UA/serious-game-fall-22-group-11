@@ -15,8 +15,8 @@
 }
 
 @font-face {
-	font-family: "Crystania";
-	src: url("media/Fonts/Crystania-PERSONAL USE ONLY.ttf")
+	font-family: "Elegant";
+	src: url("media/Fonts/Elegant.ttf")
 }
 
 @font-face{
@@ -96,8 +96,10 @@ body.family{
 }
 
 .family.passage{
-	font-family: "Crystania";
-	color:rgb(0, 0, 0);
+	font-family: "Elegant";
+	font-size: x-large;
+	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+	color:rgb(100, 149, 253);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
 	font-weight: bold;
@@ -216,7 +218,7 @@ body.tletter{
 	cursor:pointer;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	font-family:var(--bodyfont);
-	font-weight: 300;  
+	font-weight: var(--bodyfont);  
   }
 
 /* This id is specific to the sidebar */
