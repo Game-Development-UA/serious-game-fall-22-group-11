@@ -1,0 +1,142 @@
+:: Family Letter
+    <<if $f_crit == $crit_number || $k_crit == $crit_number || $t_crit == $crit_number>>
+        <<goto "Special Event">>
+
+    <<else>>
+    As you leave $Mvictim's family house, you feel a slight pang of guilt. 
+
+    Are you doing the right thing? 
+
+    <<nobr>>
+        <<set $f_crit += 1>>
+        <<set $read to $fletters_content.pluck()>>
+            <<if (typeof $read !== 'undefined')>>
+                <<run $fletters_read.push($read)>>
+
+                [[You have a new letter|$read]]
+
+            <<else>>
+                You sigh, as you do not know the answer. 
+                [[Return to your desk -> Main Desk]]
+
+            <</if>>
+    <</nobr>>
+    <</if>>
+
+:: Killer Letter 
+    <<if $f_crit == $crit_number || $k_crit == $crit_number || $t_crit == $crit_number>>
+        <<goto "Special Event">>
+
+    <<else>>
+    As you leave $killer's prison, a cold chill runs down you back. Despite how depicable and diabolical that man was....
+    
+    ... you couldn't get him out of your head. 
+
+    <<nobr>>
+        <<set $k_crit += 1>>
+        <<set $read to $kletters_content.pluck()>>
+            <<if (typeof $read !== 'undefined')>>
+                <<run $kletters_read.push($read)>>
+
+                [[You have a new letter|$read]]
+
+            <<else>>
+                Love him or hate him. $killer was already an entertaining thought in your mind. 
+                [[Return to your desk -> Main Desk]]
+
+            <</if>>
+    <</nobr>>
+    <</if>>
+
+:: True Crime Letter [tletter]
+    <<if $f_crit == $crit_number || $k_crit == $crit_number || $t_crit == $crit_number>>
+        <<goto "Special Event">>
+
+    <<else>>
+    As you leave the police station, you grit your teeth in anger. So much of this injustice could have been avoided... 
+
+    Maybe you could be the one that delievers the justice the victims deserve.   
+
+    <<nobr>>
+        <<set $t_crit += 1>>
+        <<set $read to $tletters_content.pluck()>>
+            <<if (typeof $read !== 'undefined')>>
+                <<run $tletters_read.push($read)>>
+
+            [[You have a new letter|$read]]
+
+            <<else>>
+                But how would you make sure you don't do injustice to those who tried to help in a broken system?
+                [[Return to your desk -> Main Desk]]
+
+            <</if>>
+    <</nobr>>
+    <</if>>
+
+:: Random Letter 
+    As you head into your office this morning, you see a new letter on your desk. 
+
+    <<set $type to random(1, 3)>> 
+    <<print $type >> 
+
+    <<if $type == 1>>
+        <<set $f_crit += 1>>
+        <<set $read to $fletters_content.pluck()>>
+        <<if (typeof $read !== 'undefined')>>
+            <<run $fletters_read.push($read)>>
+        <</if>>
+    <<elseif $type == 2>>
+        <<set $k_crit += 1>>
+        <<set $read to $kletters_content.pluck()>>
+        <<if (typeof $read !== 'undefined')>>
+            <<run $kletters_read.push($read)>>
+        <</if>>
+    <<else>>
+        <<set $t_crit += 1>>
+        <<set $read to $tletters_content.pluck()>>
+        <<if (typeof $read !== 'undefined')>>
+            <<run $tletters_read.push($read)>>
+        <</if>>
+    <</if>>
+
+    <<if (typeof $read !== 'undefined')>>
+        [[Open it?|$read]]
+    <<else>>
+        [[Open it?|Spam Mail]]
+    <</if>>
+
+:: Spam Mail
+You open the letter..... only to find out it was spam mail. 
+[[Return to your desk -> Main Desk]]
+
+:: Special Event
+<<if $f_crit == $crit_number>>
+    As you're on your way back to the office after an exhausting day of interrogations - both physically and emotionally - you notice a peculiar man wearing a trench coat walking towards you. He comes up close and suddenly speaks without warning.
+
+    "H-hey... hey you're that producer for that TV show right? Angel of Death?"
+
+    His voice was frail and weak. You could sense that he was mustering a large part of his energy to speak to you.
+
+    [[Well yes, that's me, but how did you kn- -> Special Family]]
+
+<<elseif $k_crit == $crit_number >>
+    As you are strolling back to the office, feeling everso worried about the future, you pass the entrance to the outlet mall next to the office. Just then, a girl bounds right up to you as if she had known you her whole life.
+
+    "Oh my god!!! You're the producer for the new TV show, right!! Angel of Death! It's about $killer!"
+
+    You are mystified as to how this girl, who can't be older than 17, knows your face AND the name of the show.
+
+    [[Y-yeah... I'm the producer-> Special Killer]]
+
+<<elseif $t_crit == $crit_number >>
+    As you are on your way back to the office that day, you think about the information you've gathered thus far. Taking walks is important for clearing your mind and concentrating on making connections, finding links, and thinking about how to present everything in an interesting way. 
+    
+    As you're deep in thought, a random man holding a camcorder appears out of nowhere, coming up close to you pointing his DSLR directly in your face - wait, did he come out of the bushes?
+    
+    <<nobr>>
+         You shout:
+
+        [[What do you want from me? -> Special Police]]
+    <</nobr>>
+
+<</if>>
