@@ -3,6 +3,7 @@
         <<goto "Special Event">>
 
     <<else>>
+    /* If conditional statments */
     As you leave $Mvictim's family house, you feel a slight pang of guilt. 
 
     Are you doing the right thing? 
