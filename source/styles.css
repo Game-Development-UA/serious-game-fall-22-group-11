@@ -15,13 +15,23 @@
 }
 
 @font-face {
-	font-family: "Elegant";
-	src: url("media/Fonts/Elegant.ttf")
+	font-family: "Winter";
+	src: url("media/Fonts/Winter Coffee.ttf")
 }
 
 @font-face{
 	font-family:"Fancy";
 	src: url("media/Fonts/Fancy-PersonalUse.ttf")
+}
+
+@font-face{
+	font-family:"Stamp";
+	src: url("media/Fonts/BadlyStamped.ttf")
+}
+
+@font-face{
+	font-family:"Homework";
+	src: url("media/Fonts/Holidays Homework.ttf")
 }
 
 /* ---MAIN STAGES--- */
@@ -35,10 +45,11 @@ body.corp{
 .corp.passage{
 	align-self: space-evenly;
 	font-family: "Georgia", Georgia, serif;
-	font-size: medium;
-	font-weight: 500;
-	color:rgb(0, 63, 114);
-	backdrop-filter: blur(10px) saturate(70%);
+	font-size: large;
+	font-weight: 700;
+	color:rgb(22, 97, 158);
+	text-shadow: 0px 0px 5px white;
+	backdrop-filter: blur(30px) saturate(70%);
 	margin: 0 auto;
 }
 
@@ -50,7 +61,9 @@ body.desk{
 }
 
 .desk.passage{
-	font-family: "Georgia", Georgia, serif;
+	font-family: "Stamp";
+	font-size: x-large;
+	font-weight: lighter;
 	color:rgb(146, 103, 39);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
@@ -65,8 +78,9 @@ body.police{
 
 .police.passage{
 	font-family: "TypeWriter";
+	font-size: large;
 	color:rgb(46, 13, 13);
-	text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+	text-shadow: -1px -1px 0 rgb(255, 255, 255, 0.6), 1px -1px 0 rgb(255, 255, 255, 0.6), -1px 1px 0 rgb(255, 255, 255, 0.6), 1px 1px 0 rgb(255, 255, 255, 0.6);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
 }
@@ -82,7 +96,7 @@ body.killer{
 	font-family: "Fancy";
 	font-weight: bolder;
 	font-size: x-large;
-	color:rgb(139, 0, 0);
+	color:rgb(150, 0, 0);
 	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
@@ -96,13 +110,13 @@ body.family{
 }
 
 .family.passage{
-	font-family: "Elegant";
-	font-size: x-large;
-	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
-	color:rgb(100, 149, 253);
+	font-family: "Winter";
+	word-spacing: auto;
+	font-size: xx-large;
+	text-shadow: 1px 1px 2px rgb(194, 207, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+	color:rgb(43, 24, 87);
 	backdrop-filter: blur(10px) saturate(70%);
-	margin: 0 auto;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 body.inventory{
@@ -112,11 +126,15 @@ body.inventory{
 	background-size: cover;
 }
 
-.interview.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
-	backdrop-filter: blur(10px) saturate(70%);
-	margin: 0 auto;
+.inventory.passage{
+	font-family: "Homework";
+	padding: 2em;
+	color:rgb(0, 0, 0);
+	background-image: url("https://wallpapercave.com/wp/wp8085030.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 10px double black;
+	height: 1080px;
 }
 
 body.fspecial{
@@ -225,7 +243,7 @@ body.tletter{
 #ui-bar {
 	display: none;
 	padding:0%;
-	margin: 0mm;
+	margin: -1000px;
 }
 
 

@@ -117,13 +117,23 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 }
 
 @font-face {
-	font-family: "Elegant";
-	src: url("media/Fonts/Elegant.ttf")
+	font-family: "Winter";
+	src: url("media/Fonts/Winter Coffee.ttf")
 }
 
 @font-face{
 	font-family:"Fancy";
 	src: url("media/Fonts/Fancy-PersonalUse.ttf")
+}
+
+@font-face{
+	font-family:"Stamp";
+	src: url("media/Fonts/BadlyStamped.ttf")
+}
+
+@font-face{
+	font-family:"Homework";
+	src: url("media/Fonts/Holidays Homework.ttf")
 }
 
 /* ---MAIN STAGES--- */
@@ -137,10 +147,11 @@ body.corp{
 .corp.passage{
 	align-self: space-evenly;
 	font-family: "Georgia", Georgia, serif;
-	font-size: medium;
-	font-weight: 500;
-	color:rgb(0, 63, 114);
-	backdrop-filter: blur(10px) saturate(70%);
+	font-size: large;
+	font-weight: 700;
+	color:rgb(22, 97, 158);
+	text-shadow: 0px 0px 5px white;
+	backdrop-filter: blur(30px) saturate(70%);
 	margin: 0 auto;
 }
 
@@ -152,7 +163,9 @@ body.desk{
 }
 
 .desk.passage{
-	font-family: "Georgia", Georgia, serif;
+	font-family: "Stamp";
+	font-size: x-large;
+	font-weight: lighter;
 	color:rgb(146, 103, 39);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
@@ -167,8 +180,9 @@ body.police{
 
 .police.passage{
 	font-family: "TypeWriter";
+	font-size: large;
 	color:rgb(46, 13, 13);
-	text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+	text-shadow: -1px -1px 0 rgb(255, 255, 255, 0.6), 1px -1px 0 rgb(255, 255, 255, 0.6), -1px 1px 0 rgb(255, 255, 255, 0.6), 1px 1px 0 rgb(255, 255, 255, 0.6);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
 }
@@ -184,7 +198,7 @@ body.killer{
 	font-family: "Fancy";
 	font-weight: bolder;
 	font-size: x-large;
-	color:rgb(139, 0, 0);
+	color:rgb(150, 0, 0);
 	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
@@ -198,13 +212,13 @@ body.family{
 }
 
 .family.passage{
-	font-family: "Elegant";
-	font-size: x-large;
-	text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
-	color:rgb(100, 149, 253);
+	font-family: "Winter";
+	word-spacing: auto;
+	font-size: xx-large;
+	text-shadow: 1px 1px 2px rgb(194, 207, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+	color:rgb(43, 24, 87);
 	backdrop-filter: blur(10px) saturate(70%);
-	margin: 0 auto;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 body.inventory{
@@ -214,11 +228,15 @@ body.inventory{
 	background-size: cover;
 }
 
-.interview.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
-	backdrop-filter: blur(10px) saturate(70%);
-	margin: 0 auto;
+.inventory.passage{
+	font-family: "Homework";
+	padding: 2em;
+	color:rgb(0, 0, 0);
+	background-image: url("https://wallpapercave.com/wp/wp8085030.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 10px double black;
+	height: 1080px;
 }
 
 body.fspecial{
@@ -327,7 +345,7 @@ body.tletter{
 #ui-bar {
 	display: none;
 	padding:0%;
-	margin: 0mm;
+	margin: -1000px;
 }
 
 
@@ -501,6 +519,7 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
         &lt;&lt;goto &quot;Special Event&quot;&gt;&gt;
 
     &lt;&lt;else&gt;&gt;
+    /* If conditional statments */
     As you leave $Mvictim&#39;s family house, you feel a slight pang of guilt. 
 
     Are you doing the right thing? 
@@ -1322,7 +1341,13 @@ Mr. Jones cuts you off again, but this time he starts to raise his voice.
 
 &quot;Just promise me one thing, alright? Promise me you&#39;ll tell her story, about how she was strong, she was a fighter, she was passionate, she was amazing. Can you promise that?&quot;
 
-[choice? between something like &quot;Yes, of course.&quot; and &quot;I&#39;ll try my best&quot; and &quot;My hands are tied&quot; depending on what info you have? idk]</tw-passagedata><tw-passagedata pid="104" name="victim2" tags="fspecial" position="475,1350" size="100,100">$victim2 [[Jones|Jones]] was the last victim of $killer. A stanford student and acclaimed dancer, she was smart enough to leave behind evidence that she knew the police would find. Thanks to her, investigators were able to find the identity of $killer and take him into custody.</tw-passagedata><tw-passagedata pid="105" name="Knowsmore" tags="fspecial" position="600,1350" size="100,100">This man has intimate knowledge of the case. He is clearly obsessed with the killer, the potential trial, and all the details of his murders. I mean, who can [[blame|blame]] him?</tw-passagedata><tw-passagedata pid="106" name="Special Killer" tags="kspecial" position="725,1350" size="100,100">You speak with reluctance; you know you shouldn&#39;t be talking about the show with the public
+You&#39;re split. On one hand, you can&#39;t assure him of any details that will be in the final product at such an early stage in production. On the other hand, you&#39;d do anything to comfort this man, who is clearly in an immense amount of pain.
+
+&quot;Yes, you have my word&quot;, the words leave your lips with palpable reluctance, but Mr. Jones is too emotional, and intoxicated, to tell.
+
+&quot;Thank you... thank you so much&quot;
+
+He pulls you into an embrace before you part ways. You can&#39;t help but feel a pang of guilt; you essentially just lied to a grieving father. What has this show turned you into?</tw-passagedata><tw-passagedata pid="104" name="victim2" tags="fspecial" position="475,1350" size="100,100">$victim2 [[Jones|Jones]] was the last victim of $killer. A stanford student and acclaimed dancer, she was smart enough to leave behind evidence that she knew the police would find. Thanks to her, investigators were able to find the identity of $killer and take him into custody.</tw-passagedata><tw-passagedata pid="105" name="Knowsmore" tags="fspecial" position="600,1350" size="100,100">This man has intimate knowledge of the case. He is clearly obsessed with the killer, the potential trial, and all the details of his murders. I mean, who can [[blame|blame]] him?</tw-passagedata><tw-passagedata pid="106" name="Special Killer" tags="kspecial" position="725,1350" size="100,100">You speak with reluctance; you know you shouldn&#39;t be talking about the show with the public
 
 &quot;Holy cow! I can&#39;t believe this! $killer is sooooo hot!! Oh my god, if I met him I would just melt!&quot;
 

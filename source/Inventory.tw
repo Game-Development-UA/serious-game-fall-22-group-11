@@ -10,7 +10,6 @@
         <<for _index to 0; _index < $fletters_read.length; _index++>>
             No. <<print (_index+1)>>
             [[$fletters_read[_index]]]
-        ---------
         <</for>>
     <</if>>
     .............................................................
@@ -21,7 +20,6 @@
         <<for _index to 0; _index < $kletters_read.length; _index++>>
             No. <<print (_index+1)>>
             [[$kletters_read[_index]]]
-        ---------
         <</for>>
     <</if>>
     .............................................................
@@ -32,7 +30,6 @@
         <<for _index to 0; _index < $tletters_read.length; _index++>>
             No. <<print (_index+1)>>
             [[$tletters_read[_index]]]
-        ---------
         <</for>>
     <</if>> 
 <</if>>
