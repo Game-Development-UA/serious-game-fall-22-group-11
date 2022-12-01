@@ -20,7 +20,13 @@ Mr. Jones cuts you off again, but this time he starts to raise his voice.
 
 "Just promise me one thing, alright? Promise me you'll tell her story, about how she was strong, she was a fighter, she was passionate, she was amazing. Can you promise that?"
 
-[choice? between something like "Yes, of course." and "I'll try my best" and "My hands are tied" depending on what info you have? idk]
+You're split. On one hand, you can't assure him of any details that will be in the final product at such an early stage in production. On the other hand, you'd do anything to comfort this man, who is clearly in an immense amount of pain.
+
+"Yes, you have my word", the words leave your lips with palpable reluctance, but Mr. Jones is too emotional, and intoxicated, to tell.
+
+"Thank you... thank you so much"
+
+He pulls you into an embrace before you part ways. You can't help but feel a pang of guilt; you essentially just lied to a grieving father. What has this show turned you into?
 
 :: victim2 [fspecial]
 $victim2 [[Jones|Jones]] was the last victim of $killer. A stanford student and acclaimed dancer, she was smart enough to leave behind evidence that she knew the police would find. Thanks to her, investigators were able to find the identity of $killer and take him into custody.
