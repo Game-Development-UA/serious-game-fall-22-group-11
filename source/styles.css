@@ -34,6 +34,16 @@
 	src: url("media/Fonts/Holidays Homework.ttf")
 }
 
+@font-face{
+	font-family:"Rough";
+	src: url("media/Fonts/Roughnut.ttf")
+}
+
+@font-face{
+	font-family:"Kin";
+	src: url("media/Fonts/Kinlove.ttf")
+}
+
 /* ---MAIN STAGES--- */
 body.corp{
 	background-image: url("media/images/CEO.png");
@@ -67,6 +77,7 @@ body.desk{
 	color:rgb(146, 103, 39);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
+	text-shadow: black 1px 0 10px,black 1px 0 10px,black 1px 0 10px;
 }
 
 body.police{
@@ -137,6 +148,7 @@ body.inventory{
 	height: 1080px;
 }
 
+/* ---SPECIAL EVENTS--- */
 body.fspecial{
 	background-image: url("media/images/Alleyway.png");
 	background-repeat: no-repeat;
@@ -145,8 +157,12 @@ body.fspecial{
 }
 
 .fspecial.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Rough";
+	letter-spacing: 0.04em;
+    word-spacing: 0.05em;
+    font-size: xx-large;
+    color: rgb(223 223 223);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	backdrop-filter: blur(10px) saturate(70%);
 	padding-right: -100px;
 	margin: 0 auto;
@@ -160,8 +176,11 @@ body.kspecial{
 }
 
 .kspecial.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Kin";
+	color: rgb(195 100 174);
+    line-height: 1.5em;
+    font-size: xx-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	backdrop-filter: blur(10px) saturate(70%);
 	padding-right: -100px;
 	margin: 0 auto;
@@ -210,6 +229,20 @@ body.kletter{
 	background-size: cover;
 }
 
+.kletter.passage{
+	line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+	background-image: url("https://i.pinimg.com/474x/32/1b/69/321b6930001b1963935cc4eca8e5e81c.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: "PWSolar";
+}
+
 body.tletter{
     background-image: url("https://th.bing.com/th/id/OIP.Q0pnsfCDS2XS7ES4zTeyQQHaEK?pid=ImgDet&rs=1");
 	background-repeat: no-repeat;
@@ -245,6 +278,5 @@ body.tletter{
 	padding:0%;
 	margin: -1000px;
 }
-
 
 
