@@ -26,7 +26,7 @@
 
 [[Hello there. -> Family I 2a]]
 [[Can I get you anything? I brought stuff that might help. -> Family I 2b]]
-[[...->Family I 2c]]
+[[      ...->Family I 2c]]
 
 :: Family I 2a [family]
 "I'm only agreeing to do this so she'll stay out of the papers."
@@ -112,7 +112,7 @@ Nothing as of right now, things are moving as fast as they can with this case. C
 Now, I know you mentioned only a little bit about your daughter. Is there anything specific about her that you could share with me?
 "How specific are we talking..."
 Anything you say to me will help with the case greatly. It has to be something that you haven't said to me yet though.
-"I mean..." *sigh* "I mean, we're currently unregistered for the country. I came here on a work visa hoping it would give her the opportunity to grow and nurish in a better environment that where we came from. She was doing so well in school too, she had a plan to attend college and become a lawyer. Her hope was to defend other illegal immigrants from suffering."
+"I mean..." //sigh// "I mean, we're currently unregistered for the country. I came here on a work visa hoping it would give her the opportunity to grow and nurish in a better environment that where we came from. She was doing so well in school too, she had a plan to attend college and become a lawyer. Her hope was to defend other illegal immigrants from suffering."
 I'm sorry to hear that. Do know that there's an officer assisting with the case who's on your side completely. If that means anything to you.
 "Any support helps right now. It's good to know that there's people on my side that want the same justice as I currently do."
 We're here for you.
@@ -170,7 +170,7 @@ What's a stan, if you don't mind me asking?
 "A fan. A person whose a big fan of something. Could be an idea, could be a person, a type of personality. Most of the time though it's someone. I know they're everywhere on the internet."
 What's your point?
 "They would tear this story to shreds. Those freaks would glorify my daughter's killer as if he were a saint, a prophet from God, an idol. I of all people believe that man should never see the light of day ever again. If her story was out for anyone to grab, I wouldn't be able to do anything about it. I'd be forced to watch the fire burn from the bleachers. I don't want her story out, if there's one thing I want from this... it would be to bring back my daughter. But I can't have that. The next thing I want is to keep her story hidden, for her legacy."
-*sigh* I'll see what I can do. Thank you for your help. I forget how hard this must be to talk about her. I guess I couldn't understand seeing that I need someone to talk about her so I can help. So, thank you, again. If it means anything.
+//sigh// I'll see what I can do. Thank you for your help. I forget how hard this must be to talk about her. I guess I couldn't understand seeing that I need someone to talk about her so I can help. So, thank you, again. If it means anything.
 "Your help doesn't go unnoticed."
 /*This is the end of the fourth conversation with the mother */
 <<set $morning to true>>

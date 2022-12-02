@@ -136,6 +136,16 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	src: url("media/Fonts/Holidays Homework.ttf")
 }
 
+@font-face{
+	font-family:"Rough";
+	src: url("media/Fonts/Roughnut.ttf")
+}
+
+@font-face{
+	font-family:"Kin";
+	src: url("media/Fonts/Kinlove.ttf")
+}
+
 /* ---MAIN STAGES--- */
 body.corp{
 	background-image: url("media/images/CEO.png");
@@ -169,6 +179,7 @@ body.desk{
 	color:rgb(146, 103, 39);
 	backdrop-filter: blur(10px) saturate(70%);
 	margin: 0 auto;
+	text-shadow: black 1px 0 10px,black 1px 0 10px,black 1px 0 10px;
 }
 
 body.police{
@@ -239,6 +250,7 @@ body.inventory{
 	height: 1080px;
 }
 
+/* ---SPECIAL EVENTS--- */
 body.fspecial{
 	background-image: url("media/images/Alleyway.png");
 	background-repeat: no-repeat;
@@ -247,8 +259,12 @@ body.fspecial{
 }
 
 .fspecial.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Rough";
+	letter-spacing: 0.04em;
+    word-spacing: 0.05em;
+    font-size: xx-large;
+    color: rgb(223 223 223);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	backdrop-filter: blur(10px) saturate(70%);
 	padding-right: -100px;
 	margin: 0 auto;
@@ -262,8 +278,8 @@ body.kspecial{
 }
 
 .kspecial.passage{
-	font-family: "Georgia", Georgia, serif;
-	color:rgb(255, 0, 0);
+	font-family: "Kin";
+	color:rgb(224, 21, 21);
 	backdrop-filter: blur(10px) saturate(70%);
 	padding-right: -100px;
 	margin: 0 auto;
@@ -312,6 +328,20 @@ body.kletter{
 	background-size: cover;
 }
 
+.kletter.passage{
+	line-height: 1.6;
+    text-align: justify;
+    font-size: 1.6em;
+    color: #000000;
+	background-image: url("https://i.pinimg.com/474x/32/1b/69/321b6930001b1963935cc4eca8e5e81c.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+    padding: 2em;
+    box-shadow: 6px 10px rgba(var(--passage-box-shadow), 0.2);
+    border: 1px solid #000000;
+    font-family: "PWSolar";
+}
+
 body.tletter{
     background-image: url("https://th.bing.com/th/id/OIP.Q0pnsfCDS2XS7ES4zTeyQQHaEK?pid=ImgDet&rs=1");
 	background-repeat: no-repeat;
@@ -347,7 +377,6 @@ body.tletter{
 	padding:0%;
 	margin: -1000px;
 }
-
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Stow the sidebar initially
@@ -520,9 +549,30 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
 
     &lt;&lt;else&gt;&gt;
     /* If conditional statments */
+    &lt;&lt;if $f_visited == 1&gt;&gt;
     As you leave $Mvictim&#39;s family house, you feel a slight pang of guilt. 
 
-    Are you doing the right thing? 
+    Are you doing the right thing?
+    &lt;&lt;elseif $f_visited == 2&gt;&gt;
+    You start to wonder the effect these interviews are having on this poor woman
+ 
+    How many more meetings can she handle?
+    &lt;&lt;elseif $f_visited == 3&gt;&gt;
+    The tension in the room was palpable today.
+
+    Now you start to wonder the effect these interviews are having on you...
+    &lt;&lt;elseif $f_visited == 4&gt;&gt;
+    The more you talk to her, the more you understand her pain.
+
+    You leave feeling extremely distraught. 
+    
+    What in the world are you doing to this woman?
+    &lt;&lt;elseif $f_visited == 5&gt;&gt;
+    These interviews are unbearable at this point. You can no longer sit here and subject this woman to such treatment.
+
+    You&#39;ve left each session feeling worse and worse. By this point, you feel like you completely understand her pain.
+    &lt;&lt;/if&gt;&gt;
+
 
     &lt;&lt;nobr&gt;&gt;
         &lt;&lt;set $f_crit += 1&gt;&gt;
@@ -542,10 +592,27 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
         &lt;&lt;goto &quot;Special Event&quot;&gt;&gt;
 
     &lt;&lt;else&gt;&gt;
+    &lt;&lt;if $k_visited == 1&gt;&gt;
     As you leave $killer&#39;s prison, a cold chill runs down you back. Despite how depicable and diabolical that man was....
     
     ... you couldn&#39;t get him out of your head. 
+    &lt;&lt;elseif $k_visited == 2&gt;&gt;
+    You gained even more insight from $killer than the first day.
 
+    For the first time, you feel slightly optimistic about this project.
+    &lt;&lt;elseif $k_visited == 3&gt;&gt;
+    Despite being such a horrible man, you realize you didn&#39;t want the interview to end.
+
+    Maybe some of these fan letters have a point, this man is one of the most intricate people you&#39;ve ever talked to.
+    &lt;&lt;elseif $k_visited == 4&gt;&gt;
+    The story goes even deeper than you were expecting. The potential scenes start flooding your head.
+
+    You can&#39;t help but start thinking how this show will affect your career, how this really could be your big break.
+    &lt;&lt;elseif $k_visited == 5&gt;&gt;
+    $killer is going to make you rich, you&#39;re absolutely convinced. Stella is going to promote you, with the incredible ideas filling your mind theres no way she won&#39;t.
+
+    You head back as optimistic as ever. If this show doesn&#39;t launch your career into the stratosphere, nothing will.
+    &lt;&lt;/if&gt;&gt;
     &lt;&lt;nobr&gt;&gt;
         &lt;&lt;set $k_crit += 1&gt;&gt;
         &lt;&lt;set $read to $kletters_content.pluck()&gt;&gt;
@@ -564,9 +631,27 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
         &lt;&lt;goto &quot;Special Event&quot;&gt;&gt;
 
     &lt;&lt;else&gt;&gt;
+    &lt;&lt;if $t_visited == 1&gt;&gt;
     As you leave the police station, you grit your teeth in anger. So much of this injustice could have been avoided... 
 
-    Maybe you could be the one that delivers the justice the victims deserve.   
+    Maybe you could be the one that delivers the justice the victims deserve.
+    &lt;&lt;elseif $t_visited == 2&gt;&gt;
+    The knowledge you hold of the corruption in the police force on just the second day is astounding.
+
+    You start to wonder why nobody else has blown the whistle on this yet?
+
+    As you leave the station, you notice a strange car following you, but quickly dismiss it as it turns away. The stress from the case must be getting to you.
+    &lt;&lt;elseif $t_visited == 3&gt;&gt;
+    You gain even more information, and feel like you hold the key to correct all the injustice in this horrible little scenario.
+
+    As you near the office, you stop daydreaming about taking down corruption just long enough to notice the car. Its the same one from the previous interview, you&#39;re sure of it. You begin making wrong turns to shake him off, and eventually you&#39;re successful.
+
+    Are you just paranoid? Maybe it was a coincidence, maybe the car just looked similar, maybe they were just going to a nearby destination.
+
+    You decide to withold this incident from Stella since you know she won&#39;t react with any sympathy and just call you names.
+    &lt;&lt;elseif $t_visited == 4&gt;&gt;
+    
+    &lt;&lt;/if&gt;&gt;
 
     &lt;&lt;nobr&gt;&gt;
         &lt;&lt;set $t_crit += 1&gt;&gt;
@@ -652,7 +737,6 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
         &lt;&lt;for _index to 0; _index &lt; $fletters_read.length; _index++&gt;&gt;
             No. &lt;&lt;print (_index+1)&gt;&gt;
             [[$fletters_read[_index]]]
-        ---------
         &lt;&lt;/for&gt;&gt;
     &lt;&lt;/if&gt;&gt;
     .............................................................
@@ -663,7 +747,6 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
         &lt;&lt;for _index to 0; _index &lt; $kletters_read.length; _index++&gt;&gt;
             No. &lt;&lt;print (_index+1)&gt;&gt;
             [[$kletters_read[_index]]]
-        ---------
         &lt;&lt;/for&gt;&gt;
     &lt;&lt;/if&gt;&gt;
     .............................................................
@@ -674,7 +757,6 @@ Did you do a good thing here? Was the effort worth it? Only time will tell, you 
         &lt;&lt;for _index to 0; _index &lt; $tletters_read.length; _index++&gt;&gt;
             No. &lt;&lt;print (_index+1)&gt;&gt;
             [[$tletters_read[_index]]]
-        ---------
         &lt;&lt;/for&gt;&gt;
     &lt;&lt;/if&gt;&gt; 
 &lt;&lt;/if&gt;&gt;
@@ -868,7 +950,7 @@ I don&#39;t like people jeopardizing my paycheck.
 
 [[Hello there. -&gt; Family I 2a]]
 [[Can I get you anything? I brought stuff that might help. -&gt; Family I 2b]]
-[[...-&gt;Family I 2c]]</tw-passagedata><tw-passagedata pid="53" name="Family I 2a" tags="family" position="350,725" size="100,100">&quot;I&#39;m only agreeing to do this so she&#39;ll stay out of the papers.&quot;
+[[      ...-&gt;Family I 2c]]</tw-passagedata><tw-passagedata pid="53" name="Family I 2a" tags="family" position="350,725" size="100,100">&quot;I&#39;m only agreeing to do this so she&#39;ll stay out of the papers.&quot;
 I understand ma&#39;am, I take it this hasn&#39;t been very easy for you to deal with.
 &quot;Obviously. My child is dead, so no. It hasn&#39;t been that easy. Have they charged him with anything yet?&quot;
 No, he hasn&#39;t been officially charged yet, we are waiting for his statement.
@@ -922,7 +1004,7 @@ Nothing as of right now, things are moving as fast as they can with this case. C
 Now, I know you mentioned only a little bit about your daughter. Is there anything specific about her that you could share with me?
 &quot;How specific are we talking...&quot;
 Anything you say to me will help with the case greatly. It has to be something that you haven&#39;t said to me yet though.
-&quot;I mean...&quot; *sigh* &quot;I mean, we&#39;re currently unregistered for the country. I came here on a work visa hoping it would give her the opportunity to grow and nurish in a better environment that where we came from. She was doing so well in school too, she had a plan to attend college and become a lawyer. Her hope was to defend other illegal immigrants from suffering.&quot;
+&quot;I mean...&quot; //sigh// &quot;I mean, we&#39;re currently unregistered for the country. I came here on a work visa hoping it would give her the opportunity to grow and nurish in a better environment that where we came from. She was doing so well in school too, she had a plan to attend college and become a lawyer. Her hope was to defend other illegal immigrants from suffering.&quot;
 I&#39;m sorry to hear that. Do know that there&#39;s an officer assisting with the case who&#39;s on your side completely. If that means anything to you.
 &quot;Any support helps right now. It&#39;s good to know that there&#39;s people on my side that want the same justice as I currently do.&quot;
 We&#39;re here for you.
@@ -970,7 +1052,7 @@ What&#39;s a stan, if you don&#39;t mind me asking?
 &quot;A fan. A person whose a big fan of something. Could be an idea, could be a person, a type of personality. Most of the time though it&#39;s someone. I know they&#39;re everywhere on the internet.&quot;
 What&#39;s your point?
 &quot;They would tear this story to shreds. Those freaks would glorify my daughter&#39;s killer as if he were a saint, a prophet from God, an idol. I of all people believe that man should never see the light of day ever again. If her story was out for anyone to grab, I wouldn&#39;t be able to do anything about it. I&#39;d be forced to watch the fire burn from the bleachers. I don&#39;t want her story out, if there&#39;s one thing I want from this... it would be to bring back my daughter. But I can&#39;t have that. The next thing I want is to keep her story hidden, for her legacy.&quot;
-*sigh* I&#39;ll see what I can do. Thank you for your help. I forget how hard this must be to talk about her. I guess I couldn&#39;t understand seeing that I need someone to talk about her so I can help. So, thank you, again. If it means anything.
+//sigh// I&#39;ll see what I can do. Thank you for your help. I forget how hard this must be to talk about her. I guess I couldn&#39;t understand seeing that I need someone to talk about her so I can help. So, thank you, again. If it means anything.
 &quot;Your help doesn&#39;t go unnoticed.&quot;
 /*This is the end of the fourth conversation with the mother */
 &lt;&lt;set $morning to true&gt;&gt;
@@ -988,7 +1070,7 @@ Of course.
 /*This is the end of the mother conversation */
 &lt;&lt;set $morning to true&gt;&gt;
 [[Return to your desk -&gt; Family Letter]]</tw-passagedata><tw-passagedata pid="70" name="StoryInit" tags="" position="1225,850" size="100,100">/*Global Keys */
-&lt;&lt;set $crit_number to 5 &gt;&gt;
+&lt;&lt;set $crit_number to 3 &gt;&gt;
 &lt;&lt;set $morning to true&gt;&gt;
 &lt;&lt;set $killer to &quot;Martin&quot;&gt;&gt;
 &lt;&lt;set $show to &quot;Angel of Death&quot;&gt;&gt;
@@ -1347,7 +1429,8 @@ You&#39;re split. On one hand, you can&#39;t assure him of any details that will
 
 &quot;Thank you... thank you so much&quot;
 
-He pulls you into an embrace before you part ways. You can&#39;t help but feel a pang of guilt; you essentially just lied to a grieving father. What has this show turned you into?</tw-passagedata><tw-passagedata pid="104" name="victim2" tags="fspecial" position="475,1350" size="100,100">$victim2 [[Jones|Jones]] was the last victim of $killer. A stanford student and acclaimed dancer, she was smart enough to leave behind evidence that she knew the police would find. Thanks to her, investigators were able to find the identity of $killer and take him into custody.</tw-passagedata><tw-passagedata pid="105" name="Knowsmore" tags="fspecial" position="600,1350" size="100,100">This man has intimate knowledge of the case. He is clearly obsessed with the killer, the potential trial, and all the details of his murders. I mean, who can [[blame|blame]] him?</tw-passagedata><tw-passagedata pid="106" name="Special Killer" tags="kspecial" position="725,1350" size="100,100">You speak with reluctance; you know you shouldn&#39;t be talking about the show with the public
+He pulls you into an embrace before you part ways. You can&#39;t help but feel a pang of guilt; you essentially just lied to a grieving father. What has this show turned you into?
+[[Return to your Desk -&gt; Desk Condition]]</tw-passagedata><tw-passagedata pid="104" name="victim2" tags="fspecial" position="475,1350" size="100,100">$victim2 [[Jones|Jones]] was the last victim of $killer. A stanford student and acclaimed dancer, she was smart enough to leave behind evidence that she knew the police would find. Thanks to her, investigators were able to find the identity of $killer and take him into custody.</tw-passagedata><tw-passagedata pid="105" name="Knowsmore" tags="fspecial" position="600,1350" size="100,100">This man has intimate knowledge of the case. He is clearly obsessed with the killer, the potential trial, and all the details of his murders. I mean, who can [[blame|blame]] him?</tw-passagedata><tw-passagedata pid="106" name="Special Killer" tags="kspecial" position="725,1350" size="100,100">You speak with reluctance; you know you shouldn&#39;t be talking about the show with the public
 
 &quot;Holy cow! I can&#39;t believe this! $killer is sooooo hot!! Oh my god, if I met him I would just melt!&quot;
 

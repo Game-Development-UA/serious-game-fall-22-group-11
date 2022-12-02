@@ -10,7 +10,7 @@
 Angel of Death
 :: StoryInit
 /*Global Keys */
-<<set $crit_number to 5 >>
+<<set $crit_number to 3 >>
 <<set $morning to true>>
 <<set $killer to "Martin">>
 <<set $show to "Angel of Death">>
