@@ -3,6 +3,7 @@
         <<goto "Special Event">>
 
     <<else>>
+    <<audio "Mother" volume 1 fadeout>>
     /* If conditional statments */
     <<if $f_visited == 1>>
     As you leave $Mvictim's family house, you feel a slight pang of guilt. 
@@ -50,6 +51,7 @@
         <<goto "Special Event">>
 
     <<else>>
+    <<audio "Killer" volume 1 fadeout>>
     <<if $k_visited == 1>>
     As you leave $killer's prison, a cold chill runs down you back. Despite how depicable and diabolical that man was....
     
@@ -92,6 +94,7 @@
         <<goto "Special Event">>
 
     <<else>>
+    <<audio "Police" volume 1 fadeout>>
     <<if $t_visited == 1>>
     As you leave the police station, you grit your teeth in anger. So much of this injustice could have been avoided... 
 
@@ -168,7 +171,9 @@ You open the letter..... only to find out it was spam mail.
 [[Return to your desk -> Main Desk]]
 
 :: Special Event
+<<audio ":playing" stop>>
 <<if $f_crit == $crit_number>>
+
     As you're on your way back to the office after an exhausting day of interrogations - both physically and emotionally - you notice a peculiar man wearing a trench coat walking towards you. He comes up close and suddenly speaks without warning.
 
     "H-hey... hey you're that producer for that TV show right? Angel of Death?"
